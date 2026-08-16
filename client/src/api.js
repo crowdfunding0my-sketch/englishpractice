@@ -1,7 +1,7 @@
 import { supabase } from "./lib/supabaseClient.js";
 
 export async function fetchWords(grade) {
-  const res = await fetch(`/api/words/${grade}`);
+  const res = await fetch(`/api/words?grade=${grade}`);
   if (!res.ok) throw new Error("単語データの取得に失敗しました");
   return res.json();
 }

@@ -1,14 +1,16 @@
-// Vercel Serverless Function: GET /api/words/:grade
+// Vercel Serverless Function: GET /api/words?grade=1
 // server/src/routes/words.js のVercelデプロイ用版(同じ単語データを配信する)
+// api/images.js と同じクエリパラメータ方式にすることで、動的ルート([grade].js)の
+// 認識ゆれを避け、確実にFunctionとして呼び出されるようにしている
 import { readFileSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const dataDir = path.join(__dirname, "..", "data", "words");
+const dataDir = path.join(__dirname, "data", "words");
 
 export default function handler(req, res) {
-  const grade = req.query.grade;
+  const grade = (req.query.grade || "").toString();
   if (!["1", "2", "3"].includes(grade)) {
     res.status(400).json({ error: "grade must be 1, 2, or 3" });
     return;

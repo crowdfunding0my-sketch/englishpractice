@@ -8,8 +8,8 @@ const dataDir = path.join(__dirname, "..", "data", "words");
 
 const router = Router();
 
-router.get("/:grade", async (req, res) => {
-  const grade = req.params.grade;
+router.get("/", async (req, res) => {
+  const grade = (req.query.grade || "").toString();
   if (!["1", "2", "3"].includes(grade)) {
     return res.status(400).json({ error: "grade must be 1, 2, or 3" });
   }
