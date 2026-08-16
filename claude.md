@@ -39,3 +39,9 @@ SupabaseのProject URLとPublishable keyは client/.env で管理し、.gitignor
 
 ## リポジトリ
 GitHub: https://github.com/crowdfunding0my-sketch/englishpractice.git
+
+## デプロイ構成
+- 本番はVercelに一本化する。Vercelプロジェクトの Root Directory は `client` を指定する。
+- `client/api/` 配下に、単語データ配信・Pixabay画像プロキシ用のVercel Serverless Functionsを用意している
+  （ローカル開発用の `server/`（Express）とは別実装。ローカルは今まで通り `npm run dev` でExpressサーバーを使う）。
+- 環境変数（`PIXABAY_API_KEY` / `VITE_SUPABASE_URL` / `VITE_SUPABASE_ANON_KEY`）はVercelダッシュボードで設定し、`vercel.json` には含めない。
