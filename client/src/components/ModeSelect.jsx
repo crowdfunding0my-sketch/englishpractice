@@ -1,4 +1,4 @@
-export default function ModeSelect({ grade, onSelect, onBack }) {
+export default function ModeSelect({ grade, isPremium, onSelect, onBack }) {
   return (
     <div className="card">
       <button className="back-link" onClick={onBack}>
@@ -25,6 +25,11 @@ export default function ModeSelect({ grade, onSelect, onBack }) {
           <span className="emoji">📚</span>
           <span className="label">苦手単語</span>
           <span className="sub">間違えた単語を復習する</span>
+        </div>
+        <div className="select-card" onClick={() => onSelect("upgrade")}>
+          <span className="emoji">{isPremium ? "👑" : "✨"}</span>
+          <span className="label">{isPremium ? "プレミアム会員" : "プレミアムにアップグレード"}</span>
+          <span className="sub">{isPremium ? "プラン管理はこちら" : "拡張単語パック(各学年+400語)が使い放題"}</span>
         </div>
       </div>
     </div>

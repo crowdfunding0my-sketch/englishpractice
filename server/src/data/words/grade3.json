@@ -1,152 +1,1357 @@
 [
-  { "id": "g3-001", "word": "environment", "pos": "名詞", "meaning": "環境", "example": "We should protect the environment for future generations.", "exampleJa": "私たちは未来の世代のために環境を守るべきです。", "imageQuery": "environment nature" },
-  { "id": "g3-002", "word": "pollution", "pos": "名詞", "meaning": "汚染", "example": "Air pollution has become a serious problem.", "exampleJa": "大気汚染は深刻な問題になっています。", "imageQuery": "air pollution" },
-  { "id": "g3-003", "word": "recycle", "pos": "動詞", "meaning": "リサイクルする", "example": "These bottles are recycled every week.", "exampleJa": "これらのボトルは毎週リサイクルされています。", "imageQuery": "recycling bottles" },
-  { "id": "g3-004", "word": "waste", "pos": "名詞", "meaning": "ごみ・廃棄物", "example": "A lot of waste is produced every day.", "exampleJa": "毎日たくさんのごみが出されています。", "imageQuery": "waste garbage" },
-  { "id": "g3-005", "word": "energy", "pos": "名詞", "meaning": "エネルギー", "example": "This town uses energy from the sun.", "exampleJa": "この町は太陽からのエネルギーを使っています。", "imageQuery": "solar energy" },
-  { "id": "g3-006", "word": "resource", "pos": "名詞", "meaning": "資源", "example": "Water is an important resource for everyone.", "exampleJa": "水はみんなにとって大切な資源です。", "imageQuery": "natural resources" },
-  { "id": "g3-007", "word": "climate", "pos": "名詞", "meaning": "気候", "example": "The climate has changed a lot in the last century.", "exampleJa": "気候はこの1世紀で大きく変化しました。", "imageQuery": "climate change" },
-  { "id": "g3-008", "word": "protect", "pos": "動詞", "meaning": "守る", "example": "This forest is protected by the government.", "exampleJa": "この森は政府によって守られています。", "imageQuery": "protecting forest" },
-  { "id": "g3-009", "word": "reduce", "pos": "動詞", "meaning": "減らす", "example": "We need to reduce plastic waste.", "exampleJa": "私たちはプラスチックごみを減らす必要があります。", "imageQuery": "reducing waste" },
-  { "id": "g3-010", "word": "plastic", "pos": "名詞", "meaning": "プラスチック", "example": "This bag is made of plastic.", "exampleJa": "このかばんはプラスチックでできています。", "imageQuery": "plastic bottles" },
-  { "id": "g3-011", "word": "solar", "pos": "形容詞", "meaning": "太陽の", "example": "Solar power is used in many houses now.", "exampleJa": "今では多くの家で太陽光発電が使われています。", "imageQuery": "solar panels" },
-  { "id": "g3-012", "word": "disaster", "pos": "名詞", "meaning": "災害", "example": "The area was hit by a natural disaster.", "exampleJa": "その地域は自然災害に見舞われました。", "imageQuery": "natural disaster" },
-  { "id": "g3-013", "word": "technology", "pos": "名詞", "meaning": "科学技術", "example": "Technology has changed our lives a lot.", "exampleJa": "科学技術は私たちの生活を大きく変えました。", "imageQuery": "technology devices" },
-  { "id": "g3-014", "word": "science", "pos": "名詞", "meaning": "科学", "example": "Science helps us understand the world.", "exampleJa": "科学は私たちが世界を理解する助けになります。", "imageQuery": "science laboratory" },
-  { "id": "g3-015", "word": "invent", "pos": "動詞", "meaning": "発明する", "example": "This machine was invented over a hundred years ago.", "exampleJa": "この機械は100年以上前に発明されました。", "imageQuery": "invention machine" },
-  { "id": "g3-016", "word": "discover", "pos": "動詞", "meaning": "発見する", "example": "Scientists have discovered a new kind of star.", "exampleJa": "科学者たちは新しい種類の星を発見しました。", "imageQuery": "discovery telescope" },
-  { "id": "g3-017", "word": "research", "pos": "名詞", "meaning": "研究", "example": "She has done research on ocean life for ten years.", "exampleJa": "彼女は10年間海の生物について研究をしてきました。", "imageQuery": "science research" },
-  { "id": "g3-018", "word": "experiment", "pos": "名詞", "meaning": "実験", "example": "We did an interesting experiment in class.", "exampleJa": "私たちは授業で面白い実験をしました。", "imageQuery": "science experiment" },
-  { "id": "g3-019", "word": "computer", "pos": "名詞", "meaning": "コンピューター", "example": "This report was written on a computer.", "exampleJa": "この報告書はコンピューターで書かれました。", "imageQuery": "computer" },
-  { "id": "g3-020", "word": "internet", "pos": "名詞", "meaning": "インターネット", "example": "The internet is used by people all over the world.", "exampleJa": "インターネットは世界中の人々に使われています。", "imageQuery": "internet network" },
-  { "id": "g3-021", "word": "robot", "pos": "名詞", "meaning": "ロボット", "example": "This robot was made by high school students.", "exampleJa": "このロボットは高校生によって作られました。", "imageQuery": "robot" },
-  { "id": "g3-022", "word": "machine", "pos": "名詞", "meaning": "機械", "example": "This machine can wash clothes quickly.", "exampleJa": "この機械は服を素早く洗うことができます。", "imageQuery": "washing machine" },
-  { "id": "g3-023", "word": "develop", "pos": "動詞", "meaning": "開発する", "example": "A new medicine has been developed by this team.", "exampleJa": "新しい薬がこのチームによって開発されました。", "imageQuery": "developing medicine" },
-  { "id": "g3-024", "word": "device", "pos": "名詞", "meaning": "機器", "example": "This small device can measure your heartbeat.", "exampleJa": "この小さな機器はあなたの心拍を測ることができます。", "imageQuery": "electronic device" },
-  { "id": "g3-025", "word": "international", "pos": "形容詞", "meaning": "国際的な", "example": "This is an international event held every year.", "exampleJa": "これは毎年開催される国際的な行事です。", "imageQuery": "international event" },
-  { "id": "g3-026", "word": "society", "pos": "名詞", "meaning": "社会", "example": "Everyone has a role to play in society.", "exampleJa": "誰もが社会の中で果たす役割を持っています。", "imageQuery": "society community" },
-  { "id": "g3-027", "word": "peace", "pos": "名詞", "meaning": "平和", "example": "People around the world are working for peace.", "exampleJa": "世界中の人々が平和のために活動しています。", "imageQuery": "peace symbol" },
-  { "id": "g3-028", "word": "war", "pos": "名詞", "meaning": "戦争", "example": "This museum shows what happened during the war.", "exampleJa": "この博物館は戦争中に起こったことを示しています。", "imageQuery": "war museum" },
-  { "id": "g3-029", "word": "poverty", "pos": "名詞", "meaning": "貧困", "example": "Many people are still living in poverty.", "exampleJa": "多くの人々がまだ貧困の中で暮らしています。", "imageQuery": "poverty" },
-  { "id": "g3-030", "word": "volunteer", "pos": "名詞", "meaning": "ボランティア", "example": "I work as a volunteer at the hospital.", "exampleJa": "私は病院でボランティアとして働いています。", "imageQuery": "volunteer helping" },
-  { "id": "g3-031", "word": "organization", "pos": "名詞", "meaning": "組織", "example": "This organization helps children in need.", "exampleJa": "この組織は困っている子どもたちを助けています。", "imageQuery": "charity organization" },
-  { "id": "g3-032", "word": "government", "pos": "名詞", "meaning": "政府", "example": "The new law was passed by the government.", "exampleJa": "その新しい法律は政府によって可決されました。", "imageQuery": "government building" },
-  { "id": "g3-033", "word": "population", "pos": "名詞", "meaning": "人口", "example": "The population of this city has grown quickly.", "exampleJa": "この都市の人口は急速に増加しました。", "imageQuery": "city population crowd" },
-  { "id": "g3-034", "word": "community", "pos": "名詞", "meaning": "地域社会", "example": "Everyone in the community helped after the storm.", "exampleJa": "地域社会の全員が嵐の後に助け合いました。", "imageQuery": "community people" },
-  { "id": "g3-035", "word": "history", "pos": "名詞", "meaning": "歴史", "example": "This building has a history of two hundred years.", "exampleJa": "この建物は200年の歴史を持っています。", "imageQuery": "historic building" },
-  { "id": "g3-036", "word": "tradition", "pos": "名詞", "meaning": "伝統", "example": "This festival is a tradition that has been kept for years.", "exampleJa": "この祭りは長年守られてきた伝統です。", "imageQuery": "traditional festival" },
-  { "id": "g3-037", "word": "century", "pos": "名詞", "meaning": "世紀", "example": "This temple was built in the twelfth century.", "exampleJa": "この寺は12世紀に建てられました。", "imageQuery": "ancient temple century" },
-  { "id": "g3-038", "word": "ancient", "pos": "形容詞", "meaning": "古代の", "example": "We visited an ancient castle in Europe.", "exampleJa": "私たちはヨーロッパの古代の城を訪れました。", "imageQuery": "ancient castle" },
-  { "id": "g3-039", "word": "heritage", "pos": "名詞", "meaning": "遺産", "example": "This site has been listed as world heritage.", "exampleJa": "この場所は世界遺産として登録されています。", "imageQuery": "world heritage site" },
-  { "id": "g3-040", "word": "ancestor", "pos": "名詞", "meaning": "祖先", "example": "Our ancestors lived in this village long ago.", "exampleJa": "私たちの祖先は昔この村に住んでいました。", "imageQuery": "ancestors village" },
-  { "id": "g3-041", "word": "generation", "pos": "名詞", "meaning": "世代", "example": "This story has been passed down for many generations.", "exampleJa": "この物語は何世代にもわたって語り継がれてきました。", "imageQuery": "generations family" },
-  { "id": "g3-042", "word": "era", "pos": "名詞", "meaning": "時代", "example": "This picture was painted in a different era.", "exampleJa": "この絵は違う時代に描かれました。", "imageQuery": "historical era painting" },
-  { "id": "g3-043", "word": "museum", "pos": "名詞", "meaning": "博物館", "example": "This museum was visited by many students last month.", "exampleJa": "この博物館は先月多くの生徒に訪れられました。", "imageQuery": "museum" },
-  { "id": "g3-044", "word": "ceremony", "pos": "名詞", "meaning": "式典", "example": "The graduation ceremony will be held next week.", "exampleJa": "卒業式は来週行われる予定です。", "imageQuery": "graduation ceremony" },
-  { "id": "g3-045", "word": "career", "pos": "名詞", "meaning": "職業・経歴", "example": "She has built a successful career as a doctor.", "exampleJa": "彼女は医者として成功したキャリアを築いてきました。", "imageQuery": "career success" },
-  { "id": "g3-046", "word": "education", "pos": "名詞", "meaning": "教育", "example": "Education is important for every child.", "exampleJa": "教育はすべての子どもにとって大切です。", "imageQuery": "education classroom" },
-  { "id": "g3-047", "word": "university", "pos": "名詞", "meaning": "大学", "example": "My brother has studied at this university for two years.", "exampleJa": "私の兄はこの大学で2年間学んでいます。", "imageQuery": "university campus" },
-  { "id": "g3-048", "word": "graduate", "pos": "動詞", "meaning": "卒業する", "example": "I will graduate from junior high school next spring.", "exampleJa": "私は来年の春に中学校を卒業します。", "imageQuery": "graduation students" },
-  { "id": "g3-049", "word": "degree", "pos": "名詞", "meaning": "学位", "example": "He got a degree in science from that university.", "exampleJa": "彼はその大学で科学の学位を取得しました。", "imageQuery": "university degree" },
-  { "id": "g3-050", "word": "skill", "pos": "名詞", "meaning": "技能", "example": "This job requires good communication skills.", "exampleJa": "この仕事は良いコミュニケーション技能を必要とします。", "imageQuery": "skill training" },
-  { "id": "g3-051", "word": "knowledge", "pos": "名詞", "meaning": "知識", "example": "He has a lot of knowledge about space.", "exampleJa": "彼は宇宙についてたくさんの知識を持っています。", "imageQuery": "knowledge books" },
-  { "id": "g3-052", "word": "opportunity", "pos": "名詞", "meaning": "機会", "example": "Studying abroad gave her a great opportunity.", "exampleJa": "海外留学は彼女に素晴らしい機会を与えました。", "imageQuery": "opportunity door" },
-  { "id": "g3-053", "word": "scholarship", "pos": "名詞", "meaning": "奨学金", "example": "She received a scholarship to study music.", "exampleJa": "彼女は音楽を学ぶための奨学金を受け取りました。", "imageQuery": "scholarship graduation" },
-  { "id": "g3-054", "word": "major", "pos": "名詞", "meaning": "専攻", "example": "His major is environmental science.", "exampleJa": "彼の専攻は環境科学です。", "imageQuery": "university major study" },
-  { "id": "g3-055", "word": "improve", "pos": "動詞", "meaning": "改善する", "example": "This app has improved my English a lot.", "exampleJa": "このアプリは私の英語をとても改善してくれました。", "imageQuery": "improvement progress" },
-  { "id": "g3-056", "word": "achieve", "pos": "動詞", "meaning": "達成する", "example": "She has achieved her goal after years of practice.", "exampleJa": "彼女は何年もの練習の末に目標を達成しました。", "imageQuery": "achievement success" },
-  { "id": "g3-057", "word": "produce", "pos": "動詞", "meaning": "生産する", "example": "This factory produces cars for many countries.", "exampleJa": "この工場は多くの国のために車を生産しています。", "imageQuery": "factory production" },
-  { "id": "g3-058", "word": "increase", "pos": "動詞", "meaning": "増える・増やす", "example": "The number of visitors has increased this year.", "exampleJa": "今年、訪問者の数が増加しました。", "imageQuery": "increase graph" },
-  { "id": "g3-059", "word": "decrease", "pos": "動詞", "meaning": "減る・減らす", "example": "The population of this town has decreased slowly.", "exampleJa": "この町の人口はゆっくりと減少してきました。", "imageQuery": "decrease graph" },
-  { "id": "g3-060", "word": "create", "pos": "動詞", "meaning": "創造する", "example": "This app was created by a high school student.", "exampleJa": "このアプリは高校生によって作られました。", "imageQuery": "creating app" },
-  { "id": "g3-061", "word": "provide", "pos": "動詞", "meaning": "提供する", "example": "This website provides useful information for free.", "exampleJa": "このウェブサイトは役に立つ情報を無料で提供しています。", "imageQuery": "providing information" },
-  { "id": "g3-062", "word": "require", "pos": "動詞", "meaning": "必要とする", "example": "This job requires a special skill.", "exampleJa": "この仕事は特別な技能を必要とします。", "imageQuery": "job requirement" },
-  { "id": "g3-063", "word": "consider", "pos": "動詞", "meaning": "考慮する", "example": "We should consider other people's feelings.", "exampleJa": "私たちは他人の気持ちを考慮するべきです。", "imageQuery": "considering thinking" },
-  { "id": "g3-064", "word": "realize", "pos": "動詞", "meaning": "気づく", "example": "I realized my mistake after the test.", "exampleJa": "私はテストの後に自分の間違いに気づきました。", "imageQuery": "realization thinking" },
-  { "id": "g3-065", "word": "solve", "pos": "動詞", "meaning": "解決する", "example": "This problem has not been solved yet.", "exampleJa": "この問題はまだ解決されていません。", "imageQuery": "solving problem puzzle" },
-  { "id": "g3-066", "word": "spread", "pos": "動詞", "meaning": "広がる", "example": "The news spread quickly around the world.", "exampleJa": "そのニュースは世界中に急速に広がりました。", "imageQuery": "news spreading" },
-  { "id": "g3-067", "word": "affect", "pos": "動詞", "meaning": "影響を与える", "example": "Climate change affects animals all over the world.", "exampleJa": "気候変動は世界中の動物に影響を与えています。", "imageQuery": "climate change animals" },
-  { "id": "g3-068", "word": "support", "pos": "動詞", "meaning": "支える", "example": "My friends have always supported me.", "exampleJa": "私の友達はいつも私を支えてくれました。", "imageQuery": "support friends" },
-  { "id": "g3-069", "word": "express", "pos": "動詞", "meaning": "表現する", "example": "It is important to express your own opinion.", "exampleJa": "自分自身の意見を表現することは大切です。", "imageQuery": "expressing opinion" },
-  { "id": "g3-070", "word": "communicate", "pos": "動詞", "meaning": "コミュニケーションを取る", "example": "We can communicate with people around the world online.", "exampleJa": "私たちはオンラインで世界中の人々とコミュニケーションを取れます。", "imageQuery": "communication online" },
-  { "id": "g3-071", "word": "influence", "pos": "動詞", "meaning": "影響を及ぼす", "example": "Her words influenced many young people.", "exampleJa": "彼女の言葉は多くの若者に影響を及ぼしました。", "imageQuery": "influence inspiring speech" },
-  { "id": "g3-072", "word": "succeed", "pos": "動詞", "meaning": "成功する", "example": "She succeeded in becoming a scientist.", "exampleJa": "彼女は科学者になることに成功しました。", "imageQuery": "success scientist" },
-  { "id": "g3-073", "word": "fail", "pos": "動詞", "meaning": "失敗する", "example": "Don't be afraid to fail sometimes.", "exampleJa": "時には失敗することを恐れないでください。", "imageQuery": "failure learning" },
-  { "id": "g3-074", "word": "appear", "pos": "動詞", "meaning": "現れる", "example": "A rainbow appeared after the rain.", "exampleJa": "雨の後に虹が現れました。", "imageQuery": "rainbow appearing" },
-  { "id": "g3-075", "word": "disappear", "pos": "動詞", "meaning": "消える", "example": "Many kinds of animals are disappearing from the earth.", "exampleJa": "多くの種類の動物が地球上から消えつつあります。", "imageQuery": "endangered animals" },
-  { "id": "g3-076", "word": "exist", "pos": "動詞", "meaning": "存在する", "example": "This custom has existed for over three hundred years.", "exampleJa": "この習慣は300年以上前から存在しています。", "imageQuery": "old custom tradition" },
-  { "id": "g3-077", "word": "survive", "pos": "動詞", "meaning": "生き残る", "example": "Few animals can survive in this cold place.", "exampleJa": "この寒い場所で生き残れる動物はほとんどいません。", "imageQuery": "animal survival cold" },
-  { "id": "g3-078", "word": "depend", "pos": "動詞", "meaning": "頼る", "example": "Our life depends on clean water and air.", "exampleJa": "私たちの生活はきれいな水と空気に頼っています。", "imageQuery": "clean water dependence" },
-  { "id": "g3-079", "word": "manage", "pos": "動詞", "meaning": "何とかやり遂げる・管理する", "example": "She managed to finish the project on time.", "exampleJa": "彼女は何とかそのプロジェクトを時間通りに終えました。", "imageQuery": "project management" },
-  { "id": "g3-080", "word": "avoid", "pos": "動詞", "meaning": "避ける", "example": "We should avoid using too much plastic.", "exampleJa": "私たちはプラスチックを使いすぎるのを避けるべきです。", "imageQuery": "avoiding plastic" },
-  { "id": "g3-081", "word": "allow", "pos": "動詞", "meaning": "許す", "example": "My parents allow me to use the internet at night.", "exampleJa": "私の両親は夜にインターネットを使うことを許してくれます。", "imageQuery": "internet permission" },
-  { "id": "g3-082", "word": "encourage", "pos": "動詞", "meaning": "励ます", "example": "The coach encouraged the team before the game.", "exampleJa": "コーチは試合の前にチームを励ましました。", "imageQuery": "coach encouraging team" },
-  { "id": "g3-083", "word": "suggest", "pos": "動詞", "meaning": "提案する", "example": "My teacher suggested a new way to study.", "exampleJa": "私の先生は新しい勉強法を提案してくれました。", "imageQuery": "suggestion advice teacher" },
-  { "id": "g3-084", "word": "prevent", "pos": "動詞", "meaning": "防ぐ", "example": "Washing hands can prevent many illnesses.", "exampleJa": "手を洗うことは多くの病気を防ぐことができます。", "imageQuery": "hand washing prevention" },
-  { "id": "g3-085", "word": "necessary", "pos": "形容詞", "meaning": "必要な", "example": "Clean water is necessary for all living things.", "exampleJa": "きれいな水はすべての生き物にとって必要です。", "imageQuery": "clean water necessary" },
-  { "id": "g3-086", "word": "possible", "pos": "形容詞", "meaning": "可能な", "example": "It is possible to solve this problem together.", "exampleJa": "この問題を一緒に解決することは可能です。", "imageQuery": "possible solution teamwork" },
-  { "id": "g3-087", "word": "impossible", "pos": "形容詞", "meaning": "不可能な", "example": "Nothing is impossible if you keep trying.", "exampleJa": "挑戦し続ければ不可能なことはありません。", "imageQuery": "never give up" },
-  { "id": "g3-088", "word": "global", "pos": "形容詞", "meaning": "地球規模の", "example": "Global warming is a problem for everyone.", "exampleJa": "地球温暖化はすべての人にとっての問題です。", "imageQuery": "global warming earth" },
-  { "id": "g3-089", "word": "modern", "pos": "形容詞", "meaning": "現代の", "example": "This building has a very modern design.", "exampleJa": "この建物はとても現代的なデザインをしています。", "imageQuery": "modern building" },
-  { "id": "g3-090", "word": "traditional", "pos": "形容詞", "meaning": "伝統的な", "example": "She wore a traditional dress at the festival.", "exampleJa": "彼女は祭りで伝統的な衣装を着ました。", "imageQuery": "traditional dress festival" },
-  { "id": "g3-091", "word": "various", "pos": "形容詞", "meaning": "様々な", "example": "This shop sells various kinds of vegetables.", "exampleJa": "この店は様々な種類の野菜を売っています。", "imageQuery": "various vegetables" },
-  { "id": "g3-092", "word": "serious", "pos": "形容詞", "meaning": "深刻な", "example": "Water pollution is a serious problem in this area.", "exampleJa": "水質汚染はこの地域で深刻な問題です。", "imageQuery": "water pollution serious" },
-  { "id": "g3-093", "word": "effective", "pos": "形容詞", "meaning": "効果的な", "example": "This method is an effective way to learn words.", "exampleJa": "この方法は単語を覚える効果的な方法です。", "imageQuery": "effective study method" },
-  { "id": "g3-094", "word": "convenient", "pos": "形容詞", "meaning": "便利な", "example": "This station is very convenient for shopping.", "exampleJa": "この駅は買い物にとても便利です。", "imageQuery": "convenient station shopping" },
-  { "id": "g3-095", "word": "be used for", "pos": "熟語", "meaning": "～のために使われる", "example": "This tool is used for cutting paper.", "exampleJa": "この道具は紙を切るために使われます。", "imageQuery": "cutting tool paper" },
-  { "id": "g3-096", "word": "according to", "pos": "熟語", "meaning": "～によれば", "example": "According to the news, it will rain tomorrow.", "exampleJa": "ニュースによると、明日は雨が降るそうです。", "imageQuery": "weather news forecast" },
-  { "id": "g3-097", "word": "take part in", "pos": "熟語", "meaning": "～に参加する", "example": "Many students took part in the volunteer activity.", "exampleJa": "多くの生徒がそのボランティア活動に参加しました。", "imageQuery": "volunteer activity students" },
-  { "id": "g3-098", "word": "give up", "pos": "熟語", "meaning": "あきらめる", "example": "She never gives up even when things are hard.", "exampleJa": "彼女は物事が大変な時でも決してあきらめません。", "imageQuery": "never give up perseverance" },
-  { "id": "g3-099", "word": "look forward to", "pos": "熟語", "meaning": "～を楽しみにする", "example": "I am looking forward to seeing you soon.", "exampleJa": "私はもうすぐあなたに会えるのを楽しみにしています。", "imageQuery": "looking forward excited" },
-  { "id": "g3-100", "word": "be made of", "pos": "熟語", "meaning": "～でできている（材料が見える）", "example": "This desk is made of wood.", "exampleJa": "この机は木でできています。", "imageQuery": "wooden desk material" },
-  { "id": "g3-101", "word": "be made from", "pos": "熟語", "meaning": "～でできている（材料が変化する）", "example": "Paper is made from trees.", "exampleJa": "紙は木から作られています。", "imageQuery": "paper making trees" },
-  { "id": "g3-102", "word": "in order to", "pos": "熟語", "meaning": "～するために", "example": "I got up early in order to catch the first train.", "exampleJa": "私は始発電車に乗るために早く起きました。", "imageQuery": "early train morning" },
-  { "id": "g3-103", "word": "such as", "pos": "熟語", "meaning": "例えば～のような", "example": "I like fruits such as apples and oranges.", "exampleJa": "私はりんごやオレンジのような果物が好きです。", "imageQuery": "fruits apples oranges" },
-  { "id": "g3-104", "word": "thanks to", "pos": "熟語", "meaning": "～のおかげで", "example": "Thanks to your help, I finished the work.", "exampleJa": "あなたの助けのおかげで、私はその仕事を終えました。", "imageQuery": "helping hand thanks" },
-  { "id": "g3-105", "word": "as well as", "pos": "熟語", "meaning": "～と同様に", "example": "She can speak French as well as English.", "exampleJa": "彼女は英語と同様にフランス語も話せます。", "imageQuery": "speaking languages" },
-  { "id": "g3-106", "word": "be known for", "pos": "熟語", "meaning": "～で知られている", "example": "This city is known for its old temples.", "exampleJa": "この都市は古い寺で知られています。", "imageQuery": "city temples known" },
-  { "id": "g3-107", "word": "fact", "pos": "名詞", "meaning": "事実", "example": "It is a fact that the earth is getting warmer.", "exampleJa": "地球が暖かくなっているのは事実です。", "imageQuery": "fact earth warming" },
-  { "id": "g3-108", "word": "truth", "pos": "名詞", "meaning": "真実", "example": "I want to know the truth about this story.", "exampleJa": "私はこの話の真実を知りたいです。", "imageQuery": "truth honesty" },
-  { "id": "g3-109", "word": "opinion", "pos": "名詞", "meaning": "意見", "example": "Everyone has a different opinion about this topic.", "exampleJa": "この話題については誰もが違う意見を持っています。", "imageQuery": "opinion discussion" },
-  { "id": "g3-110", "word": "decision", "pos": "名詞", "meaning": "決定", "example": "That was a difficult decision for the team.", "exampleJa": "それはチームにとって難しい決定でした。", "imageQuery": "decision making team" },
-  { "id": "g3-111", "word": "responsibility", "pos": "名詞", "meaning": "責任", "example": "It is our responsibility to protect the environment.", "exampleJa": "環境を守ることは私たちの責任です。", "imageQuery": "responsibility environment" },
-  { "id": "g3-112", "word": "rule", "pos": "名詞", "meaning": "規則", "example": "This rule was made to keep students safe.", "exampleJa": "この規則は生徒たちの安全を守るために作られました。", "imageQuery": "school rules safety" },
-  { "id": "g3-113", "word": "law", "pos": "名詞", "meaning": "法律", "example": "This law was passed ten years ago.", "exampleJa": "この法律は10年前に制定されました。", "imageQuery": "law government" },
-  { "id": "g3-114", "word": "right", "pos": "名詞", "meaning": "権利", "example": "Every child has the right to education.", "exampleJa": "すべての子どもは教育を受ける権利を持っています。", "imageQuery": "children rights education" },
-  { "id": "g3-115", "word": "freedom", "pos": "名詞", "meaning": "自由", "example": "People fought hard for their freedom.", "exampleJa": "人々は自由のために懸命に戦いました。", "imageQuery": "freedom" },
-  { "id": "g3-116", "word": "equality", "pos": "名詞", "meaning": "平等", "example": "Equality between men and women is important.", "exampleJa": "男女の平等は大切です。", "imageQuery": "equality" },
-  { "id": "g3-117", "word": "difference", "pos": "名詞", "meaning": "違い", "example": "There is a big difference between the two plans.", "exampleJa": "その2つの計画には大きな違いがあります。", "imageQuery": "difference comparison" },
-  { "id": "g3-118", "word": "similarity", "pos": "名詞", "meaning": "類似点", "example": "I found many similarities between the two cultures.", "exampleJa": "私はその2つの文化の間に多くの類似点を見つけました。", "imageQuery": "cultures comparison similarity" },
-  { "id": "g3-119", "word": "value", "pos": "名詞", "meaning": "価値", "example": "This old book has great value to me.", "exampleJa": "この古い本は私にとって大きな価値があります。", "imageQuery": "old book value" },
-  { "id": "g3-120", "word": "respect", "pos": "名詞", "meaning": "尊敬", "example": "Students showed respect for their teacher.", "exampleJa": "生徒たちは先生に対して尊敬を示しました。", "imageQuery": "respect teacher students" },
-  { "id": "g3-121", "word": "trust", "pos": "名詞", "meaning": "信頼", "example": "Trust is important between friends.", "exampleJa": "友人同士では信頼が大切です。", "imageQuery": "trust friendship" },
-  { "id": "g3-122", "word": "communication", "pos": "名詞", "meaning": "コミュニケーション", "example": "Good communication can solve many problems.", "exampleJa": "良いコミュニケーションは多くの問題を解決できます。", "imageQuery": "communication people talking" },
-  { "id": "g3-123", "word": "purpose", "pos": "名詞", "meaning": "目的", "example": "The purpose of this trip is to learn about history.", "exampleJa": "この旅行の目的は歴史について学ぶことです。", "imageQuery": "purpose learning trip" },
-  { "id": "g3-124", "word": "result", "pos": "名詞", "meaning": "結果", "example": "We were happy with the result of the experiment.", "exampleJa": "私たちはその実験の結果に満足しました。", "imageQuery": "experiment result" },
-  { "id": "g3-125", "word": "effect", "pos": "名詞", "meaning": "効果", "example": "This medicine has a strong effect on headaches.", "exampleJa": "この薬は頭痛に強い効果があります。", "imageQuery": "medicine effect" },
-  { "id": "g3-126", "word": "process", "pos": "名詞", "meaning": "過程", "example": "We learned about the process of making paper.", "exampleJa": "私たちは紙を作る過程について学びました。", "imageQuery": "paper making process" },
-  { "id": "g3-127", "word": "product", "pos": "名詞", "meaning": "製品", "example": "This product was made in Japan.", "exampleJa": "この製品は日本で作られました。", "imageQuery": "product made in japan" },
-  { "id": "g3-128", "word": "material", "pos": "名詞", "meaning": "材料", "example": "This bag is made of a strong material.", "exampleJa": "このかばんは丈夫な材料でできています。", "imageQuery": "bag material" },
-  { "id": "g3-129", "word": "factory", "pos": "名詞", "meaning": "工場", "example": "This car was made in a factory near Tokyo.", "exampleJa": "この車は東京近くの工場で作られました。", "imageQuery": "car factory" },
-  { "id": "g3-130", "word": "report", "pos": "名詞", "meaning": "報告書", "example": "I have written a report about global warming.", "exampleJa": "私は地球温暖化についての報告書を書きました。", "imageQuery": "report writing" },
-  { "id": "g3-131", "word": "article", "pos": "名詞", "meaning": "記事", "example": "I read an interesting article about space.", "exampleJa": "私は宇宙についての面白い記事を読みました。", "imageQuery": "newspaper article" },
-  { "id": "g3-132", "word": "document", "pos": "名詞", "meaning": "文書", "example": "This document was written many years ago.", "exampleJa": "この文書は何年も前に書かれました。", "imageQuery": "old document" },
-  { "id": "g3-133", "word": "system", "pos": "名詞", "meaning": "制度・仕組み", "example": "This school has a new system for tests.", "exampleJa": "この学校にはテストのための新しい仕組みがあります。", "imageQuery": "school system" },
-  { "id": "g3-134", "word": "method", "pos": "名詞", "meaning": "方法", "example": "This method has been used for many years.", "exampleJa": "この方法は長年使われてきました。", "imageQuery": "study method" },
-  { "id": "g3-135", "word": "technique", "pos": "名詞", "meaning": "技術・手法", "example": "She learned a new painting technique.", "exampleJa": "彼女は新しい絵画の技法を学びました。", "imageQuery": "painting technique" },
-  { "id": "g3-136", "word": "standard", "pos": "名詞", "meaning": "基準", "example": "This product meets a high standard.", "exampleJa": "この製品は高い基準を満たしています。", "imageQuery": "quality standard" },
-  { "id": "g3-137", "word": "quality", "pos": "名詞", "meaning": "質", "example": "This shop is known for the quality of its bread.", "exampleJa": "この店はパンの質の高さで知られています。", "imageQuery": "quality bread" },
-  { "id": "g3-138", "word": "quantity", "pos": "名詞", "meaning": "量", "example": "A large quantity of rice is produced in this area.", "exampleJa": "この地域では大量の米が生産されています。", "imageQuery": "rice quantity field" },
-  { "id": "g3-139", "word": "expert", "pos": "名詞", "meaning": "専門家", "example": "I asked an expert about this problem.", "exampleJa": "私はこの問題について専門家に尋ねました。", "imageQuery": "expert advice" },
-  { "id": "g3-140", "word": "researcher", "pos": "名詞", "meaning": "研究者", "example": "The researcher who studies this topic lives in Kyoto.", "exampleJa": "この話題を研究している研究者は京都に住んでいます。", "imageQuery": "researcher laboratory" },
-  { "id": "g3-141", "word": "citizen", "pos": "名詞", "meaning": "市民", "example": "Every citizen should follow the law.", "exampleJa": "すべての市民は法律に従うべきです。", "imageQuery": "citizens community" },
-  { "id": "g3-142", "word": "immigrant", "pos": "名詞", "meaning": "移民", "example": "Many immigrants have started new lives in this city.", "exampleJa": "多くの移民がこの都市で新しい生活を始めました。", "imageQuery": "immigrants city" },
-  { "id": "g3-143", "word": "refugee", "pos": "名詞", "meaning": "難民", "example": "This organization supports refugees from many countries.", "exampleJa": "この組織は多くの国からの難民を支援しています。", "imageQuery": "refugee support" },
-  { "id": "g3-144", "word": "leader", "pos": "名詞", "meaning": "指導者", "example": "She is a leader who is respected by everyone.", "exampleJa": "彼女は誰からも尊敬される指導者です。", "imageQuery": "leader respected" },
-  { "id": "g3-145", "word": "president", "pos": "名詞", "meaning": "大統領", "example": "The president gave a speech about peace.", "exampleJa": "大統領は平和についてスピーチをしました。", "imageQuery": "president speech" },
-  { "id": "g3-146", "word": "architect", "pos": "名詞", "meaning": "建築家", "example": "This building was designed by a famous architect.", "exampleJa": "この建物は有名な建築家によって設計されました。", "imageQuery": "architect building design" },
-  { "id": "g3-147", "word": "astronaut", "pos": "名詞", "meaning": "宇宙飛行士", "example": "He has dreamed of becoming an astronaut since he was small.", "exampleJa": "彼は小さい頃から宇宙飛行士になることを夢見ています。", "imageQuery": "astronaut space" },
-  { "id": "g3-148", "word": "inventor", "pos": "名詞", "meaning": "発明家", "example": "The inventor of this machine is known around the world.", "exampleJa": "この機械の発明家は世界中で知られています。", "imageQuery": "inventor machine" },
-  { "id": "g3-149", "word": "author", "pos": "名詞", "meaning": "著者", "example": "This book was written by a famous author.", "exampleJa": "この本は有名な著者によって書かれました。", "imageQuery": "author writing book" },
-  { "id": "g3-150", "word": "audience", "pos": "名詞", "meaning": "観客・聴衆", "example": "The audience clapped after the wonderful speech.", "exampleJa": "観客は素晴らしいスピーチの後に拍手をしました。", "imageQuery": "audience applause" }
+  {
+    "id": "g3-001",
+    "word": "environment",
+    "pos": "名詞",
+    "meaning": "環境",
+    "example": "We should protect the environment for future generations.",
+    "exampleJa": "私たちは未来の世代のために環境を守るべきです。",
+    "imageQuery": "environment nature"
+  },
+  {
+    "id": "g3-002",
+    "word": "pollution",
+    "pos": "名詞",
+    "meaning": "汚染",
+    "example": "Air pollution has become a serious problem.",
+    "exampleJa": "大気汚染は深刻な問題になっています。",
+    "imageQuery": "air pollution"
+  },
+  {
+    "id": "g3-003",
+    "word": "recycle",
+    "pos": "動詞",
+    "meaning": "リサイクルする",
+    "example": "These bottles are recycled every week.",
+    "exampleJa": "これらのボトルは毎週リサイクルされています。",
+    "imageQuery": "recycling bottles"
+  },
+  {
+    "id": "g3-004",
+    "word": "waste",
+    "pos": "名詞",
+    "meaning": "ごみ・廃棄物",
+    "example": "A lot of waste is produced every day.",
+    "exampleJa": "毎日たくさんのごみが出されています。",
+    "imageQuery": "waste garbage"
+  },
+  {
+    "id": "g3-005",
+    "word": "energy",
+    "pos": "名詞",
+    "meaning": "エネルギー",
+    "example": "This town uses energy from the sun.",
+    "exampleJa": "この町は太陽からのエネルギーを使っています。",
+    "imageQuery": "solar energy"
+  },
+  {
+    "id": "g3-006",
+    "word": "resource",
+    "pos": "名詞",
+    "meaning": "資源",
+    "example": "Water is an important resource for everyone.",
+    "exampleJa": "水はみんなにとって大切な資源です。",
+    "imageQuery": "natural resources"
+  },
+  {
+    "id": "g3-007",
+    "word": "climate",
+    "pos": "名詞",
+    "meaning": "気候",
+    "example": "The climate has changed a lot in the last century.",
+    "exampleJa": "気候はこの1世紀で大きく変化しました。",
+    "imageQuery": "climate change"
+  },
+  {
+    "id": "g3-008",
+    "word": "protect",
+    "pos": "動詞",
+    "meaning": "守る",
+    "example": "This forest is protected by the government.",
+    "exampleJa": "この森は政府によって守られています。",
+    "imageQuery": "protecting forest"
+  },
+  {
+    "id": "g3-009",
+    "word": "reduce",
+    "pos": "動詞",
+    "meaning": "減らす",
+    "example": "We need to reduce plastic waste.",
+    "exampleJa": "私たちはプラスチックごみを減らす必要があります。",
+    "imageQuery": "reducing waste"
+  },
+  {
+    "id": "g3-010",
+    "word": "plastic",
+    "pos": "名詞",
+    "meaning": "プラスチック",
+    "example": "This bag is made of plastic.",
+    "exampleJa": "このかばんはプラスチックでできています。",
+    "imageQuery": "plastic bottles"
+  },
+  {
+    "id": "g3-011",
+    "word": "solar",
+    "pos": "形容詞",
+    "meaning": "太陽の",
+    "example": "Solar power is used in many houses now.",
+    "exampleJa": "今では多くの家で太陽光発電が使われています。",
+    "imageQuery": "solar panels"
+  },
+  {
+    "id": "g3-012",
+    "word": "disaster",
+    "pos": "名詞",
+    "meaning": "災害",
+    "example": "The area was hit by a natural disaster.",
+    "exampleJa": "その地域は自然災害に見舞われました。",
+    "imageQuery": "natural disaster"
+  },
+  {
+    "id": "g3-013",
+    "word": "technology",
+    "pos": "名詞",
+    "meaning": "科学技術",
+    "example": "Technology has changed our lives a lot.",
+    "exampleJa": "科学技術は私たちの生活を大きく変えました。",
+    "imageQuery": "technology devices"
+  },
+  {
+    "id": "g3-014",
+    "word": "science",
+    "pos": "名詞",
+    "meaning": "科学",
+    "example": "Science helps us understand the world.",
+    "exampleJa": "科学は私たちが世界を理解する助けになります。",
+    "imageQuery": "science laboratory"
+  },
+  {
+    "id": "g3-015",
+    "word": "invent",
+    "pos": "動詞",
+    "meaning": "発明する",
+    "example": "This machine was invented over a hundred years ago.",
+    "exampleJa": "この機械は100年以上前に発明されました。",
+    "imageQuery": "invention machine"
+  },
+  {
+    "id": "g3-016",
+    "word": "discover",
+    "pos": "動詞",
+    "meaning": "発見する",
+    "example": "Scientists have discovered a new kind of star.",
+    "exampleJa": "科学者たちは新しい種類の星を発見しました。",
+    "imageQuery": "discovery telescope"
+  },
+  {
+    "id": "g3-017",
+    "word": "research",
+    "pos": "名詞",
+    "meaning": "研究",
+    "example": "She has done research on ocean life for ten years.",
+    "exampleJa": "彼女は10年間海の生物について研究をしてきました。",
+    "imageQuery": "science research"
+  },
+  {
+    "id": "g3-018",
+    "word": "experiment",
+    "pos": "名詞",
+    "meaning": "実験",
+    "example": "We did an interesting experiment in class.",
+    "exampleJa": "私たちは授業で面白い実験をしました。",
+    "imageQuery": "science experiment"
+  },
+  {
+    "id": "g3-019",
+    "word": "computer",
+    "pos": "名詞",
+    "meaning": "コンピューター",
+    "example": "This report was written on a computer.",
+    "exampleJa": "この報告書はコンピューターで書かれました。",
+    "imageQuery": "computer"
+  },
+  {
+    "id": "g3-020",
+    "word": "internet",
+    "pos": "名詞",
+    "meaning": "インターネット",
+    "example": "The internet is used by people all over the world.",
+    "exampleJa": "インターネットは世界中の人々に使われています。",
+    "imageQuery": "internet network"
+  },
+  {
+    "id": "g3-021",
+    "word": "robot",
+    "pos": "名詞",
+    "meaning": "ロボット",
+    "example": "This robot was made by high school students.",
+    "exampleJa": "このロボットは高校生によって作られました。",
+    "imageQuery": "robot"
+  },
+  {
+    "id": "g3-022",
+    "word": "machine",
+    "pos": "名詞",
+    "meaning": "機械",
+    "example": "This machine can wash clothes quickly.",
+    "exampleJa": "この機械は服を素早く洗うことができます。",
+    "imageQuery": "washing machine"
+  },
+  {
+    "id": "g3-023",
+    "word": "develop",
+    "pos": "動詞",
+    "meaning": "開発する",
+    "example": "A new medicine has been developed by this team.",
+    "exampleJa": "新しい薬がこのチームによって開発されました。",
+    "imageQuery": "developing medicine"
+  },
+  {
+    "id": "g3-024",
+    "word": "device",
+    "pos": "名詞",
+    "meaning": "機器",
+    "example": "This small device can measure your heartbeat.",
+    "exampleJa": "この小さな機器はあなたの心拍を測ることができます。",
+    "imageQuery": "electronic device"
+  },
+  {
+    "id": "g3-025",
+    "word": "international",
+    "pos": "形容詞",
+    "meaning": "国際的な",
+    "example": "This is an international event held every year.",
+    "exampleJa": "これは毎年開催される国際的な行事です。",
+    "imageQuery": "international event"
+  },
+  {
+    "id": "g3-026",
+    "word": "society",
+    "pos": "名詞",
+    "meaning": "社会",
+    "example": "Everyone has a role to play in society.",
+    "exampleJa": "誰もが社会の中で果たす役割を持っています。",
+    "imageQuery": "society community"
+  },
+  {
+    "id": "g3-027",
+    "word": "peace",
+    "pos": "名詞",
+    "meaning": "平和",
+    "example": "People around the world are working for peace.",
+    "exampleJa": "世界中の人々が平和のために活動しています。",
+    "imageQuery": "peace symbol"
+  },
+  {
+    "id": "g3-028",
+    "word": "war",
+    "pos": "名詞",
+    "meaning": "戦争",
+    "example": "This museum shows what happened during the war.",
+    "exampleJa": "この博物館は戦争中に起こったことを示しています。",
+    "imageQuery": "war museum"
+  },
+  {
+    "id": "g3-029",
+    "word": "poverty",
+    "pos": "名詞",
+    "meaning": "貧困",
+    "example": "Many people are still living in poverty.",
+    "exampleJa": "多くの人々がまだ貧困の中で暮らしています。",
+    "imageQuery": "poverty"
+  },
+  {
+    "id": "g3-030",
+    "word": "volunteer",
+    "pos": "名詞",
+    "meaning": "ボランティア",
+    "example": "I work as a volunteer at the hospital.",
+    "exampleJa": "私は病院でボランティアとして働いています。",
+    "imageQuery": "volunteer helping"
+  },
+  {
+    "id": "g3-031",
+    "word": "organization",
+    "pos": "名詞",
+    "meaning": "組織",
+    "example": "This organization helps children in need.",
+    "exampleJa": "この組織は困っている子どもたちを助けています。",
+    "imageQuery": "charity organization"
+  },
+  {
+    "id": "g3-032",
+    "word": "government",
+    "pos": "名詞",
+    "meaning": "政府",
+    "example": "The new law was passed by the government.",
+    "exampleJa": "その新しい法律は政府によって可決されました。",
+    "imageQuery": "government building"
+  },
+  {
+    "id": "g3-033",
+    "word": "population",
+    "pos": "名詞",
+    "meaning": "人口",
+    "example": "The population of this city has grown quickly.",
+    "exampleJa": "この都市の人口は急速に増加しました。",
+    "imageQuery": "city population crowd"
+  },
+  {
+    "id": "g3-034",
+    "word": "community",
+    "pos": "名詞",
+    "meaning": "地域社会",
+    "example": "Everyone in the community helped after the storm.",
+    "exampleJa": "地域社会の全員が嵐の後に助け合いました。",
+    "imageQuery": "community people"
+  },
+  {
+    "id": "g3-035",
+    "word": "history",
+    "pos": "名詞",
+    "meaning": "歴史",
+    "example": "This building has a history of two hundred years.",
+    "exampleJa": "この建物は200年の歴史を持っています。",
+    "imageQuery": "historic building"
+  },
+  {
+    "id": "g3-036",
+    "word": "tradition",
+    "pos": "名詞",
+    "meaning": "伝統",
+    "example": "This festival is a tradition that has been kept for years.",
+    "exampleJa": "この祭りは長年守られてきた伝統です。",
+    "imageQuery": "traditional festival"
+  },
+  {
+    "id": "g3-037",
+    "word": "century",
+    "pos": "名詞",
+    "meaning": "世紀",
+    "example": "This temple was built in the twelfth century.",
+    "exampleJa": "この寺は12世紀に建てられました。",
+    "imageQuery": "ancient temple century"
+  },
+  {
+    "id": "g3-038",
+    "word": "ancient",
+    "pos": "形容詞",
+    "meaning": "古代の",
+    "example": "We visited an ancient castle in Europe.",
+    "exampleJa": "私たちはヨーロッパの古代の城を訪れました。",
+    "imageQuery": "ancient castle"
+  },
+  {
+    "id": "g3-039",
+    "word": "heritage",
+    "pos": "名詞",
+    "meaning": "遺産",
+    "example": "This site has been listed as world heritage.",
+    "exampleJa": "この場所は世界遺産として登録されています。",
+    "imageQuery": "world heritage site"
+  },
+  {
+    "id": "g3-040",
+    "word": "ancestor",
+    "pos": "名詞",
+    "meaning": "祖先",
+    "example": "Our ancestors lived in this village long ago.",
+    "exampleJa": "私たちの祖先は昔この村に住んでいました。",
+    "imageQuery": "ancestors village"
+  },
+  {
+    "id": "g3-041",
+    "word": "generation",
+    "pos": "名詞",
+    "meaning": "世代",
+    "example": "This story has been passed down for many generations.",
+    "exampleJa": "この物語は何世代にもわたって語り継がれてきました。",
+    "imageQuery": "generations family"
+  },
+  {
+    "id": "g3-042",
+    "word": "era",
+    "pos": "名詞",
+    "meaning": "時代",
+    "example": "This picture was painted in a different era.",
+    "exampleJa": "この絵は違う時代に描かれました。",
+    "imageQuery": "historical era painting"
+  },
+  {
+    "id": "g3-043",
+    "word": "museum",
+    "pos": "名詞",
+    "meaning": "博物館",
+    "example": "This museum was visited by many students last month.",
+    "exampleJa": "この博物館は先月多くの生徒に訪れられました。",
+    "imageQuery": "museum"
+  },
+  {
+    "id": "g3-044",
+    "word": "ceremony",
+    "pos": "名詞",
+    "meaning": "式典",
+    "example": "The graduation ceremony will be held next week.",
+    "exampleJa": "卒業式は来週行われる予定です。",
+    "imageQuery": "graduation ceremony"
+  },
+  {
+    "id": "g3-045",
+    "word": "career",
+    "pos": "名詞",
+    "meaning": "職業・経歴",
+    "example": "She has built a successful career as a doctor.",
+    "exampleJa": "彼女は医者として成功したキャリアを築いてきました。",
+    "imageQuery": "career success"
+  },
+  {
+    "id": "g3-046",
+    "word": "education",
+    "pos": "名詞",
+    "meaning": "教育",
+    "example": "Education is important for every child.",
+    "exampleJa": "教育はすべての子どもにとって大切です。",
+    "imageQuery": "education classroom"
+  },
+  {
+    "id": "g3-047",
+    "word": "university",
+    "pos": "名詞",
+    "meaning": "大学",
+    "example": "My brother has studied at this university for two years.",
+    "exampleJa": "私の兄はこの大学で2年間学んでいます。",
+    "imageQuery": "university campus"
+  },
+  {
+    "id": "g3-048",
+    "word": "graduate",
+    "pos": "動詞",
+    "meaning": "卒業する",
+    "example": "I will graduate from junior high school next spring.",
+    "exampleJa": "私は来年の春に中学校を卒業します。",
+    "imageQuery": "graduation students"
+  },
+  {
+    "id": "g3-049",
+    "word": "degree",
+    "pos": "名詞",
+    "meaning": "学位",
+    "example": "He got a degree in science from that university.",
+    "exampleJa": "彼はその大学で科学の学位を取得しました。",
+    "imageQuery": "university degree"
+  },
+  {
+    "id": "g3-050",
+    "word": "skill",
+    "pos": "名詞",
+    "meaning": "技能",
+    "example": "This job requires good communication skills.",
+    "exampleJa": "この仕事は良いコミュニケーション技能を必要とします。",
+    "imageQuery": "skill training"
+  },
+  {
+    "id": "g3-051",
+    "word": "knowledge",
+    "pos": "名詞",
+    "meaning": "知識",
+    "example": "He has a lot of knowledge about space.",
+    "exampleJa": "彼は宇宙についてたくさんの知識を持っています。",
+    "imageQuery": "knowledge books"
+  },
+  {
+    "id": "g3-052",
+    "word": "opportunity",
+    "pos": "名詞",
+    "meaning": "機会",
+    "example": "Studying abroad gave her a great opportunity.",
+    "exampleJa": "海外留学は彼女に素晴らしい機会を与えました。",
+    "imageQuery": "opportunity door"
+  },
+  {
+    "id": "g3-053",
+    "word": "scholarship",
+    "pos": "名詞",
+    "meaning": "奨学金",
+    "example": "She received a scholarship to study music.",
+    "exampleJa": "彼女は音楽を学ぶための奨学金を受け取りました。",
+    "imageQuery": "scholarship graduation"
+  },
+  {
+    "id": "g3-054",
+    "word": "major",
+    "pos": "名詞",
+    "meaning": "専攻",
+    "example": "His major is environmental science.",
+    "exampleJa": "彼の専攻は環境科学です。",
+    "imageQuery": "university major study"
+  },
+  {
+    "id": "g3-055",
+    "word": "improve",
+    "pos": "動詞",
+    "meaning": "改善する",
+    "example": "This app has improved my English a lot.",
+    "exampleJa": "このアプリは私の英語をとても改善してくれました。",
+    "imageQuery": "improvement progress"
+  },
+  {
+    "id": "g3-056",
+    "word": "achieve",
+    "pos": "動詞",
+    "meaning": "達成する",
+    "example": "She has achieved her goal after years of practice.",
+    "exampleJa": "彼女は何年もの練習の末に目標を達成しました。",
+    "imageQuery": "achievement success"
+  },
+  {
+    "id": "g3-057",
+    "word": "produce",
+    "pos": "動詞",
+    "meaning": "生産する",
+    "example": "This factory produces cars for many countries.",
+    "exampleJa": "この工場は多くの国のために車を生産しています。",
+    "imageQuery": "factory production"
+  },
+  {
+    "id": "g3-058",
+    "word": "increase",
+    "pos": "動詞",
+    "meaning": "増える・増やす",
+    "example": "The number of visitors has increased this year.",
+    "exampleJa": "今年、訪問者の数が増加しました。",
+    "imageQuery": "increase graph"
+  },
+  {
+    "id": "g3-059",
+    "word": "decrease",
+    "pos": "動詞",
+    "meaning": "減る・減らす",
+    "example": "The population of this town has decreased slowly.",
+    "exampleJa": "この町の人口はゆっくりと減少してきました。",
+    "imageQuery": "decrease graph"
+  },
+  {
+    "id": "g3-060",
+    "word": "create",
+    "pos": "動詞",
+    "meaning": "創造する",
+    "example": "This app was created by a high school student.",
+    "exampleJa": "このアプリは高校生によって作られました。",
+    "imageQuery": "creating app"
+  },
+  {
+    "id": "g3-061",
+    "word": "provide",
+    "pos": "動詞",
+    "meaning": "提供する",
+    "example": "This website provides useful information for free.",
+    "exampleJa": "このウェブサイトは役に立つ情報を無料で提供しています。",
+    "imageQuery": "providing information"
+  },
+  {
+    "id": "g3-062",
+    "word": "require",
+    "pos": "動詞",
+    "meaning": "必要とする",
+    "example": "This job requires a special skill.",
+    "exampleJa": "この仕事は特別な技能を必要とします。",
+    "imageQuery": "job requirement"
+  },
+  {
+    "id": "g3-063",
+    "word": "consider",
+    "pos": "動詞",
+    "meaning": "考慮する",
+    "example": "We should consider other people's feelings.",
+    "exampleJa": "私たちは他人の気持ちを考慮するべきです。",
+    "imageQuery": "considering thinking"
+  },
+  {
+    "id": "g3-064",
+    "word": "realize",
+    "pos": "動詞",
+    "meaning": "気づく",
+    "example": "I realized my mistake after the test.",
+    "exampleJa": "私はテストの後に自分の間違いに気づきました。",
+    "imageQuery": "realization thinking"
+  },
+  {
+    "id": "g3-065",
+    "word": "solve",
+    "pos": "動詞",
+    "meaning": "解決する",
+    "example": "This problem has not been solved yet.",
+    "exampleJa": "この問題はまだ解決されていません。",
+    "imageQuery": "solving problem puzzle"
+  },
+  {
+    "id": "g3-066",
+    "word": "spread",
+    "pos": "動詞",
+    "meaning": "広がる",
+    "example": "The news spread quickly around the world.",
+    "exampleJa": "そのニュースは世界中に急速に広がりました。",
+    "imageQuery": "news spreading"
+  },
+  {
+    "id": "g3-067",
+    "word": "affect",
+    "pos": "動詞",
+    "meaning": "影響を与える",
+    "example": "Climate change affects animals all over the world.",
+    "exampleJa": "気候変動は世界中の動物に影響を与えています。",
+    "imageQuery": "climate change animals"
+  },
+  {
+    "id": "g3-068",
+    "word": "support",
+    "pos": "動詞",
+    "meaning": "支える",
+    "example": "My friends have always supported me.",
+    "exampleJa": "私の友達はいつも私を支えてくれました。",
+    "imageQuery": "support friends"
+  },
+  {
+    "id": "g3-069",
+    "word": "express",
+    "pos": "動詞",
+    "meaning": "表現する",
+    "example": "It is important to express your own opinion.",
+    "exampleJa": "自分自身の意見を表現することは大切です。",
+    "imageQuery": "expressing opinion"
+  },
+  {
+    "id": "g3-070",
+    "word": "communicate",
+    "pos": "動詞",
+    "meaning": "コミュニケーションを取る",
+    "example": "We can communicate with people around the world online.",
+    "exampleJa": "私たちはオンラインで世界中の人々とコミュニケーションを取れます。",
+    "imageQuery": "communication online"
+  },
+  {
+    "id": "g3-071",
+    "word": "influence",
+    "pos": "動詞",
+    "meaning": "影響を及ぼす",
+    "example": "Her words influenced many young people.",
+    "exampleJa": "彼女の言葉は多くの若者に影響を及ぼしました。",
+    "imageQuery": "influence inspiring speech"
+  },
+  {
+    "id": "g3-072",
+    "word": "succeed",
+    "pos": "動詞",
+    "meaning": "成功する",
+    "example": "She succeeded in becoming a scientist.",
+    "exampleJa": "彼女は科学者になることに成功しました。",
+    "imageQuery": "success scientist"
+  },
+  {
+    "id": "g3-073",
+    "word": "fail",
+    "pos": "動詞",
+    "meaning": "失敗する",
+    "example": "Don't be afraid to fail sometimes.",
+    "exampleJa": "時には失敗することを恐れないでください。",
+    "imageQuery": "failure learning"
+  },
+  {
+    "id": "g3-074",
+    "word": "appear",
+    "pos": "動詞",
+    "meaning": "現れる",
+    "example": "A rainbow appeared after the rain.",
+    "exampleJa": "雨の後に虹が現れました。",
+    "imageQuery": "rainbow appearing"
+  },
+  {
+    "id": "g3-075",
+    "word": "disappear",
+    "pos": "動詞",
+    "meaning": "消える",
+    "example": "Many kinds of animals are disappearing from the earth.",
+    "exampleJa": "多くの種類の動物が地球上から消えつつあります。",
+    "imageQuery": "endangered animals"
+  },
+  {
+    "id": "g3-076",
+    "word": "exist",
+    "pos": "動詞",
+    "meaning": "存在する",
+    "example": "This custom has existed for over three hundred years.",
+    "exampleJa": "この習慣は300年以上前から存在しています。",
+    "imageQuery": "old custom tradition"
+  },
+  {
+    "id": "g3-077",
+    "word": "survive",
+    "pos": "動詞",
+    "meaning": "生き残る",
+    "example": "Few animals can survive in this cold place.",
+    "exampleJa": "この寒い場所で生き残れる動物はほとんどいません。",
+    "imageQuery": "animal survival cold"
+  },
+  {
+    "id": "g3-078",
+    "word": "depend",
+    "pos": "動詞",
+    "meaning": "頼る",
+    "example": "Our life depends on clean water and air.",
+    "exampleJa": "私たちの生活はきれいな水と空気に頼っています。",
+    "imageQuery": "clean water dependence"
+  },
+  {
+    "id": "g3-079",
+    "word": "manage",
+    "pos": "動詞",
+    "meaning": "何とかやり遂げる・管理する",
+    "example": "She managed to finish the project on time.",
+    "exampleJa": "彼女は何とかそのプロジェクトを時間通りに終えました。",
+    "imageQuery": "project management"
+  },
+  {
+    "id": "g3-080",
+    "word": "avoid",
+    "pos": "動詞",
+    "meaning": "避ける",
+    "example": "We should avoid using too much plastic.",
+    "exampleJa": "私たちはプラスチックを使いすぎるのを避けるべきです。",
+    "imageQuery": "avoiding plastic"
+  },
+  {
+    "id": "g3-081",
+    "word": "allow",
+    "pos": "動詞",
+    "meaning": "許す",
+    "example": "My parents allow me to use the internet at night.",
+    "exampleJa": "私の両親は夜にインターネットを使うことを許してくれます。",
+    "imageQuery": "internet permission"
+  },
+  {
+    "id": "g3-082",
+    "word": "encourage",
+    "pos": "動詞",
+    "meaning": "励ます",
+    "example": "The coach encouraged the team before the game.",
+    "exampleJa": "コーチは試合の前にチームを励ましました。",
+    "imageQuery": "coach encouraging team"
+  },
+  {
+    "id": "g3-083",
+    "word": "suggest",
+    "pos": "動詞",
+    "meaning": "提案する",
+    "example": "My teacher suggested a new way to study.",
+    "exampleJa": "私の先生は新しい勉強法を提案してくれました。",
+    "imageQuery": "suggestion advice teacher"
+  },
+  {
+    "id": "g3-084",
+    "word": "prevent",
+    "pos": "動詞",
+    "meaning": "防ぐ",
+    "example": "Washing hands can prevent many illnesses.",
+    "exampleJa": "手を洗うことは多くの病気を防ぐことができます。",
+    "imageQuery": "hand washing prevention"
+  },
+  {
+    "id": "g3-085",
+    "word": "necessary",
+    "pos": "形容詞",
+    "meaning": "必要な",
+    "example": "Clean water is necessary for all living things.",
+    "exampleJa": "きれいな水はすべての生き物にとって必要です。",
+    "imageQuery": "clean water necessary"
+  },
+  {
+    "id": "g3-086",
+    "word": "possible",
+    "pos": "形容詞",
+    "meaning": "可能な",
+    "example": "It is possible to solve this problem together.",
+    "exampleJa": "この問題を一緒に解決することは可能です。",
+    "imageQuery": "possible solution teamwork"
+  },
+  {
+    "id": "g3-087",
+    "word": "impossible",
+    "pos": "形容詞",
+    "meaning": "不可能な",
+    "example": "Nothing is impossible if you keep trying.",
+    "exampleJa": "挑戦し続ければ不可能なことはありません。",
+    "imageQuery": "never give up"
+  },
+  {
+    "id": "g3-088",
+    "word": "global",
+    "pos": "形容詞",
+    "meaning": "地球規模の",
+    "example": "Global warming is a problem for everyone.",
+    "exampleJa": "地球温暖化はすべての人にとっての問題です。",
+    "imageQuery": "global warming earth"
+  },
+  {
+    "id": "g3-089",
+    "word": "modern",
+    "pos": "形容詞",
+    "meaning": "現代の",
+    "example": "This building has a very modern design.",
+    "exampleJa": "この建物はとても現代的なデザインをしています。",
+    "imageQuery": "modern building"
+  },
+  {
+    "id": "g3-090",
+    "word": "traditional",
+    "pos": "形容詞",
+    "meaning": "伝統的な",
+    "example": "She wore a traditional dress at the festival.",
+    "exampleJa": "彼女は祭りで伝統的な衣装を着ました。",
+    "imageQuery": "traditional dress festival"
+  },
+  {
+    "id": "g3-091",
+    "word": "various",
+    "pos": "形容詞",
+    "meaning": "様々な",
+    "example": "This shop sells various kinds of vegetables.",
+    "exampleJa": "この店は様々な種類の野菜を売っています。",
+    "imageQuery": "various vegetables"
+  },
+  {
+    "id": "g3-092",
+    "word": "serious",
+    "pos": "形容詞",
+    "meaning": "深刻な",
+    "example": "Water pollution is a serious problem in this area.",
+    "exampleJa": "水質汚染はこの地域で深刻な問題です。",
+    "imageQuery": "water pollution serious"
+  },
+  {
+    "id": "g3-093",
+    "word": "effective",
+    "pos": "形容詞",
+    "meaning": "効果的な",
+    "example": "This method is an effective way to learn words.",
+    "exampleJa": "この方法は単語を覚える効果的な方法です。",
+    "imageQuery": "effective study method"
+  },
+  {
+    "id": "g3-094",
+    "word": "convenient",
+    "pos": "形容詞",
+    "meaning": "便利な",
+    "example": "This station is very convenient for shopping.",
+    "exampleJa": "この駅は買い物にとても便利です。",
+    "imageQuery": "convenient station shopping"
+  },
+  {
+    "id": "g3-095",
+    "word": "be used for",
+    "pos": "熟語",
+    "meaning": "～のために使われる",
+    "example": "This tool is used for cutting paper.",
+    "exampleJa": "この道具は紙を切るために使われます。",
+    "imageQuery": "cutting tool paper"
+  },
+  {
+    "id": "g3-096",
+    "word": "according to",
+    "pos": "熟語",
+    "meaning": "～によれば",
+    "example": "According to the news, it will rain tomorrow.",
+    "exampleJa": "ニュースによると、明日は雨が降るそうです。",
+    "imageQuery": "weather news forecast"
+  },
+  {
+    "id": "g3-097",
+    "word": "take part in",
+    "pos": "熟語",
+    "meaning": "～に参加する",
+    "example": "Many students took part in the volunteer activity.",
+    "exampleJa": "多くの生徒がそのボランティア活動に参加しました。",
+    "imageQuery": "volunteer activity students"
+  },
+  {
+    "id": "g3-098",
+    "word": "give up",
+    "pos": "熟語",
+    "meaning": "あきらめる",
+    "example": "She never gives up even when things are hard.",
+    "exampleJa": "彼女は物事が大変な時でも決してあきらめません。",
+    "imageQuery": "never give up perseverance"
+  },
+  {
+    "id": "g3-099",
+    "word": "look forward to",
+    "pos": "熟語",
+    "meaning": "～を楽しみにする",
+    "example": "I am looking forward to seeing you soon.",
+    "exampleJa": "私はもうすぐあなたに会えるのを楽しみにしています。",
+    "imageQuery": "looking forward excited"
+  },
+  {
+    "id": "g3-100",
+    "word": "be made of",
+    "pos": "熟語",
+    "meaning": "～でできている（材料が見える）",
+    "example": "This desk is made of wood.",
+    "exampleJa": "この机は木でできています。",
+    "imageQuery": "wooden desk material"
+  },
+  {
+    "id": "g3-101",
+    "word": "be made from",
+    "pos": "熟語",
+    "meaning": "～でできている（材料が変化する）",
+    "example": "Paper is made from trees.",
+    "exampleJa": "紙は木から作られています。",
+    "imageQuery": "paper making trees"
+  },
+  {
+    "id": "g3-102",
+    "word": "in order to",
+    "pos": "熟語",
+    "meaning": "～するために",
+    "example": "I got up early in order to catch the first train.",
+    "exampleJa": "私は始発電車に乗るために早く起きました。",
+    "imageQuery": "early train morning"
+  },
+  {
+    "id": "g3-103",
+    "word": "such as",
+    "pos": "熟語",
+    "meaning": "例えば～のような",
+    "example": "I like fruits such as apples and oranges.",
+    "exampleJa": "私はりんごやオレンジのような果物が好きです。",
+    "imageQuery": "fruits apples oranges"
+  },
+  {
+    "id": "g3-104",
+    "word": "thanks to",
+    "pos": "熟語",
+    "meaning": "～のおかげで",
+    "example": "Thanks to your help, I finished the work.",
+    "exampleJa": "あなたの助けのおかげで、私はその仕事を終えました。",
+    "imageQuery": "helping hand thanks"
+  },
+  {
+    "id": "g3-105",
+    "word": "as well as",
+    "pos": "熟語",
+    "meaning": "～と同様に",
+    "example": "She can speak French as well as English.",
+    "exampleJa": "彼女は英語と同様にフランス語も話せます。",
+    "imageQuery": "speaking languages"
+  },
+  {
+    "id": "g3-106",
+    "word": "be known for",
+    "pos": "熟語",
+    "meaning": "～で知られている",
+    "example": "This city is known for its old temples.",
+    "exampleJa": "この都市は古い寺で知られています。",
+    "imageQuery": "city temples known"
+  },
+  {
+    "id": "g3-107",
+    "word": "fact",
+    "pos": "名詞",
+    "meaning": "事実",
+    "example": "It is a fact that the earth is getting warmer.",
+    "exampleJa": "地球が暖かくなっているのは事実です。",
+    "imageQuery": "fact earth warming"
+  },
+  {
+    "id": "g3-108",
+    "word": "truth",
+    "pos": "名詞",
+    "meaning": "真実",
+    "example": "I want to know the truth about this story.",
+    "exampleJa": "私はこの話の真実を知りたいです。",
+    "imageQuery": "truth honesty"
+  },
+  {
+    "id": "g3-109",
+    "word": "opinion",
+    "pos": "名詞",
+    "meaning": "意見",
+    "example": "Everyone has a different opinion about this topic.",
+    "exampleJa": "この話題については誰もが違う意見を持っています。",
+    "imageQuery": "opinion discussion"
+  },
+  {
+    "id": "g3-110",
+    "word": "decision",
+    "pos": "名詞",
+    "meaning": "決定",
+    "example": "That was a difficult decision for the team.",
+    "exampleJa": "それはチームにとって難しい決定でした。",
+    "imageQuery": "decision making team"
+  },
+  {
+    "id": "g3-111",
+    "word": "responsibility",
+    "pos": "名詞",
+    "meaning": "責任",
+    "example": "It is our responsibility to protect the environment.",
+    "exampleJa": "環境を守ることは私たちの責任です。",
+    "imageQuery": "responsibility environment"
+  },
+  {
+    "id": "g3-112",
+    "word": "rule",
+    "pos": "名詞",
+    "meaning": "規則",
+    "example": "This rule was made to keep students safe.",
+    "exampleJa": "この規則は生徒たちの安全を守るために作られました。",
+    "imageQuery": "school rules safety"
+  },
+  {
+    "id": "g3-113",
+    "word": "law",
+    "pos": "名詞",
+    "meaning": "法律",
+    "example": "This law was passed ten years ago.",
+    "exampleJa": "この法律は10年前に制定されました。",
+    "imageQuery": "law government"
+  },
+  {
+    "id": "g3-114",
+    "word": "right",
+    "pos": "名詞",
+    "meaning": "権利",
+    "example": "Every child has the right to education.",
+    "exampleJa": "すべての子どもは教育を受ける権利を持っています。",
+    "imageQuery": "children rights education"
+  },
+  {
+    "id": "g3-115",
+    "word": "freedom",
+    "pos": "名詞",
+    "meaning": "自由",
+    "example": "People fought hard for their freedom.",
+    "exampleJa": "人々は自由のために懸命に戦いました。",
+    "imageQuery": "freedom"
+  },
+  {
+    "id": "g3-116",
+    "word": "equality",
+    "pos": "名詞",
+    "meaning": "平等",
+    "example": "Equality between men and women is important.",
+    "exampleJa": "男女の平等は大切です。",
+    "imageQuery": "equality"
+  },
+  {
+    "id": "g3-117",
+    "word": "difference",
+    "pos": "名詞",
+    "meaning": "違い",
+    "example": "There is a big difference between the two plans.",
+    "exampleJa": "その2つの計画には大きな違いがあります。",
+    "imageQuery": "difference comparison"
+  },
+  {
+    "id": "g3-118",
+    "word": "similarity",
+    "pos": "名詞",
+    "meaning": "類似点",
+    "example": "I found many similarities between the two cultures.",
+    "exampleJa": "私はその2つの文化の間に多くの類似点を見つけました。",
+    "imageQuery": "cultures comparison similarity"
+  },
+  {
+    "id": "g3-119",
+    "word": "value",
+    "pos": "名詞",
+    "meaning": "価値",
+    "example": "This old book has great value to me.",
+    "exampleJa": "この古い本は私にとって大きな価値があります。",
+    "imageQuery": "old book value"
+  },
+  {
+    "id": "g3-120",
+    "word": "respect",
+    "pos": "名詞",
+    "meaning": "尊敬",
+    "example": "Students showed respect for their teacher.",
+    "exampleJa": "生徒たちは先生に対して尊敬を示しました。",
+    "imageQuery": "respect teacher students"
+  },
+  {
+    "id": "g3-121",
+    "word": "trust",
+    "pos": "名詞",
+    "meaning": "信頼",
+    "example": "Trust is important between friends.",
+    "exampleJa": "友人同士では信頼が大切です。",
+    "imageQuery": "trust friendship"
+  },
+  {
+    "id": "g3-122",
+    "word": "communication",
+    "pos": "名詞",
+    "meaning": "コミュニケーション",
+    "example": "Good communication can solve many problems.",
+    "exampleJa": "良いコミュニケーションは多くの問題を解決できます。",
+    "imageQuery": "communication people talking"
+  },
+  {
+    "id": "g3-123",
+    "word": "purpose",
+    "pos": "名詞",
+    "meaning": "目的",
+    "example": "The purpose of this trip is to learn about history.",
+    "exampleJa": "この旅行の目的は歴史について学ぶことです。",
+    "imageQuery": "purpose learning trip"
+  },
+  {
+    "id": "g3-124",
+    "word": "result",
+    "pos": "名詞",
+    "meaning": "結果",
+    "example": "We were happy with the result of the experiment.",
+    "exampleJa": "私たちはその実験の結果に満足しました。",
+    "imageQuery": "experiment result"
+  },
+  {
+    "id": "g3-125",
+    "word": "effect",
+    "pos": "名詞",
+    "meaning": "効果",
+    "example": "This medicine has a strong effect on headaches.",
+    "exampleJa": "この薬は頭痛に強い効果があります。",
+    "imageQuery": "medicine effect"
+  },
+  {
+    "id": "g3-126",
+    "word": "process",
+    "pos": "名詞",
+    "meaning": "過程",
+    "example": "We learned about the process of making paper.",
+    "exampleJa": "私たちは紙を作る過程について学びました。",
+    "imageQuery": "paper making process"
+  },
+  {
+    "id": "g3-127",
+    "word": "product",
+    "pos": "名詞",
+    "meaning": "製品",
+    "example": "This product was made in Japan.",
+    "exampleJa": "この製品は日本で作られました。",
+    "imageQuery": "product made in japan"
+  },
+  {
+    "id": "g3-128",
+    "word": "material",
+    "pos": "名詞",
+    "meaning": "材料",
+    "example": "This bag is made of a strong material.",
+    "exampleJa": "このかばんは丈夫な材料でできています。",
+    "imageQuery": "bag material"
+  },
+  {
+    "id": "g3-129",
+    "word": "factory",
+    "pos": "名詞",
+    "meaning": "工場",
+    "example": "This car was made in a factory near Tokyo.",
+    "exampleJa": "この車は東京近くの工場で作られました。",
+    "imageQuery": "car factory"
+  },
+  {
+    "id": "g3-130",
+    "word": "report",
+    "pos": "名詞",
+    "meaning": "報告書",
+    "example": "I have written a report about global warming.",
+    "exampleJa": "私は地球温暖化についての報告書を書きました。",
+    "imageQuery": "report writing"
+  },
+  {
+    "id": "g3-131",
+    "word": "article",
+    "pos": "名詞",
+    "meaning": "記事",
+    "example": "I read an interesting article about space.",
+    "exampleJa": "私は宇宙についての面白い記事を読みました。",
+    "imageQuery": "newspaper article"
+  },
+  {
+    "id": "g3-132",
+    "word": "document",
+    "pos": "名詞",
+    "meaning": "文書",
+    "example": "This document was written many years ago.",
+    "exampleJa": "この文書は何年も前に書かれました。",
+    "imageQuery": "old document"
+  },
+  {
+    "id": "g3-133",
+    "word": "system",
+    "pos": "名詞",
+    "meaning": "制度・仕組み",
+    "example": "This school has a new system for tests.",
+    "exampleJa": "この学校にはテストのための新しい仕組みがあります。",
+    "imageQuery": "school system"
+  },
+  {
+    "id": "g3-134",
+    "word": "method",
+    "pos": "名詞",
+    "meaning": "方法",
+    "example": "This method has been used for many years.",
+    "exampleJa": "この方法は長年使われてきました。",
+    "imageQuery": "study method"
+  },
+  {
+    "id": "g3-135",
+    "word": "technique",
+    "pos": "名詞",
+    "meaning": "技術・手法",
+    "example": "She learned a new painting technique.",
+    "exampleJa": "彼女は新しい絵画の技法を学びました。",
+    "imageQuery": "painting technique"
+  },
+  {
+    "id": "g3-136",
+    "word": "standard",
+    "pos": "名詞",
+    "meaning": "基準",
+    "example": "This product meets a high standard.",
+    "exampleJa": "この製品は高い基準を満たしています。",
+    "imageQuery": "quality standard"
+  },
+  {
+    "id": "g3-137",
+    "word": "quality",
+    "pos": "名詞",
+    "meaning": "質",
+    "example": "This shop is known for the quality of its bread.",
+    "exampleJa": "この店はパンの質の高さで知られています。",
+    "imageQuery": "quality bread"
+  },
+  {
+    "id": "g3-138",
+    "word": "quantity",
+    "pos": "名詞",
+    "meaning": "量",
+    "example": "A large quantity of rice is produced in this area.",
+    "exampleJa": "この地域では大量の米が生産されています。",
+    "imageQuery": "rice quantity field"
+  },
+  {
+    "id": "g3-139",
+    "word": "expert",
+    "pos": "名詞",
+    "meaning": "専門家",
+    "example": "I asked an expert about this problem.",
+    "exampleJa": "私はこの問題について専門家に尋ねました。",
+    "imageQuery": "expert advice"
+  },
+  {
+    "id": "g3-140",
+    "word": "researcher",
+    "pos": "名詞",
+    "meaning": "研究者",
+    "example": "The researcher who studies this topic lives in Kyoto.",
+    "exampleJa": "この話題を研究している研究者は京都に住んでいます。",
+    "imageQuery": "researcher laboratory"
+  },
+  {
+    "id": "g3-141",
+    "word": "citizen",
+    "pos": "名詞",
+    "meaning": "市民",
+    "example": "Every citizen should follow the law.",
+    "exampleJa": "すべての市民は法律に従うべきです。",
+    "imageQuery": "citizens community"
+  },
+  {
+    "id": "g3-142",
+    "word": "immigrant",
+    "pos": "名詞",
+    "meaning": "移民",
+    "example": "Many immigrants have started new lives in this city.",
+    "exampleJa": "多くの移民がこの都市で新しい生活を始めました。",
+    "imageQuery": "immigrants city"
+  },
+  {
+    "id": "g3-143",
+    "word": "refugee",
+    "pos": "名詞",
+    "meaning": "難民",
+    "example": "This organization supports refugees from many countries.",
+    "exampleJa": "この組織は多くの国からの難民を支援しています。",
+    "imageQuery": "refugee support"
+  },
+  {
+    "id": "g3-144",
+    "word": "leader",
+    "pos": "名詞",
+    "meaning": "指導者",
+    "example": "She is a leader who is respected by everyone.",
+    "exampleJa": "彼女は誰からも尊敬される指導者です。",
+    "imageQuery": "leader respected"
+  },
+  {
+    "id": "g3-145",
+    "word": "president",
+    "pos": "名詞",
+    "meaning": "大統領",
+    "example": "The president gave a speech about peace.",
+    "exampleJa": "大統領は平和についてスピーチをしました。",
+    "imageQuery": "president speech"
+  },
+  {
+    "id": "g3-146",
+    "word": "architect",
+    "pos": "名詞",
+    "meaning": "建築家",
+    "example": "This building was designed by a famous architect.",
+    "exampleJa": "この建物は有名な建築家によって設計されました。",
+    "imageQuery": "architect building design",
+    "tier": "premium"
+  },
+  {
+    "id": "g3-147",
+    "word": "astronaut",
+    "pos": "名詞",
+    "meaning": "宇宙飛行士",
+    "example": "He has dreamed of becoming an astronaut since he was small.",
+    "exampleJa": "彼は小さい頃から宇宙飛行士になることを夢見ています。",
+    "imageQuery": "astronaut space",
+    "tier": "premium"
+  },
+  {
+    "id": "g3-148",
+    "word": "inventor",
+    "pos": "名詞",
+    "meaning": "発明家",
+    "example": "The inventor of this machine is known around the world.",
+    "exampleJa": "この機械の発明家は世界中で知られています。",
+    "imageQuery": "inventor machine",
+    "tier": "premium"
+  },
+  {
+    "id": "g3-149",
+    "word": "author",
+    "pos": "名詞",
+    "meaning": "著者",
+    "example": "This book was written by a famous author.",
+    "exampleJa": "この本は有名な著者によって書かれました。",
+    "imageQuery": "author writing book",
+    "tier": "premium"
+  },
+  {
+    "id": "g3-150",
+    "word": "audience",
+    "pos": "名詞",
+    "meaning": "観客・聴衆",
+    "example": "The audience clapped after the wonderful speech.",
+    "exampleJa": "観客は素晴らしいスピーチの後に拍手をしました。",
+    "imageQuery": "audience applause",
+    "tier": "premium"
+  }
 ]

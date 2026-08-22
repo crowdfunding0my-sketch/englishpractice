@@ -119,3 +119,37 @@ export async function reportMistakes(grade, items) {
     // 保存失敗はテスト結果表示自体をブロックしない
   }
 }
+
+// 自分の購読状態(プレミアム会員かどうか)を取得する。行が無ければ未購読とみなす。
+export async function fetchSubscriptionStatus() {
+  const { data, error } = await supabase.from("subscriptions").select("*").maybeSingle();
+  if (error) throw error;
+  return data;
+}
+
+async function callStripeApi(path) {
+  const {
+    data: { session },
+  } = await supabase.auth.getSession();
+  if (!session) throw new Error("ログインが必要です");
+
+  const res = await fetch(`/api/stripe/${path}`, {
+    method: "POST",
+    headers: { Authorization: `Bearer ${session.access_token}` },
+  });
+  if (!res.ok) throw new Error("処理に失敗しました");
+  const data = await res.json();
+  return data.url;
+}
+
+// Stripe Checkoutページへ遷移する(アップグレード)
+export async function startCheckout() {
+  const url = await callStripeApi("create-checkout-session");
+  window.location.href = url;
+}
+
+// Stripeの請求管理ページ(プラン変更・解約)へ遷移する
+export async function openBillingPortal() {
+  const url = await callStripeApi("create-portal-session");
+  window.location.href = url;
+}

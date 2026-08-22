@@ -23,9 +23,18 @@
 - 追加した単語はその学年の練習モード・テストモードの出題対象にも含まれます。
 - テストで間違えた単語（library相当のデータ）はSupabaseのデータベースに保存され、ユーザーごとに記録されます。
 
+## 有料ゾーン(プレミアムプラン)
+- Stripeを使った月額/年額サブスクリプションで、拡張単語パック(各学年+400語予定)を有料会員限定にする。
+- 決済はWeb版のみStripe Checkoutを使用(App Store/Google Play配信時のIn-App Purchase対応は別タスク)。
+- 購読状態はSupabaseの `subscriptions` テーブルで管理し、StripeのWebhookが `service_role` キーで更新する
+  （クライアントからは読み取り専用）。
+- 単語データの `tier` フィールド(`"premium"`)で、未購読ユーザーには練習・テストの出題対象から除外する。
+- 現状は動作確認用に各学年5語のみサンプルとして `tier:"premium"` を付与済み。本番の+400語コンテンツ追加は別タスク。
+
 ## 技術スタック
 - HTML / CSS / JavaScript　/　React
 - Supabase（認証・データベース）
+- Stripe（有料プランの決済・サブスクリプション管理）
 もし、他に必要な技術が発生したら聞いてください。
 
 ## 画面上ルール
@@ -44,4 +53,7 @@ GitHub: https://github.com/crowdfunding0my-sketch/englishpractice.git
 - 本番はVercelに一本化する。Vercelプロジェクトの Root Directory は `client` を指定する。
 - `client/api/` 配下に、単語データ配信・Pixabay画像プロキシ用のVercel Serverless Functionsを用意している
   （ローカル開発用の `server/`（Express）とは別実装。ローカルは今まで通り `npm run dev` でExpressサーバーを使う）。
-- 環境変数（`PIXABAY_API_KEY` / `VITE_SUPABASE_URL` / `VITE_SUPABASE_ANON_KEY`）はVercelダッシュボードで設定し、`vercel.json` には含めない。
+- 環境変数（`PIXABAY_API_KEY` / `VITE_SUPABASE_URL` / `VITE_SUPABASE_ANON_KEY` / `SUPABASE_URL` /
+  `SUPABASE_SERVICE_ROLE_KEY` / `STRIPE_SECRET_KEY` / `STRIPE_WEBHOOK_SECRET` / `STRIPE_PRICE_ID` /
+  `CLIENT_URL`）はVercelダッシュボードで設定し、`vercel.json` には含めない。
+  `SUPABASE_SERVICE_ROLE_KEY` はRLSを越える強い権限を持つため、クライアント(VITE_接頭辞)には絶対に含めない。

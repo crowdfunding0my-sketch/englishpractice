@@ -1,152 +1,1357 @@
 [
-  { "id": "g2-001", "word": "doctor", "pos": "名詞", "meaning": "医者", "example": "My uncle became a doctor last year.", "exampleJa": "私のおじは去年医者になりました。", "imageQuery": "doctor" },
-  { "id": "g2-002", "word": "nurse", "pos": "名詞", "meaning": "看護師", "example": "The nurse was very kind to patients.", "exampleJa": "その看護師は患者にとても親切でした。", "imageQuery": "nurse" },
-  { "id": "g2-003", "word": "police officer", "pos": "名詞", "meaning": "警察官", "example": "A police officer helped us yesterday.", "exampleJa": "昨日警察官が私たちを助けてくれました。", "imageQuery": "police officer" },
-  { "id": "g2-004", "word": "firefighter", "pos": "名詞", "meaning": "消防士", "example": "The firefighter saved a little cat.", "exampleJa": "その消防士は小さな猫を救いました。", "imageQuery": "firefighter" },
-  { "id": "g2-005", "word": "farmer", "pos": "名詞", "meaning": "農家", "example": "My grandfather was a farmer.", "exampleJa": "私の祖父は農家でした。", "imageQuery": "farmer field" },
-  { "id": "g2-006", "word": "chef", "pos": "名詞", "meaning": "シェフ", "example": "I want to be a chef in the future.", "exampleJa": "私は将来シェフになりたいです。", "imageQuery": "chef cooking" },
-  { "id": "g2-007", "word": "singer", "pos": "名詞", "meaning": "歌手", "example": "She is a more famous singer than I thought.", "exampleJa": "彼女は思ったより有名な歌手です。", "imageQuery": "singer stage" },
-  { "id": "g2-008", "word": "actor", "pos": "名詞", "meaning": "俳優", "example": "That actor will visit Japan next month.", "exampleJa": "その俳優は来月日本を訪れる予定です。", "imageQuery": "actor movie" },
-  { "id": "g2-009", "word": "writer", "pos": "名詞", "meaning": "作家", "example": "This writer wrote many popular books.", "exampleJa": "この作家はたくさんの人気の本を書きました。", "imageQuery": "writer books" },
-  { "id": "g2-010", "word": "scientist", "pos": "名詞", "meaning": "科学者", "example": "The scientist discovered something new.", "exampleJa": "その科学者は新しい何かを発見しました。", "imageQuery": "scientist laboratory" },
-  { "id": "g2-011", "word": "engineer", "pos": "名詞", "meaning": "技術者", "example": "My brother is training to be an engineer.", "exampleJa": "私の兄は技術者になるための訓練をしています。", "imageQuery": "engineer" },
-  { "id": "g2-012", "word": "pilot", "pos": "名詞", "meaning": "パイロット", "example": "She decided to become a pilot.", "exampleJa": "彼女はパイロットになることを決めました。", "imageQuery": "pilot airplane" },
-  { "id": "g2-013", "word": "weather", "pos": "名詞", "meaning": "天気", "example": "The weather will be sunny tomorrow.", "exampleJa": "明日は晴れの天気になるでしょう。", "imageQuery": "sunny weather" },
-  { "id": "g2-014", "word": "season", "pos": "名詞", "meaning": "季節", "example": "Which season do you like the best?", "exampleJa": "あなたはどの季節が一番好きですか。", "imageQuery": "four seasons" },
-  { "id": "g2-015", "word": "spring", "pos": "名詞", "meaning": "春", "example": "Cherry blossoms bloom in spring.", "exampleJa": "桜は春に咲きます。", "imageQuery": "spring cherry blossoms" },
-  { "id": "g2-016", "word": "summer", "pos": "名詞", "meaning": "夏", "example": "We went swimming last summer.", "exampleJa": "私たちはこの前の夏に泳ぎに行きました。", "imageQuery": "summer beach" },
-  { "id": "g2-017", "word": "autumn", "pos": "名詞", "meaning": "秋", "example": "The leaves turn red in autumn.", "exampleJa": "秋には葉が赤くなります。", "imageQuery": "autumn leaves" },
-  { "id": "g2-018", "word": "winter", "pos": "名詞", "meaning": "冬", "example": "It will snow a lot this winter.", "exampleJa": "今年の冬はたくさん雪が降るでしょう。", "imageQuery": "winter snow" },
-  { "id": "g2-019", "word": "rain", "pos": "名詞", "meaning": "雨", "example": "The rain stopped an hour ago.", "exampleJa": "雨は1時間前にやみました。", "imageQuery": "rain" },
-  { "id": "g2-020", "word": "snow", "pos": "名詞", "meaning": "雪", "example": "The snow was more beautiful than usual.", "exampleJa": "その雪はいつもより美しかったです。", "imageQuery": "snow scene" },
-  { "id": "g2-021", "word": "wind", "pos": "名詞", "meaning": "風", "example": "A strong wind blew last night.", "exampleJa": "昨夜強い風が吹きました。", "imageQuery": "strong wind" },
-  { "id": "g2-022", "word": "cloudy", "pos": "形容詞", "meaning": "曇りの", "example": "It was cloudy this morning.", "exampleJa": "今朝は曇りでした。", "imageQuery": "cloudy sky" },
-  { "id": "g2-023", "word": "sky", "pos": "名詞", "meaning": "空", "example": "The sky turned dark before the storm.", "exampleJa": "嵐の前に空が暗くなりました。", "imageQuery": "dark sky" },
-  { "id": "g2-024", "word": "sea", "pos": "名詞", "meaning": "海", "example": "We will visit the sea next weekend.", "exampleJa": "私たちは来週末海を訪れる予定です。", "imageQuery": "sea ocean" },
-  { "id": "g2-025", "word": "mountain", "pos": "名詞", "meaning": "山", "example": "This is the highest mountain in Japan.", "exampleJa": "これは日本で一番高い山です。", "imageQuery": "mountain" },
-  { "id": "g2-026", "word": "river", "pos": "名詞", "meaning": "川", "example": "We had fun by the river.", "exampleJa": "私たちは川のそばで楽しみました。", "imageQuery": "river" },
-  { "id": "g2-027", "word": "forest", "pos": "名詞", "meaning": "森", "example": "There are many animals in the forest.", "exampleJa": "森にはたくさんの動物がいます。", "imageQuery": "forest" },
-  { "id": "g2-028", "word": "sun", "pos": "名詞", "meaning": "太陽", "example": "The sun rose earlier than usual.", "exampleJa": "太陽はいつもより早く昇りました。", "imageQuery": "sunrise sun" },
-  { "id": "g2-029", "word": "moon", "pos": "名詞", "meaning": "月（天体）", "example": "The moon looked very bright last night.", "exampleJa": "昨夜月がとても明るく見えました。", "imageQuery": "full moon" },
-  { "id": "g2-030", "word": "star", "pos": "名詞", "meaning": "星", "example": "We saw many stars in the sky.", "exampleJa": "私たちは空にたくさんの星を見ました。", "imageQuery": "stars night sky" },
-  { "id": "g2-031", "word": "earth", "pos": "名詞", "meaning": "地球", "example": "We should take care of the earth.", "exampleJa": "私たちは地球を大切にするべきです。", "imageQuery": "earth planet" },
-  { "id": "g2-032", "word": "nature", "pos": "名詞", "meaning": "自然", "example": "I want to learn more about nature.", "exampleJa": "私は自然についてもっと学びたいです。", "imageQuery": "nature landscape" },
-  { "id": "g2-033", "word": "sick", "pos": "形容詞", "meaning": "病気の", "example": "He was sick last week.", "exampleJa": "彼は先週病気でした。", "imageQuery": "sick person bed" },
-  { "id": "g2-034", "word": "illness", "pos": "名詞", "meaning": "病気", "example": "She recovered from her illness quickly.", "exampleJa": "彼女は病気からすぐに回復しました。", "imageQuery": "illness recovery" },
-  { "id": "g2-035", "word": "medicine", "pos": "名詞", "meaning": "薬", "example": "You should take this medicine after meals.", "exampleJa": "この薬は食後に飲むべきです。", "imageQuery": "medicine pills" },
-  { "id": "g2-036", "word": "rest", "pos": "動詞", "meaning": "休む", "example": "You need to rest more.", "exampleJa": "あなたはもっと休む必要があります。", "imageQuery": "resting sofa" },
-  { "id": "g2-037", "word": "exercise", "pos": "動詞", "meaning": "運動する", "example": "I will exercise every morning.", "exampleJa": "私は毎朝運動するつもりです。", "imageQuery": "exercise morning" },
-  { "id": "g2-038", "word": "tired", "pos": "形容詞", "meaning": "疲れた", "example": "I was too tired to walk more.", "exampleJa": "私は疲れすぎてこれ以上歩けませんでした。", "imageQuery": "tired person" },
-  { "id": "g2-039", "word": "headache", "pos": "名詞", "meaning": "頭痛", "example": "I had a headache this morning.", "exampleJa": "私は今朝頭痛がしました。", "imageQuery": "headache" },
-  { "id": "g2-040", "word": "fever", "pos": "名詞", "meaning": "熱", "example": "He had a high fever yesterday.", "exampleJa": "彼は昨日高い熱がありました。", "imageQuery": "fever thermometer" },
-  { "id": "g2-041", "word": "contest", "pos": "名詞", "meaning": "コンテスト", "example": "She won the speech contest.", "exampleJa": "彼女はスピーチコンテストで優勝しました。", "imageQuery": "speech contest" },
-  { "id": "g2-042", "word": "event", "pos": "名詞", "meaning": "行事", "example": "Our school will have a big event next week.", "exampleJa": "私たちの学校では来週大きな行事があります。", "imageQuery": "school event" },
-  { "id": "g2-043", "word": "festival", "pos": "名詞", "meaning": "祭り", "example": "We enjoyed the summer festival together.", "exampleJa": "私たちは一緒に夏祭りを楽しみました。", "imageQuery": "summer festival" },
-  { "id": "g2-044", "word": "match", "pos": "名詞", "meaning": "試合", "example": "Our team won the last match.", "exampleJa": "私たちのチームは前回の試合に勝ちました。", "imageQuery": "sports match" },
-  { "id": "g2-045", "word": "team", "pos": "名詞", "meaning": "チーム", "example": "Our team practiced very hard.", "exampleJa": "私たちのチームはとても一生懸命練習しました。", "imageQuery": "sports team" },
-  { "id": "g2-046", "word": "win", "pos": "動詞", "meaning": "勝つ", "example": "We will win the next game.", "exampleJa": "私たちは次の試合に勝つつもりです。", "imageQuery": "winning trophy" },
-  { "id": "g2-047", "word": "lose", "pos": "動詞", "meaning": "負ける", "example": "We didn't want to lose the match.", "exampleJa": "私たちは試合に負けたくありませんでした。", "imageQuery": "losing game" },
-  { "id": "g2-048", "word": "practice", "pos": "動詞", "meaning": "練習する", "example": "I practiced soccer for two hours.", "exampleJa": "私は2時間サッカーを練習しました。", "imageQuery": "soccer practice" },
-  { "id": "g2-049", "word": "champion", "pos": "名詞", "meaning": "チャンピオン", "example": "He became the champion of the tournament.", "exampleJa": "彼はその大会のチャンピオンになりました。", "imageQuery": "champion trophy" },
-  { "id": "g2-050", "word": "medal", "pos": "名詞", "meaning": "メダル", "example": "She got a gold medal at the contest.", "exampleJa": "彼女はコンテストで金メダルを取りました。", "imageQuery": "gold medal" },
-  { "id": "g2-051", "word": "abroad", "pos": "副詞", "meaning": "海外へ", "example": "I want to study abroad someday.", "exampleJa": "私はいつか海外に留学したいです。", "imageQuery": "studying abroad" },
-  { "id": "g2-052", "word": "foreign", "pos": "形容詞", "meaning": "外国の", "example": "She can speak three foreign languages.", "exampleJa": "彼女は3つの外国語を話せます。", "imageQuery": "foreign languages" },
-  { "id": "g2-053", "word": "culture", "pos": "名詞", "meaning": "文化", "example": "I'm interested in Japanese culture.", "exampleJa": "私は日本の文化に興味があります。", "imageQuery": "japanese culture" },
-  { "id": "g2-054", "word": "language", "pos": "名詞", "meaning": "言語", "example": "English is a useful language.", "exampleJa": "英語は役に立つ言語です。", "imageQuery": "language learning" },
-  { "id": "g2-055", "word": "travel", "pos": "動詞", "meaning": "旅行する", "example": "We will travel to Canada this summer.", "exampleJa": "私たちはこの夏カナダへ旅行する予定です。", "imageQuery": "travel suitcase" },
-  { "id": "g2-056", "word": "airport", "pos": "名詞", "meaning": "空港", "example": "We arrived at the airport early.", "exampleJa": "私たちは早く空港に着きました。", "imageQuery": "airport" },
-  { "id": "g2-057", "word": "passport", "pos": "名詞", "meaning": "パスポート", "example": "Don't forget your passport.", "exampleJa": "パスポートを忘れないでください。", "imageQuery": "passport" },
-  { "id": "g2-058", "word": "custom", "pos": "名詞", "meaning": "習慣", "example": "This is an old custom in my country.", "exampleJa": "これは私の国の古い習慣です。", "imageQuery": "traditional custom" },
-  { "id": "g2-059", "word": "excited", "pos": "形容詞", "meaning": "わくわくした", "example": "I was excited about the trip.", "exampleJa": "私はその旅行にわくわくしていました。", "imageQuery": "excited child" },
-  { "id": "g2-060", "word": "surprised", "pos": "形容詞", "meaning": "驚いた", "example": "She was surprised at the news.", "exampleJa": "彼女はその知らせに驚きました。", "imageQuery": "surprised face" },
-  { "id": "g2-061", "word": "nervous", "pos": "形容詞", "meaning": "緊張した", "example": "I felt nervous before the test.", "exampleJa": "私はテストの前に緊張しました。", "imageQuery": "nervous student" },
-  { "id": "g2-062", "word": "worried", "pos": "形容詞", "meaning": "心配した", "example": "My mother was worried about me.", "exampleJa": "私の母は私のことを心配していました。", "imageQuery": "worried mother" },
-  { "id": "g2-063", "word": "afraid", "pos": "形容詞", "meaning": "怖がった", "example": "She was afraid of the dark.", "exampleJa": "彼女は暗闇が怖かったです。", "imageQuery": "afraid dark" },
-  { "id": "g2-064", "word": "proud", "pos": "形容詞", "meaning": "誇りに思った", "example": "My parents are proud of me.", "exampleJa": "私の両親は私を誇りに思っています。", "imageQuery": "proud parents" },
-  { "id": "g2-065", "word": "glad", "pos": "形容詞", "meaning": "嬉しい", "example": "I was glad to see her again.", "exampleJa": "私は彼女にまた会えて嬉しかったです。", "imageQuery": "glad reunion" },
-  { "id": "g2-066", "word": "angry", "pos": "形容詞", "meaning": "怒った", "example": "He got angry at that word.", "exampleJa": "彼はその言葉に怒りました。", "imageQuery": "angry face" },
-  { "id": "g2-067", "word": "lonely", "pos": "形容詞", "meaning": "寂しい", "example": "I felt lonely without my friends.", "exampleJa": "私は友達がいなくて寂しく感じました。", "imageQuery": "lonely person" },
-  { "id": "g2-068", "word": "relieved", "pos": "形容詞", "meaning": "安心した", "example": "We were relieved to hear the good news.", "exampleJa": "私たちはその良い知らせを聞いて安心しました。", "imageQuery": "relieved smile" },
-  { "id": "g2-069", "word": "become", "pos": "動詞", "meaning": "なる", "example": "She became a nurse two years ago.", "exampleJa": "彼女は2年前に看護師になりました。", "imageQuery": "career growth" },
-  { "id": "g2-070", "word": "decide", "pos": "動詞", "meaning": "決める", "example": "I decided to join the tennis club.", "exampleJa": "私はテニス部に入ることを決めました。", "imageQuery": "decision making" },
-  { "id": "g2-071", "word": "borrow", "pos": "動詞", "meaning": "借りる", "example": "Can I borrow your pen?", "exampleJa": "あなたのペンを借りてもいいですか。", "imageQuery": "borrowing pen" },
-  { "id": "g2-072", "word": "lend", "pos": "動詞", "meaning": "貸す", "example": "Could you lend me your umbrella?", "exampleJa": "あなたの傘を貸していただけますか。", "imageQuery": "lending umbrella" },
-  { "id": "g2-073", "word": "arrive", "pos": "動詞", "meaning": "到着する", "example": "We arrived at the station on time.", "exampleJa": "私たちは時間通りに駅に到着しました。", "imageQuery": "arrival train" },
-  { "id": "g2-074", "word": "visit", "pos": "動詞", "meaning": "訪れる", "example": "We visited Kyoto last spring.", "exampleJa": "私たちはこの前の春に京都を訪れました。", "imageQuery": "visiting kyoto" },
-  { "id": "g2-075", "word": "leave", "pos": "動詞", "meaning": "出発する・去る", "example": "The train leaves at nine.", "exampleJa": "電車は9時に出発します。", "imageQuery": "train departure" },
-  { "id": "g2-076", "word": "stay", "pos": "動詞", "meaning": "滞在する", "example": "We stayed at a hotel near the sea.", "exampleJa": "私たちは海の近くのホテルに滞在しました。", "imageQuery": "hotel stay" },
-  { "id": "g2-077", "word": "finish", "pos": "動詞", "meaning": "終える", "example": "I finished my homework before dinner.", "exampleJa": "私は夕食前に宿題を終えました。", "imageQuery": "finishing homework" },
-  { "id": "g2-078", "word": "begin", "pos": "動詞", "meaning": "始める", "example": "The concert will begin soon.", "exampleJa": "コンサートはもうすぐ始まります。", "imageQuery": "concert start" },
-  { "id": "g2-079", "word": "try", "pos": "動詞", "meaning": "試みる", "example": "I will try my best on the test.", "exampleJa": "私はテストでベストを尽くすつもりです。", "imageQuery": "trying hard" },
-  { "id": "g2-080", "word": "hope", "pos": "動詞", "meaning": "望む", "example": "I hope to see you again soon.", "exampleJa": "私はまたすぐにあなたに会えることを望みます。", "imageQuery": "hope wish" },
-  { "id": "g2-081", "word": "enjoy", "pos": "動詞", "meaning": "楽しむ", "example": "We enjoyed the trip very much.", "exampleJa": "私たちはその旅行をとても楽しみました。", "imageQuery": "enjoying trip" },
-  { "id": "g2-082", "word": "forget", "pos": "動詞", "meaning": "忘れる", "example": "Don't forget to bring your bag.", "exampleJa": "かばんを持ってくるのを忘れないでください。", "imageQuery": "forgetting reminder" },
-  { "id": "g2-083", "word": "remember", "pos": "動詞", "meaning": "覚えている", "example": "I still remember that day well.", "exampleJa": "私はその日のことをまだよく覚えています。", "imageQuery": "remembering memory" },
-  { "id": "g2-084", "word": "understand", "pos": "動詞", "meaning": "理解する", "example": "I couldn't understand the question.", "exampleJa": "私はその質問を理解できませんでした。", "imageQuery": "understanding confused" },
-  { "id": "g2-085", "word": "explain", "pos": "動詞", "meaning": "説明する", "example": "The teacher explained the rule again.", "exampleJa": "先生はそのルールをもう一度説明しました。", "imageQuery": "teacher explaining" },
-  { "id": "g2-086", "word": "answer", "pos": "動詞", "meaning": "答える", "example": "She answered the question quickly.", "exampleJa": "彼女はその質問にすぐに答えました。", "imageQuery": "answering question" },
-  { "id": "g2-087", "word": "ask", "pos": "動詞", "meaning": "尋ねる", "example": "I asked him about his trip.", "exampleJa": "私は彼に旅行について尋ねました。", "imageQuery": "asking question" },
-  { "id": "g2-088", "word": "tell", "pos": "動詞", "meaning": "伝える", "example": "Please tell me the truth.", "exampleJa": "私に本当のことを伝えてください。", "imageQuery": "telling truth" },
-  { "id": "g2-089", "word": "send", "pos": "動詞", "meaning": "送る", "example": "I will send you an email tonight.", "exampleJa": "私は今夜あなたにメールを送ります。", "imageQuery": "sending email" },
-  { "id": "g2-090", "word": "receive", "pos": "動詞", "meaning": "受け取る", "example": "I received a letter from my friend.", "exampleJa": "私は友達から手紙を受け取りました。", "imageQuery": "receiving letter" },
-  { "id": "g2-091", "word": "invite", "pos": "動詞", "meaning": "招待する", "example": "We invited our friends to the party.", "exampleJa": "私たちはパーティーに友達を招待しました。", "imageQuery": "inviting party" },
-  { "id": "g2-092", "word": "meet", "pos": "動詞", "meaning": "会う", "example": "I will meet her at the station.", "exampleJa": "私は駅で彼女に会う予定です。", "imageQuery": "meeting friend" },
-  { "id": "g2-093", "word": "catch", "pos": "動詞", "meaning": "捕まえる", "example": "He caught a big fish yesterday.", "exampleJa": "彼は昨日大きな魚を捕まえました。", "imageQuery": "catching fish" },
-  { "id": "g2-094", "word": "miss", "pos": "動詞", "meaning": "逃す・恋しく思う", "example": "I miss my family very much.", "exampleJa": "私は家族のことをとても恋しく思います。", "imageQuery": "missing family" },
-  { "id": "g2-095", "word": "grow", "pos": "動詞", "meaning": "育つ・育てる", "example": "These flowers grow very fast.", "exampleJa": "これらの花はとても早く育ちます。", "imageQuery": "growing plant" },
-  { "id": "g2-096", "word": "change", "pos": "動詞", "meaning": "変える・変わる", "example": "The weather changed suddenly.", "exampleJa": "天気が急に変わりました。", "imageQuery": "weather changing" },
-  { "id": "g2-097", "word": "collect", "pos": "動詞", "meaning": "集める", "example": "He collects old stamps.", "exampleJa": "彼は古い切手を集めています。", "imageQuery": "collecting stamps" },
-  { "id": "g2-098", "word": "carry", "pos": "動詞", "meaning": "運ぶ", "example": "Can you carry this box for me?", "exampleJa": "この箱を運んでもらえますか。", "imageQuery": "carrying box" },
-  { "id": "g2-099", "word": "difficult", "pos": "形容詞", "meaning": "難しい", "example": "This question is more difficult than that one.", "exampleJa": "この問題はあの問題より難しいです。", "imageQuery": "difficult puzzle" },
-  { "id": "g2-100", "word": "important", "pos": "形容詞", "meaning": "大切な", "example": "Family is the most important thing to me.", "exampleJa": "家族は私にとって一番大切なものです。", "imageQuery": "important family" },
-  { "id": "g2-101", "word": "popular", "pos": "形容詞", "meaning": "人気のある", "example": "This singer is very popular among students.", "exampleJa": "この歌手は生徒たちにとても人気があります。", "imageQuery": "popular singer" },
-  { "id": "g2-102", "word": "famous", "pos": "形容詞", "meaning": "有名な", "example": "This temple is famous for its garden.", "exampleJa": "この寺は庭で有名です。", "imageQuery": "famous temple" },
-  { "id": "g2-103", "word": "useful", "pos": "形容詞", "meaning": "役に立つ", "example": "This dictionary is very useful.", "exampleJa": "この辞書はとても役に立ちます。", "imageQuery": "useful dictionary" },
-  { "id": "g2-104", "word": "dangerous", "pos": "形容詞", "meaning": "危険な", "example": "It is dangerous to swim in this river.", "exampleJa": "この川で泳ぐのは危険です。", "imageQuery": "dangerous river" },
-  { "id": "g2-105", "word": "free", "pos": "形容詞", "meaning": "暇な・自由な", "example": "I am free this afternoon.", "exampleJa": "私は今日の午後は暇です。", "imageQuery": "free time relax" },
-  { "id": "g2-106", "word": "busy", "pos": "形容詞", "meaning": "忙しい", "example": "My mother is busier than my father.", "exampleJa": "私の母は父より忙しいです。", "imageQuery": "busy schedule" },
-  { "id": "g2-107", "word": "interesting", "pos": "形容詞", "meaning": "面白い", "example": "This is the most interesting book I have read.", "exampleJa": "これは私が読んだ中で最も面白い本です。", "imageQuery": "interesting book" },
-  { "id": "g2-108", "word": "boring", "pos": "形容詞", "meaning": "退屈な", "example": "The movie was a little boring.", "exampleJa": "その映画は少し退屈でした。", "imageQuery": "boring movie" },
-  { "id": "g2-109", "word": "be interested in", "pos": "熟語", "meaning": "～に興味がある", "example": "I am interested in Japanese history.", "exampleJa": "私は日本の歴史に興味があります。", "imageQuery": "japanese history interest" },
-  { "id": "g2-110", "word": "look for", "pos": "熟語", "meaning": "～を探す", "example": "She is looking for her key.", "exampleJa": "彼女は鍵を探しています。", "imageQuery": "looking for key" },
-  { "id": "g2-111", "word": "have to", "pos": "熟語", "meaning": "～しなければならない", "example": "I have to finish my report today.", "exampleJa": "私は今日レポートを終えなければなりません。", "imageQuery": "deadline report" },
-  { "id": "g2-112", "word": "be able to", "pos": "熟語", "meaning": "～することができる", "example": "She will be able to swim soon.", "exampleJa": "彼女はもうすぐ泳げるようになるでしょう。", "imageQuery": "learning to swim" },
-  { "id": "g2-113", "word": "be good at", "pos": "熟語", "meaning": "～が得意である", "example": "He is good at playing the guitar.", "exampleJa": "彼はギターを弾くのが得意です。", "imageQuery": "playing guitar skill" },
-  { "id": "g2-114", "word": "be famous for", "pos": "熟語", "meaning": "～で有名である", "example": "This town is famous for its old castle.", "exampleJa": "この町は古い城で有名です。", "imageQuery": "famous castle town" },
-  { "id": "g2-115", "word": "take care of", "pos": "熟語", "meaning": "～の世話をする", "example": "I take care of my little sister.", "exampleJa": "私は妹の世話をします。", "imageQuery": "taking care sibling" },
-  { "id": "g2-116", "word": "be full of", "pos": "熟語", "meaning": "～でいっぱいである", "example": "The park was full of people.", "exampleJa": "その公園は人でいっぱいでした。", "imageQuery": "crowded park" },
-  { "id": "g2-117", "word": "because of", "pos": "熟語", "meaning": "～のせいで・～のために", "example": "The game was canceled because of the rain.", "exampleJa": "その試合は雨のために中止になりました。", "imageQuery": "rain cancel game" },
-  { "id": "g2-118", "word": "a few", "pos": "熟語", "meaning": "少しの～", "example": "I have a few friends in this city.", "exampleJa": "私はこの街に少しの友達がいます。", "imageQuery": "few friends group" },
-  { "id": "g2-119", "word": "more than", "pos": "熟語", "meaning": "～以上", "example": "More than fifty people joined the event.", "exampleJa": "50人以上がその行事に参加しました。", "imageQuery": "crowd event people" },
-  { "id": "g2-120", "word": "get to", "pos": "熟語", "meaning": "～に着く", "example": "What time will we get to the airport?", "exampleJa": "私たちは何時に空港に着きますか。", "imageQuery": "arriving airport" },
-  { "id": "g2-121", "word": "news", "pos": "名詞", "meaning": "ニュース", "example": "I heard the news on TV this morning.", "exampleJa": "私は今朝テレビでそのニュースを聞きました。", "imageQuery": "news television" },
-  { "id": "g2-122", "word": "information", "pos": "名詞", "meaning": "情報", "example": "This website has a lot of useful information.", "exampleJa": "このウェブサイトには役に立つ情報がたくさんあります。", "imageQuery": "information website" },
-  { "id": "g2-123", "word": "problem", "pos": "名詞", "meaning": "問題", "example": "We solved the problem together.", "exampleJa": "私たちはその問題を一緒に解決しました。", "imageQuery": "solving problem" },
-  { "id": "g2-124", "word": "idea", "pos": "名詞", "meaning": "考え", "example": "That's a really good idea.", "exampleJa": "それは本当に良い考えです。", "imageQuery": "good idea lightbulb" },
-  { "id": "g2-125", "word": "plan", "pos": "名詞", "meaning": "計画", "example": "We made a plan for the summer vacation.", "exampleJa": "私たちは夏休みの計画を立てました。", "imageQuery": "vacation planning" },
-  { "id": "g2-126", "word": "experience", "pos": "名詞", "meaning": "経験", "example": "It was a great experience for me.", "exampleJa": "それは私にとって素晴らしい経験でした。", "imageQuery": "great experience travel" },
-  { "id": "g2-127", "word": "chance", "pos": "名詞", "meaning": "機会", "example": "This is a good chance to practice English.", "exampleJa": "これは英語を練習する良い機会です。", "imageQuery": "opportunity chance" },
-  { "id": "g2-128", "word": "reason", "pos": "名詞", "meaning": "理由", "example": "Tell me the reason for your decision.", "exampleJa": "あなたの決断の理由を教えてください。", "imageQuery": "reason explanation" },
-  { "id": "g2-129", "word": "future", "pos": "名詞", "meaning": "未来", "example": "I often think about my future.", "exampleJa": "私はよく自分の未来について考えます。", "imageQuery": "future thinking" },
-  { "id": "g2-130", "word": "dream", "pos": "名詞", "meaning": "夢", "example": "My dream is to be a pilot.", "exampleJa": "私の夢はパイロットになることです。", "imageQuery": "dream sky" },
-  { "id": "g2-131", "word": "goal", "pos": "名詞", "meaning": "目標", "example": "Our goal is to win the next match.", "exampleJa": "私たちの目標は次の試合に勝つことです。", "imageQuery": "goal target" },
-  { "id": "g2-132", "word": "effort", "pos": "名詞", "meaning": "努力", "example": "She made a lot of effort to pass the test.", "exampleJa": "彼女はテストに合格するためたくさん努力しました。", "imageQuery": "effort studying" },
-  { "id": "g2-133", "word": "success", "pos": "名詞", "meaning": "成功", "example": "Hard work leads to success.", "exampleJa": "一生懸命な努力は成功につながります。", "imageQuery": "success achievement" },
-  { "id": "g2-134", "word": "example", "pos": "名詞", "meaning": "例", "example": "Can you give me an example?", "exampleJa": "例を挙げてもらえますか。", "imageQuery": "example illustration" },
-  { "id": "g2-135", "word": "message", "pos": "名詞", "meaning": "伝言・メッセージ", "example": "I sent a message to my friend.", "exampleJa": "私は友達にメッセージを送りました。", "imageQuery": "message phone" },
-  { "id": "g2-136", "word": "introduce", "pos": "動詞", "meaning": "紹介する", "example": "Let me introduce my new friend.", "exampleJa": "私の新しい友達を紹介させてください。", "imageQuery": "introducing friend" },
-  { "id": "g2-137", "word": "continue", "pos": "動詞", "meaning": "続ける", "example": "We continued walking in the rain.", "exampleJa": "私たちは雨の中歩き続けました。", "imageQuery": "walking rain continue" },
-  { "id": "g2-138", "word": "agree", "pos": "動詞", "meaning": "賛成する", "example": "I agree with your opinion.", "exampleJa": "私はあなたの意見に賛成です。", "imageQuery": "agreement handshake" },
-  { "id": "g2-139", "word": "share", "pos": "動詞", "meaning": "共有する", "example": "We shared our lunch with our friends.", "exampleJa": "私たちは友達と昼食を共有しました。", "imageQuery": "sharing lunch" },
-  { "id": "g2-140", "word": "join", "pos": "動詞", "meaning": "参加する", "example": "Will you join our club?", "exampleJa": "私たちのクラブに参加しますか。", "imageQuery": "joining club" },
-  { "id": "g2-141", "word": "prepare", "pos": "動詞", "meaning": "準備する", "example": "I prepared for the test all weekend.", "exampleJa": "私は週末ずっとテストの準備をしました。", "imageQuery": "preparing test" },
-  { "id": "g2-142", "word": "choose", "pos": "動詞", "meaning": "選ぶ", "example": "Please choose your favorite color.", "exampleJa": "好きな色を選んでください。", "imageQuery": "choosing colors" },
-  { "id": "g2-143", "word": "wear", "pos": "動詞", "meaning": "着ている", "example": "She wore a beautiful dress at the party.", "exampleJa": "彼女はパーティーで美しいドレスを着ていました。", "imageQuery": "wearing dress" },
-  { "id": "g2-144", "word": "bring", "pos": "動詞", "meaning": "持ってくる", "example": "Please bring your textbook tomorrow.", "exampleJa": "明日教科書を持ってきてください。", "imageQuery": "bringing textbook" },
-  { "id": "g2-145", "word": "return", "pos": "動詞", "meaning": "戻る・返す", "example": "I will return this book next week.", "exampleJa": "私は来週この本を返すつもりです。", "imageQuery": "returning book" },
-  { "id": "g2-146", "word": "move", "pos": "動詞", "meaning": "動く・引っ越す", "example": "We will move to a new house next month.", "exampleJa": "私たちは来月新しい家に引っ越す予定です。", "imageQuery": "moving house" },
-  { "id": "g2-147", "word": "keep", "pos": "動詞", "meaning": "保つ", "example": "You should keep your room clean.", "exampleJa": "あなたは部屋をきれいに保つべきです。", "imageQuery": "keeping room clean" },
-  { "id": "g2-148", "word": "fly", "pos": "動詞", "meaning": "飛ぶ", "example": "Birds fly high in the sky.", "exampleJa": "鳥たちは空高く飛びます。", "imageQuery": "birds flying" },
-  { "id": "g2-149", "word": "climb", "pos": "動詞", "meaning": "登る", "example": "We climbed the mountain together.", "exampleJa": "私たちは一緒にその山に登りました。", "imageQuery": "climbing mountain" },
-  { "id": "g2-150", "word": "fall", "pos": "動詞", "meaning": "落ちる", "example": "Leaves fall from the trees in autumn.", "exampleJa": "秋には葉が木から落ちます。", "imageQuery": "leaves falling" }
+  {
+    "id": "g2-001",
+    "word": "doctor",
+    "pos": "名詞",
+    "meaning": "医者",
+    "example": "My uncle became a doctor last year.",
+    "exampleJa": "私のおじは去年医者になりました。",
+    "imageQuery": "doctor"
+  },
+  {
+    "id": "g2-002",
+    "word": "nurse",
+    "pos": "名詞",
+    "meaning": "看護師",
+    "example": "The nurse was very kind to patients.",
+    "exampleJa": "その看護師は患者にとても親切でした。",
+    "imageQuery": "nurse"
+  },
+  {
+    "id": "g2-003",
+    "word": "police officer",
+    "pos": "名詞",
+    "meaning": "警察官",
+    "example": "A police officer helped us yesterday.",
+    "exampleJa": "昨日警察官が私たちを助けてくれました。",
+    "imageQuery": "police officer"
+  },
+  {
+    "id": "g2-004",
+    "word": "firefighter",
+    "pos": "名詞",
+    "meaning": "消防士",
+    "example": "The firefighter saved a little cat.",
+    "exampleJa": "その消防士は小さな猫を救いました。",
+    "imageQuery": "firefighter"
+  },
+  {
+    "id": "g2-005",
+    "word": "farmer",
+    "pos": "名詞",
+    "meaning": "農家",
+    "example": "My grandfather was a farmer.",
+    "exampleJa": "私の祖父は農家でした。",
+    "imageQuery": "farmer field"
+  },
+  {
+    "id": "g2-006",
+    "word": "chef",
+    "pos": "名詞",
+    "meaning": "シェフ",
+    "example": "I want to be a chef in the future.",
+    "exampleJa": "私は将来シェフになりたいです。",
+    "imageQuery": "chef cooking"
+  },
+  {
+    "id": "g2-007",
+    "word": "singer",
+    "pos": "名詞",
+    "meaning": "歌手",
+    "example": "She is a more famous singer than I thought.",
+    "exampleJa": "彼女は思ったより有名な歌手です。",
+    "imageQuery": "singer stage"
+  },
+  {
+    "id": "g2-008",
+    "word": "actor",
+    "pos": "名詞",
+    "meaning": "俳優",
+    "example": "That actor will visit Japan next month.",
+    "exampleJa": "その俳優は来月日本を訪れる予定です。",
+    "imageQuery": "actor movie"
+  },
+  {
+    "id": "g2-009",
+    "word": "writer",
+    "pos": "名詞",
+    "meaning": "作家",
+    "example": "This writer wrote many popular books.",
+    "exampleJa": "この作家はたくさんの人気の本を書きました。",
+    "imageQuery": "writer books"
+  },
+  {
+    "id": "g2-010",
+    "word": "scientist",
+    "pos": "名詞",
+    "meaning": "科学者",
+    "example": "The scientist discovered something new.",
+    "exampleJa": "その科学者は新しい何かを発見しました。",
+    "imageQuery": "scientist laboratory"
+  },
+  {
+    "id": "g2-011",
+    "word": "engineer",
+    "pos": "名詞",
+    "meaning": "技術者",
+    "example": "My brother is training to be an engineer.",
+    "exampleJa": "私の兄は技術者になるための訓練をしています。",
+    "imageQuery": "engineer"
+  },
+  {
+    "id": "g2-012",
+    "word": "pilot",
+    "pos": "名詞",
+    "meaning": "パイロット",
+    "example": "She decided to become a pilot.",
+    "exampleJa": "彼女はパイロットになることを決めました。",
+    "imageQuery": "pilot airplane"
+  },
+  {
+    "id": "g2-013",
+    "word": "weather",
+    "pos": "名詞",
+    "meaning": "天気",
+    "example": "The weather will be sunny tomorrow.",
+    "exampleJa": "明日は晴れの天気になるでしょう。",
+    "imageQuery": "sunny weather"
+  },
+  {
+    "id": "g2-014",
+    "word": "season",
+    "pos": "名詞",
+    "meaning": "季節",
+    "example": "Which season do you like the best?",
+    "exampleJa": "あなたはどの季節が一番好きですか。",
+    "imageQuery": "four seasons"
+  },
+  {
+    "id": "g2-015",
+    "word": "spring",
+    "pos": "名詞",
+    "meaning": "春",
+    "example": "Cherry blossoms bloom in spring.",
+    "exampleJa": "桜は春に咲きます。",
+    "imageQuery": "spring cherry blossoms"
+  },
+  {
+    "id": "g2-016",
+    "word": "summer",
+    "pos": "名詞",
+    "meaning": "夏",
+    "example": "We went swimming last summer.",
+    "exampleJa": "私たちはこの前の夏に泳ぎに行きました。",
+    "imageQuery": "summer beach"
+  },
+  {
+    "id": "g2-017",
+    "word": "autumn",
+    "pos": "名詞",
+    "meaning": "秋",
+    "example": "The leaves turn red in autumn.",
+    "exampleJa": "秋には葉が赤くなります。",
+    "imageQuery": "autumn leaves"
+  },
+  {
+    "id": "g2-018",
+    "word": "winter",
+    "pos": "名詞",
+    "meaning": "冬",
+    "example": "It will snow a lot this winter.",
+    "exampleJa": "今年の冬はたくさん雪が降るでしょう。",
+    "imageQuery": "winter snow"
+  },
+  {
+    "id": "g2-019",
+    "word": "rain",
+    "pos": "名詞",
+    "meaning": "雨",
+    "example": "The rain stopped an hour ago.",
+    "exampleJa": "雨は1時間前にやみました。",
+    "imageQuery": "rain"
+  },
+  {
+    "id": "g2-020",
+    "word": "snow",
+    "pos": "名詞",
+    "meaning": "雪",
+    "example": "The snow was more beautiful than usual.",
+    "exampleJa": "その雪はいつもより美しかったです。",
+    "imageQuery": "snow scene"
+  },
+  {
+    "id": "g2-021",
+    "word": "wind",
+    "pos": "名詞",
+    "meaning": "風",
+    "example": "A strong wind blew last night.",
+    "exampleJa": "昨夜強い風が吹きました。",
+    "imageQuery": "strong wind"
+  },
+  {
+    "id": "g2-022",
+    "word": "cloudy",
+    "pos": "形容詞",
+    "meaning": "曇りの",
+    "example": "It was cloudy this morning.",
+    "exampleJa": "今朝は曇りでした。",
+    "imageQuery": "cloudy sky"
+  },
+  {
+    "id": "g2-023",
+    "word": "sky",
+    "pos": "名詞",
+    "meaning": "空",
+    "example": "The sky turned dark before the storm.",
+    "exampleJa": "嵐の前に空が暗くなりました。",
+    "imageQuery": "dark sky"
+  },
+  {
+    "id": "g2-024",
+    "word": "sea",
+    "pos": "名詞",
+    "meaning": "海",
+    "example": "We will visit the sea next weekend.",
+    "exampleJa": "私たちは来週末海を訪れる予定です。",
+    "imageQuery": "sea ocean"
+  },
+  {
+    "id": "g2-025",
+    "word": "mountain",
+    "pos": "名詞",
+    "meaning": "山",
+    "example": "This is the highest mountain in Japan.",
+    "exampleJa": "これは日本で一番高い山です。",
+    "imageQuery": "mountain"
+  },
+  {
+    "id": "g2-026",
+    "word": "river",
+    "pos": "名詞",
+    "meaning": "川",
+    "example": "We had fun by the river.",
+    "exampleJa": "私たちは川のそばで楽しみました。",
+    "imageQuery": "river"
+  },
+  {
+    "id": "g2-027",
+    "word": "forest",
+    "pos": "名詞",
+    "meaning": "森",
+    "example": "There are many animals in the forest.",
+    "exampleJa": "森にはたくさんの動物がいます。",
+    "imageQuery": "forest"
+  },
+  {
+    "id": "g2-028",
+    "word": "sun",
+    "pos": "名詞",
+    "meaning": "太陽",
+    "example": "The sun rose earlier than usual.",
+    "exampleJa": "太陽はいつもより早く昇りました。",
+    "imageQuery": "sunrise sun"
+  },
+  {
+    "id": "g2-029",
+    "word": "moon",
+    "pos": "名詞",
+    "meaning": "月（天体）",
+    "example": "The moon looked very bright last night.",
+    "exampleJa": "昨夜月がとても明るく見えました。",
+    "imageQuery": "full moon"
+  },
+  {
+    "id": "g2-030",
+    "word": "star",
+    "pos": "名詞",
+    "meaning": "星",
+    "example": "We saw many stars in the sky.",
+    "exampleJa": "私たちは空にたくさんの星を見ました。",
+    "imageQuery": "stars night sky"
+  },
+  {
+    "id": "g2-031",
+    "word": "earth",
+    "pos": "名詞",
+    "meaning": "地球",
+    "example": "We should take care of the earth.",
+    "exampleJa": "私たちは地球を大切にするべきです。",
+    "imageQuery": "earth planet"
+  },
+  {
+    "id": "g2-032",
+    "word": "nature",
+    "pos": "名詞",
+    "meaning": "自然",
+    "example": "I want to learn more about nature.",
+    "exampleJa": "私は自然についてもっと学びたいです。",
+    "imageQuery": "nature landscape"
+  },
+  {
+    "id": "g2-033",
+    "word": "sick",
+    "pos": "形容詞",
+    "meaning": "病気の",
+    "example": "He was sick last week.",
+    "exampleJa": "彼は先週病気でした。",
+    "imageQuery": "sick person bed"
+  },
+  {
+    "id": "g2-034",
+    "word": "illness",
+    "pos": "名詞",
+    "meaning": "病気",
+    "example": "She recovered from her illness quickly.",
+    "exampleJa": "彼女は病気からすぐに回復しました。",
+    "imageQuery": "illness recovery"
+  },
+  {
+    "id": "g2-035",
+    "word": "medicine",
+    "pos": "名詞",
+    "meaning": "薬",
+    "example": "You should take this medicine after meals.",
+    "exampleJa": "この薬は食後に飲むべきです。",
+    "imageQuery": "medicine pills"
+  },
+  {
+    "id": "g2-036",
+    "word": "rest",
+    "pos": "動詞",
+    "meaning": "休む",
+    "example": "You need to rest more.",
+    "exampleJa": "あなたはもっと休む必要があります。",
+    "imageQuery": "resting sofa"
+  },
+  {
+    "id": "g2-037",
+    "word": "exercise",
+    "pos": "動詞",
+    "meaning": "運動する",
+    "example": "I will exercise every morning.",
+    "exampleJa": "私は毎朝運動するつもりです。",
+    "imageQuery": "exercise morning"
+  },
+  {
+    "id": "g2-038",
+    "word": "tired",
+    "pos": "形容詞",
+    "meaning": "疲れた",
+    "example": "I was too tired to walk more.",
+    "exampleJa": "私は疲れすぎてこれ以上歩けませんでした。",
+    "imageQuery": "tired person"
+  },
+  {
+    "id": "g2-039",
+    "word": "headache",
+    "pos": "名詞",
+    "meaning": "頭痛",
+    "example": "I had a headache this morning.",
+    "exampleJa": "私は今朝頭痛がしました。",
+    "imageQuery": "headache"
+  },
+  {
+    "id": "g2-040",
+    "word": "fever",
+    "pos": "名詞",
+    "meaning": "熱",
+    "example": "He had a high fever yesterday.",
+    "exampleJa": "彼は昨日高い熱がありました。",
+    "imageQuery": "fever thermometer"
+  },
+  {
+    "id": "g2-041",
+    "word": "contest",
+    "pos": "名詞",
+    "meaning": "コンテスト",
+    "example": "She won the speech contest.",
+    "exampleJa": "彼女はスピーチコンテストで優勝しました。",
+    "imageQuery": "speech contest"
+  },
+  {
+    "id": "g2-042",
+    "word": "event",
+    "pos": "名詞",
+    "meaning": "行事",
+    "example": "Our school will have a big event next week.",
+    "exampleJa": "私たちの学校では来週大きな行事があります。",
+    "imageQuery": "school event"
+  },
+  {
+    "id": "g2-043",
+    "word": "festival",
+    "pos": "名詞",
+    "meaning": "祭り",
+    "example": "We enjoyed the summer festival together.",
+    "exampleJa": "私たちは一緒に夏祭りを楽しみました。",
+    "imageQuery": "summer festival"
+  },
+  {
+    "id": "g2-044",
+    "word": "match",
+    "pos": "名詞",
+    "meaning": "試合",
+    "example": "Our team won the last match.",
+    "exampleJa": "私たちのチームは前回の試合に勝ちました。",
+    "imageQuery": "sports match"
+  },
+  {
+    "id": "g2-045",
+    "word": "team",
+    "pos": "名詞",
+    "meaning": "チーム",
+    "example": "Our team practiced very hard.",
+    "exampleJa": "私たちのチームはとても一生懸命練習しました。",
+    "imageQuery": "sports team"
+  },
+  {
+    "id": "g2-046",
+    "word": "win",
+    "pos": "動詞",
+    "meaning": "勝つ",
+    "example": "We will win the next game.",
+    "exampleJa": "私たちは次の試合に勝つつもりです。",
+    "imageQuery": "winning trophy"
+  },
+  {
+    "id": "g2-047",
+    "word": "lose",
+    "pos": "動詞",
+    "meaning": "負ける",
+    "example": "We didn't want to lose the match.",
+    "exampleJa": "私たちは試合に負けたくありませんでした。",
+    "imageQuery": "losing game"
+  },
+  {
+    "id": "g2-048",
+    "word": "practice",
+    "pos": "動詞",
+    "meaning": "練習する",
+    "example": "I practiced soccer for two hours.",
+    "exampleJa": "私は2時間サッカーを練習しました。",
+    "imageQuery": "soccer practice"
+  },
+  {
+    "id": "g2-049",
+    "word": "champion",
+    "pos": "名詞",
+    "meaning": "チャンピオン",
+    "example": "He became the champion of the tournament.",
+    "exampleJa": "彼はその大会のチャンピオンになりました。",
+    "imageQuery": "champion trophy"
+  },
+  {
+    "id": "g2-050",
+    "word": "medal",
+    "pos": "名詞",
+    "meaning": "メダル",
+    "example": "She got a gold medal at the contest.",
+    "exampleJa": "彼女はコンテストで金メダルを取りました。",
+    "imageQuery": "gold medal"
+  },
+  {
+    "id": "g2-051",
+    "word": "abroad",
+    "pos": "副詞",
+    "meaning": "海外へ",
+    "example": "I want to study abroad someday.",
+    "exampleJa": "私はいつか海外に留学したいです。",
+    "imageQuery": "studying abroad"
+  },
+  {
+    "id": "g2-052",
+    "word": "foreign",
+    "pos": "形容詞",
+    "meaning": "外国の",
+    "example": "She can speak three foreign languages.",
+    "exampleJa": "彼女は3つの外国語を話せます。",
+    "imageQuery": "foreign languages"
+  },
+  {
+    "id": "g2-053",
+    "word": "culture",
+    "pos": "名詞",
+    "meaning": "文化",
+    "example": "I'm interested in Japanese culture.",
+    "exampleJa": "私は日本の文化に興味があります。",
+    "imageQuery": "japanese culture"
+  },
+  {
+    "id": "g2-054",
+    "word": "language",
+    "pos": "名詞",
+    "meaning": "言語",
+    "example": "English is a useful language.",
+    "exampleJa": "英語は役に立つ言語です。",
+    "imageQuery": "language learning"
+  },
+  {
+    "id": "g2-055",
+    "word": "travel",
+    "pos": "動詞",
+    "meaning": "旅行する",
+    "example": "We will travel to Canada this summer.",
+    "exampleJa": "私たちはこの夏カナダへ旅行する予定です。",
+    "imageQuery": "travel suitcase"
+  },
+  {
+    "id": "g2-056",
+    "word": "airport",
+    "pos": "名詞",
+    "meaning": "空港",
+    "example": "We arrived at the airport early.",
+    "exampleJa": "私たちは早く空港に着きました。",
+    "imageQuery": "airport"
+  },
+  {
+    "id": "g2-057",
+    "word": "passport",
+    "pos": "名詞",
+    "meaning": "パスポート",
+    "example": "Don't forget your passport.",
+    "exampleJa": "パスポートを忘れないでください。",
+    "imageQuery": "passport"
+  },
+  {
+    "id": "g2-058",
+    "word": "custom",
+    "pos": "名詞",
+    "meaning": "習慣",
+    "example": "This is an old custom in my country.",
+    "exampleJa": "これは私の国の古い習慣です。",
+    "imageQuery": "traditional custom"
+  },
+  {
+    "id": "g2-059",
+    "word": "excited",
+    "pos": "形容詞",
+    "meaning": "わくわくした",
+    "example": "I was excited about the trip.",
+    "exampleJa": "私はその旅行にわくわくしていました。",
+    "imageQuery": "excited child"
+  },
+  {
+    "id": "g2-060",
+    "word": "surprised",
+    "pos": "形容詞",
+    "meaning": "驚いた",
+    "example": "She was surprised at the news.",
+    "exampleJa": "彼女はその知らせに驚きました。",
+    "imageQuery": "surprised face"
+  },
+  {
+    "id": "g2-061",
+    "word": "nervous",
+    "pos": "形容詞",
+    "meaning": "緊張した",
+    "example": "I felt nervous before the test.",
+    "exampleJa": "私はテストの前に緊張しました。",
+    "imageQuery": "nervous student"
+  },
+  {
+    "id": "g2-062",
+    "word": "worried",
+    "pos": "形容詞",
+    "meaning": "心配した",
+    "example": "My mother was worried about me.",
+    "exampleJa": "私の母は私のことを心配していました。",
+    "imageQuery": "worried mother"
+  },
+  {
+    "id": "g2-063",
+    "word": "afraid",
+    "pos": "形容詞",
+    "meaning": "怖がった",
+    "example": "She was afraid of the dark.",
+    "exampleJa": "彼女は暗闇が怖かったです。",
+    "imageQuery": "afraid dark"
+  },
+  {
+    "id": "g2-064",
+    "word": "proud",
+    "pos": "形容詞",
+    "meaning": "誇りに思った",
+    "example": "My parents are proud of me.",
+    "exampleJa": "私の両親は私を誇りに思っています。",
+    "imageQuery": "proud parents"
+  },
+  {
+    "id": "g2-065",
+    "word": "glad",
+    "pos": "形容詞",
+    "meaning": "嬉しい",
+    "example": "I was glad to see her again.",
+    "exampleJa": "私は彼女にまた会えて嬉しかったです。",
+    "imageQuery": "glad reunion"
+  },
+  {
+    "id": "g2-066",
+    "word": "angry",
+    "pos": "形容詞",
+    "meaning": "怒った",
+    "example": "He got angry at that word.",
+    "exampleJa": "彼はその言葉に怒りました。",
+    "imageQuery": "angry face"
+  },
+  {
+    "id": "g2-067",
+    "word": "lonely",
+    "pos": "形容詞",
+    "meaning": "寂しい",
+    "example": "I felt lonely without my friends.",
+    "exampleJa": "私は友達がいなくて寂しく感じました。",
+    "imageQuery": "lonely person"
+  },
+  {
+    "id": "g2-068",
+    "word": "relieved",
+    "pos": "形容詞",
+    "meaning": "安心した",
+    "example": "We were relieved to hear the good news.",
+    "exampleJa": "私たちはその良い知らせを聞いて安心しました。",
+    "imageQuery": "relieved smile"
+  },
+  {
+    "id": "g2-069",
+    "word": "become",
+    "pos": "動詞",
+    "meaning": "なる",
+    "example": "She became a nurse two years ago.",
+    "exampleJa": "彼女は2年前に看護師になりました。",
+    "imageQuery": "career growth"
+  },
+  {
+    "id": "g2-070",
+    "word": "decide",
+    "pos": "動詞",
+    "meaning": "決める",
+    "example": "I decided to join the tennis club.",
+    "exampleJa": "私はテニス部に入ることを決めました。",
+    "imageQuery": "decision making"
+  },
+  {
+    "id": "g2-071",
+    "word": "borrow",
+    "pos": "動詞",
+    "meaning": "借りる",
+    "example": "Can I borrow your pen?",
+    "exampleJa": "あなたのペンを借りてもいいですか。",
+    "imageQuery": "borrowing pen"
+  },
+  {
+    "id": "g2-072",
+    "word": "lend",
+    "pos": "動詞",
+    "meaning": "貸す",
+    "example": "Could you lend me your umbrella?",
+    "exampleJa": "あなたの傘を貸していただけますか。",
+    "imageQuery": "lending umbrella"
+  },
+  {
+    "id": "g2-073",
+    "word": "arrive",
+    "pos": "動詞",
+    "meaning": "到着する",
+    "example": "We arrived at the station on time.",
+    "exampleJa": "私たちは時間通りに駅に到着しました。",
+    "imageQuery": "arrival train"
+  },
+  {
+    "id": "g2-074",
+    "word": "visit",
+    "pos": "動詞",
+    "meaning": "訪れる",
+    "example": "We visited Kyoto last spring.",
+    "exampleJa": "私たちはこの前の春に京都を訪れました。",
+    "imageQuery": "visiting kyoto"
+  },
+  {
+    "id": "g2-075",
+    "word": "leave",
+    "pos": "動詞",
+    "meaning": "出発する・去る",
+    "example": "The train leaves at nine.",
+    "exampleJa": "電車は9時に出発します。",
+    "imageQuery": "train departure"
+  },
+  {
+    "id": "g2-076",
+    "word": "stay",
+    "pos": "動詞",
+    "meaning": "滞在する",
+    "example": "We stayed at a hotel near the sea.",
+    "exampleJa": "私たちは海の近くのホテルに滞在しました。",
+    "imageQuery": "hotel stay"
+  },
+  {
+    "id": "g2-077",
+    "word": "finish",
+    "pos": "動詞",
+    "meaning": "終える",
+    "example": "I finished my homework before dinner.",
+    "exampleJa": "私は夕食前に宿題を終えました。",
+    "imageQuery": "finishing homework"
+  },
+  {
+    "id": "g2-078",
+    "word": "begin",
+    "pos": "動詞",
+    "meaning": "始める",
+    "example": "The concert will begin soon.",
+    "exampleJa": "コンサートはもうすぐ始まります。",
+    "imageQuery": "concert start"
+  },
+  {
+    "id": "g2-079",
+    "word": "try",
+    "pos": "動詞",
+    "meaning": "試みる",
+    "example": "I will try my best on the test.",
+    "exampleJa": "私はテストでベストを尽くすつもりです。",
+    "imageQuery": "trying hard"
+  },
+  {
+    "id": "g2-080",
+    "word": "hope",
+    "pos": "動詞",
+    "meaning": "望む",
+    "example": "I hope to see you again soon.",
+    "exampleJa": "私はまたすぐにあなたに会えることを望みます。",
+    "imageQuery": "hope wish"
+  },
+  {
+    "id": "g2-081",
+    "word": "enjoy",
+    "pos": "動詞",
+    "meaning": "楽しむ",
+    "example": "We enjoyed the trip very much.",
+    "exampleJa": "私たちはその旅行をとても楽しみました。",
+    "imageQuery": "enjoying trip"
+  },
+  {
+    "id": "g2-082",
+    "word": "forget",
+    "pos": "動詞",
+    "meaning": "忘れる",
+    "example": "Don't forget to bring your bag.",
+    "exampleJa": "かばんを持ってくるのを忘れないでください。",
+    "imageQuery": "forgetting reminder"
+  },
+  {
+    "id": "g2-083",
+    "word": "remember",
+    "pos": "動詞",
+    "meaning": "覚えている",
+    "example": "I still remember that day well.",
+    "exampleJa": "私はその日のことをまだよく覚えています。",
+    "imageQuery": "remembering memory"
+  },
+  {
+    "id": "g2-084",
+    "word": "understand",
+    "pos": "動詞",
+    "meaning": "理解する",
+    "example": "I couldn't understand the question.",
+    "exampleJa": "私はその質問を理解できませんでした。",
+    "imageQuery": "understanding confused"
+  },
+  {
+    "id": "g2-085",
+    "word": "explain",
+    "pos": "動詞",
+    "meaning": "説明する",
+    "example": "The teacher explained the rule again.",
+    "exampleJa": "先生はそのルールをもう一度説明しました。",
+    "imageQuery": "teacher explaining"
+  },
+  {
+    "id": "g2-086",
+    "word": "answer",
+    "pos": "動詞",
+    "meaning": "答える",
+    "example": "She answered the question quickly.",
+    "exampleJa": "彼女はその質問にすぐに答えました。",
+    "imageQuery": "answering question"
+  },
+  {
+    "id": "g2-087",
+    "word": "ask",
+    "pos": "動詞",
+    "meaning": "尋ねる",
+    "example": "I asked him about his trip.",
+    "exampleJa": "私は彼に旅行について尋ねました。",
+    "imageQuery": "asking question"
+  },
+  {
+    "id": "g2-088",
+    "word": "tell",
+    "pos": "動詞",
+    "meaning": "伝える",
+    "example": "Please tell me the truth.",
+    "exampleJa": "私に本当のことを伝えてください。",
+    "imageQuery": "telling truth"
+  },
+  {
+    "id": "g2-089",
+    "word": "send",
+    "pos": "動詞",
+    "meaning": "送る",
+    "example": "I will send you an email tonight.",
+    "exampleJa": "私は今夜あなたにメールを送ります。",
+    "imageQuery": "sending email"
+  },
+  {
+    "id": "g2-090",
+    "word": "receive",
+    "pos": "動詞",
+    "meaning": "受け取る",
+    "example": "I received a letter from my friend.",
+    "exampleJa": "私は友達から手紙を受け取りました。",
+    "imageQuery": "receiving letter"
+  },
+  {
+    "id": "g2-091",
+    "word": "invite",
+    "pos": "動詞",
+    "meaning": "招待する",
+    "example": "We invited our friends to the party.",
+    "exampleJa": "私たちはパーティーに友達を招待しました。",
+    "imageQuery": "inviting party"
+  },
+  {
+    "id": "g2-092",
+    "word": "meet",
+    "pos": "動詞",
+    "meaning": "会う",
+    "example": "I will meet her at the station.",
+    "exampleJa": "私は駅で彼女に会う予定です。",
+    "imageQuery": "meeting friend"
+  },
+  {
+    "id": "g2-093",
+    "word": "catch",
+    "pos": "動詞",
+    "meaning": "捕まえる",
+    "example": "He caught a big fish yesterday.",
+    "exampleJa": "彼は昨日大きな魚を捕まえました。",
+    "imageQuery": "catching fish"
+  },
+  {
+    "id": "g2-094",
+    "word": "miss",
+    "pos": "動詞",
+    "meaning": "逃す・恋しく思う",
+    "example": "I miss my family very much.",
+    "exampleJa": "私は家族のことをとても恋しく思います。",
+    "imageQuery": "missing family"
+  },
+  {
+    "id": "g2-095",
+    "word": "grow",
+    "pos": "動詞",
+    "meaning": "育つ・育てる",
+    "example": "These flowers grow very fast.",
+    "exampleJa": "これらの花はとても早く育ちます。",
+    "imageQuery": "growing plant"
+  },
+  {
+    "id": "g2-096",
+    "word": "change",
+    "pos": "動詞",
+    "meaning": "変える・変わる",
+    "example": "The weather changed suddenly.",
+    "exampleJa": "天気が急に変わりました。",
+    "imageQuery": "weather changing"
+  },
+  {
+    "id": "g2-097",
+    "word": "collect",
+    "pos": "動詞",
+    "meaning": "集める",
+    "example": "He collects old stamps.",
+    "exampleJa": "彼は古い切手を集めています。",
+    "imageQuery": "collecting stamps"
+  },
+  {
+    "id": "g2-098",
+    "word": "carry",
+    "pos": "動詞",
+    "meaning": "運ぶ",
+    "example": "Can you carry this box for me?",
+    "exampleJa": "この箱を運んでもらえますか。",
+    "imageQuery": "carrying box"
+  },
+  {
+    "id": "g2-099",
+    "word": "difficult",
+    "pos": "形容詞",
+    "meaning": "難しい",
+    "example": "This question is more difficult than that one.",
+    "exampleJa": "この問題はあの問題より難しいです。",
+    "imageQuery": "difficult puzzle"
+  },
+  {
+    "id": "g2-100",
+    "word": "important",
+    "pos": "形容詞",
+    "meaning": "大切な",
+    "example": "Family is the most important thing to me.",
+    "exampleJa": "家族は私にとって一番大切なものです。",
+    "imageQuery": "important family"
+  },
+  {
+    "id": "g2-101",
+    "word": "popular",
+    "pos": "形容詞",
+    "meaning": "人気のある",
+    "example": "This singer is very popular among students.",
+    "exampleJa": "この歌手は生徒たちにとても人気があります。",
+    "imageQuery": "popular singer"
+  },
+  {
+    "id": "g2-102",
+    "word": "famous",
+    "pos": "形容詞",
+    "meaning": "有名な",
+    "example": "This temple is famous for its garden.",
+    "exampleJa": "この寺は庭で有名です。",
+    "imageQuery": "famous temple"
+  },
+  {
+    "id": "g2-103",
+    "word": "useful",
+    "pos": "形容詞",
+    "meaning": "役に立つ",
+    "example": "This dictionary is very useful.",
+    "exampleJa": "この辞書はとても役に立ちます。",
+    "imageQuery": "useful dictionary"
+  },
+  {
+    "id": "g2-104",
+    "word": "dangerous",
+    "pos": "形容詞",
+    "meaning": "危険な",
+    "example": "It is dangerous to swim in this river.",
+    "exampleJa": "この川で泳ぐのは危険です。",
+    "imageQuery": "dangerous river"
+  },
+  {
+    "id": "g2-105",
+    "word": "free",
+    "pos": "形容詞",
+    "meaning": "暇な・自由な",
+    "example": "I am free this afternoon.",
+    "exampleJa": "私は今日の午後は暇です。",
+    "imageQuery": "free time relax"
+  },
+  {
+    "id": "g2-106",
+    "word": "busy",
+    "pos": "形容詞",
+    "meaning": "忙しい",
+    "example": "My mother is busier than my father.",
+    "exampleJa": "私の母は父より忙しいです。",
+    "imageQuery": "busy schedule"
+  },
+  {
+    "id": "g2-107",
+    "word": "interesting",
+    "pos": "形容詞",
+    "meaning": "面白い",
+    "example": "This is the most interesting book I have read.",
+    "exampleJa": "これは私が読んだ中で最も面白い本です。",
+    "imageQuery": "interesting book"
+  },
+  {
+    "id": "g2-108",
+    "word": "boring",
+    "pos": "形容詞",
+    "meaning": "退屈な",
+    "example": "The movie was a little boring.",
+    "exampleJa": "その映画は少し退屈でした。",
+    "imageQuery": "boring movie"
+  },
+  {
+    "id": "g2-109",
+    "word": "be interested in",
+    "pos": "熟語",
+    "meaning": "～に興味がある",
+    "example": "I am interested in Japanese history.",
+    "exampleJa": "私は日本の歴史に興味があります。",
+    "imageQuery": "japanese history interest"
+  },
+  {
+    "id": "g2-110",
+    "word": "look for",
+    "pos": "熟語",
+    "meaning": "～を探す",
+    "example": "She is looking for her key.",
+    "exampleJa": "彼女は鍵を探しています。",
+    "imageQuery": "looking for key"
+  },
+  {
+    "id": "g2-111",
+    "word": "have to",
+    "pos": "熟語",
+    "meaning": "～しなければならない",
+    "example": "I have to finish my report today.",
+    "exampleJa": "私は今日レポートを終えなければなりません。",
+    "imageQuery": "deadline report"
+  },
+  {
+    "id": "g2-112",
+    "word": "be able to",
+    "pos": "熟語",
+    "meaning": "～することができる",
+    "example": "She will be able to swim soon.",
+    "exampleJa": "彼女はもうすぐ泳げるようになるでしょう。",
+    "imageQuery": "learning to swim"
+  },
+  {
+    "id": "g2-113",
+    "word": "be good at",
+    "pos": "熟語",
+    "meaning": "～が得意である",
+    "example": "He is good at playing the guitar.",
+    "exampleJa": "彼はギターを弾くのが得意です。",
+    "imageQuery": "playing guitar skill"
+  },
+  {
+    "id": "g2-114",
+    "word": "be famous for",
+    "pos": "熟語",
+    "meaning": "～で有名である",
+    "example": "This town is famous for its old castle.",
+    "exampleJa": "この町は古い城で有名です。",
+    "imageQuery": "famous castle town"
+  },
+  {
+    "id": "g2-115",
+    "word": "take care of",
+    "pos": "熟語",
+    "meaning": "～の世話をする",
+    "example": "I take care of my little sister.",
+    "exampleJa": "私は妹の世話をします。",
+    "imageQuery": "taking care sibling"
+  },
+  {
+    "id": "g2-116",
+    "word": "be full of",
+    "pos": "熟語",
+    "meaning": "～でいっぱいである",
+    "example": "The park was full of people.",
+    "exampleJa": "その公園は人でいっぱいでした。",
+    "imageQuery": "crowded park"
+  },
+  {
+    "id": "g2-117",
+    "word": "because of",
+    "pos": "熟語",
+    "meaning": "～のせいで・～のために",
+    "example": "The game was canceled because of the rain.",
+    "exampleJa": "その試合は雨のために中止になりました。",
+    "imageQuery": "rain cancel game"
+  },
+  {
+    "id": "g2-118",
+    "word": "a few",
+    "pos": "熟語",
+    "meaning": "少しの～",
+    "example": "I have a few friends in this city.",
+    "exampleJa": "私はこの街に少しの友達がいます。",
+    "imageQuery": "few friends group"
+  },
+  {
+    "id": "g2-119",
+    "word": "more than",
+    "pos": "熟語",
+    "meaning": "～以上",
+    "example": "More than fifty people joined the event.",
+    "exampleJa": "50人以上がその行事に参加しました。",
+    "imageQuery": "crowd event people"
+  },
+  {
+    "id": "g2-120",
+    "word": "get to",
+    "pos": "熟語",
+    "meaning": "～に着く",
+    "example": "What time will we get to the airport?",
+    "exampleJa": "私たちは何時に空港に着きますか。",
+    "imageQuery": "arriving airport"
+  },
+  {
+    "id": "g2-121",
+    "word": "news",
+    "pos": "名詞",
+    "meaning": "ニュース",
+    "example": "I heard the news on TV this morning.",
+    "exampleJa": "私は今朝テレビでそのニュースを聞きました。",
+    "imageQuery": "news television"
+  },
+  {
+    "id": "g2-122",
+    "word": "information",
+    "pos": "名詞",
+    "meaning": "情報",
+    "example": "This website has a lot of useful information.",
+    "exampleJa": "このウェブサイトには役に立つ情報がたくさんあります。",
+    "imageQuery": "information website"
+  },
+  {
+    "id": "g2-123",
+    "word": "problem",
+    "pos": "名詞",
+    "meaning": "問題",
+    "example": "We solved the problem together.",
+    "exampleJa": "私たちはその問題を一緒に解決しました。",
+    "imageQuery": "solving problem"
+  },
+  {
+    "id": "g2-124",
+    "word": "idea",
+    "pos": "名詞",
+    "meaning": "考え",
+    "example": "That's a really good idea.",
+    "exampleJa": "それは本当に良い考えです。",
+    "imageQuery": "good idea lightbulb"
+  },
+  {
+    "id": "g2-125",
+    "word": "plan",
+    "pos": "名詞",
+    "meaning": "計画",
+    "example": "We made a plan for the summer vacation.",
+    "exampleJa": "私たちは夏休みの計画を立てました。",
+    "imageQuery": "vacation planning"
+  },
+  {
+    "id": "g2-126",
+    "word": "experience",
+    "pos": "名詞",
+    "meaning": "経験",
+    "example": "It was a great experience for me.",
+    "exampleJa": "それは私にとって素晴らしい経験でした。",
+    "imageQuery": "great experience travel"
+  },
+  {
+    "id": "g2-127",
+    "word": "chance",
+    "pos": "名詞",
+    "meaning": "機会",
+    "example": "This is a good chance to practice English.",
+    "exampleJa": "これは英語を練習する良い機会です。",
+    "imageQuery": "opportunity chance"
+  },
+  {
+    "id": "g2-128",
+    "word": "reason",
+    "pos": "名詞",
+    "meaning": "理由",
+    "example": "Tell me the reason for your decision.",
+    "exampleJa": "あなたの決断の理由を教えてください。",
+    "imageQuery": "reason explanation"
+  },
+  {
+    "id": "g2-129",
+    "word": "future",
+    "pos": "名詞",
+    "meaning": "未来",
+    "example": "I often think about my future.",
+    "exampleJa": "私はよく自分の未来について考えます。",
+    "imageQuery": "future thinking"
+  },
+  {
+    "id": "g2-130",
+    "word": "dream",
+    "pos": "名詞",
+    "meaning": "夢",
+    "example": "My dream is to be a pilot.",
+    "exampleJa": "私の夢はパイロットになることです。",
+    "imageQuery": "dream sky"
+  },
+  {
+    "id": "g2-131",
+    "word": "goal",
+    "pos": "名詞",
+    "meaning": "目標",
+    "example": "Our goal is to win the next match.",
+    "exampleJa": "私たちの目標は次の試合に勝つことです。",
+    "imageQuery": "goal target"
+  },
+  {
+    "id": "g2-132",
+    "word": "effort",
+    "pos": "名詞",
+    "meaning": "努力",
+    "example": "She made a lot of effort to pass the test.",
+    "exampleJa": "彼女はテストに合格するためたくさん努力しました。",
+    "imageQuery": "effort studying"
+  },
+  {
+    "id": "g2-133",
+    "word": "success",
+    "pos": "名詞",
+    "meaning": "成功",
+    "example": "Hard work leads to success.",
+    "exampleJa": "一生懸命な努力は成功につながります。",
+    "imageQuery": "success achievement"
+  },
+  {
+    "id": "g2-134",
+    "word": "example",
+    "pos": "名詞",
+    "meaning": "例",
+    "example": "Can you give me an example?",
+    "exampleJa": "例を挙げてもらえますか。",
+    "imageQuery": "example illustration"
+  },
+  {
+    "id": "g2-135",
+    "word": "message",
+    "pos": "名詞",
+    "meaning": "伝言・メッセージ",
+    "example": "I sent a message to my friend.",
+    "exampleJa": "私は友達にメッセージを送りました。",
+    "imageQuery": "message phone"
+  },
+  {
+    "id": "g2-136",
+    "word": "introduce",
+    "pos": "動詞",
+    "meaning": "紹介する",
+    "example": "Let me introduce my new friend.",
+    "exampleJa": "私の新しい友達を紹介させてください。",
+    "imageQuery": "introducing friend"
+  },
+  {
+    "id": "g2-137",
+    "word": "continue",
+    "pos": "動詞",
+    "meaning": "続ける",
+    "example": "We continued walking in the rain.",
+    "exampleJa": "私たちは雨の中歩き続けました。",
+    "imageQuery": "walking rain continue"
+  },
+  {
+    "id": "g2-138",
+    "word": "agree",
+    "pos": "動詞",
+    "meaning": "賛成する",
+    "example": "I agree with your opinion.",
+    "exampleJa": "私はあなたの意見に賛成です。",
+    "imageQuery": "agreement handshake"
+  },
+  {
+    "id": "g2-139",
+    "word": "share",
+    "pos": "動詞",
+    "meaning": "共有する",
+    "example": "We shared our lunch with our friends.",
+    "exampleJa": "私たちは友達と昼食を共有しました。",
+    "imageQuery": "sharing lunch"
+  },
+  {
+    "id": "g2-140",
+    "word": "join",
+    "pos": "動詞",
+    "meaning": "参加する",
+    "example": "Will you join our club?",
+    "exampleJa": "私たちのクラブに参加しますか。",
+    "imageQuery": "joining club"
+  },
+  {
+    "id": "g2-141",
+    "word": "prepare",
+    "pos": "動詞",
+    "meaning": "準備する",
+    "example": "I prepared for the test all weekend.",
+    "exampleJa": "私は週末ずっとテストの準備をしました。",
+    "imageQuery": "preparing test"
+  },
+  {
+    "id": "g2-142",
+    "word": "choose",
+    "pos": "動詞",
+    "meaning": "選ぶ",
+    "example": "Please choose your favorite color.",
+    "exampleJa": "好きな色を選んでください。",
+    "imageQuery": "choosing colors"
+  },
+  {
+    "id": "g2-143",
+    "word": "wear",
+    "pos": "動詞",
+    "meaning": "着ている",
+    "example": "She wore a beautiful dress at the party.",
+    "exampleJa": "彼女はパーティーで美しいドレスを着ていました。",
+    "imageQuery": "wearing dress"
+  },
+  {
+    "id": "g2-144",
+    "word": "bring",
+    "pos": "動詞",
+    "meaning": "持ってくる",
+    "example": "Please bring your textbook tomorrow.",
+    "exampleJa": "明日教科書を持ってきてください。",
+    "imageQuery": "bringing textbook"
+  },
+  {
+    "id": "g2-145",
+    "word": "return",
+    "pos": "動詞",
+    "meaning": "戻る・返す",
+    "example": "I will return this book next week.",
+    "exampleJa": "私は来週この本を返すつもりです。",
+    "imageQuery": "returning book"
+  },
+  {
+    "id": "g2-146",
+    "word": "move",
+    "pos": "動詞",
+    "meaning": "動く・引っ越す",
+    "example": "We will move to a new house next month.",
+    "exampleJa": "私たちは来月新しい家に引っ越す予定です。",
+    "imageQuery": "moving house",
+    "tier": "premium"
+  },
+  {
+    "id": "g2-147",
+    "word": "keep",
+    "pos": "動詞",
+    "meaning": "保つ",
+    "example": "You should keep your room clean.",
+    "exampleJa": "あなたは部屋をきれいに保つべきです。",
+    "imageQuery": "keeping room clean",
+    "tier": "premium"
+  },
+  {
+    "id": "g2-148",
+    "word": "fly",
+    "pos": "動詞",
+    "meaning": "飛ぶ",
+    "example": "Birds fly high in the sky.",
+    "exampleJa": "鳥たちは空高く飛びます。",
+    "imageQuery": "birds flying",
+    "tier": "premium"
+  },
+  {
+    "id": "g2-149",
+    "word": "climb",
+    "pos": "動詞",
+    "meaning": "登る",
+    "example": "We climbed the mountain together.",
+    "exampleJa": "私たちは一緒にその山に登りました。",
+    "imageQuery": "climbing mountain",
+    "tier": "premium"
+  },
+  {
+    "id": "g2-150",
+    "word": "fall",
+    "pos": "動詞",
+    "meaning": "落ちる",
+    "example": "Leaves fall from the trees in autumn.",
+    "exampleJa": "秋には葉が木から落ちます。",
+    "imageQuery": "leaves falling",
+    "tier": "premium"
+  }
 ]

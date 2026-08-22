@@ -1,0 +1,54 @@
+// Vercel Serverless Function: POST /api/stripe/create-checkout-session
+import { getStripe } from "../../lib/stripeClient.js";
+import { getSupabaseAdmin } from "../../lib/supabaseAdmin.js";
+import { getUserFromRequest } from "../../lib/getUserFromRequest.js";
+
+export default async function handler(req, res) {
+  if (req.method !== "POST") {
+    res.status(405).json({ error: "Method not allowed" });
+    return;
+  }
+
+  const user = await getUserFromRequest(req);
+  if (!user) {
+    res.status(401).json({ error: "認証が必要です" });
+    return;
+  }
+
+  try {
+    const stripe = getStripe();
+    const supabaseAdmin = getSupabaseAdmin();
+    const clientUrl = process.env.CLIENT_URL || `https://${req.headers.host}`;
+
+    const { data: existing } = await supabaseAdmin
+      .from("subscriptions")
+      .select("stripe_customer_id")
+      .eq("user_id", user.id)
+      .maybeSingle();
+
+    let customerId = existing?.stripe_customer_id;
+    if (!customerId) {
+      const customer = await stripe.customers.create({
+        email: user.email,
+        metadata: { supabase_user_id: user.id },
+      });
+      customerId = customer.id;
+    }
+
+    const session = await stripe.checkout.sessions.create({
+      mode: "subscription",
+      customer: customerId,
+      client_reference_id: user.id,
+      line_items: [{ price: process.env.STRIPE_PRICE_ID, quantity: 1 }],
+      success_url: `${clientUrl}/?checkout=success`,
+      cancel_url: `${clientUrl}/?checkout=cancel`,
+      // 商品に税コードを設定していないため、Managed Payments(税コード必須)を無効化する
+      managed_payments: { enabled: false },
+    });
+
+    res.status(200).json({ url: session.url });
+  } catch (err) {
+    console.error("create-checkout-session error:", err);
+    res.status(500).json({ error: "決済ページの作成に失敗しました" });
+  }
+}

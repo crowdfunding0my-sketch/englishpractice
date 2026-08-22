@@ -10,7 +10,8 @@ import AuthScreen from "./components/AuthScreen.jsx";
 import AddWordMode from "./components/AddWordMode.jsx";
 import LibraryMode from "./components/LibraryMode.jsx";
 import PracticeResumeChoice from "./components/PracticeResumeChoice.jsx";
-import { fetchWords, fetchCustomWords, reportMistakes } from "./api.js";
+import UpgradeScreen from "./components/UpgradeScreen.jsx";
+import { fetchWords, fetchCustomWords, reportMistakes, fetchSubscriptionStatus } from "./api.js";
 import { useAuth } from "./context/AuthContext.jsx";
 import { getPracticeProgress, savePracticeProgress } from "./progress.js";
 import { shuffle } from "./utils.js";
@@ -25,6 +26,8 @@ function buildOrderedWords(words, order) {
   return [...ordered, ...missing];
 }
 
+const ACTIVE_SUBSCRIPTION_STATUSES = ["active", "trialing"];
+
 const SCREENS = {
   GRADE: "grade",
   MODE: "mode",
@@ -34,6 +37,7 @@ const SCREENS = {
   TEST: "test",
   ADD: "add",
   LIBRARY: "library",
+  UPGRADE: "upgrade",
   RESULT: "result",
 };
 
@@ -51,11 +55,41 @@ export default function App() {
   const [result, setResult] = useState(null);
   const [practiceWords, setPracticeWords] = useState(null);
   const [practiceStartIndex, setPracticeStartIndex] = useState(0);
+  const [isPremium, setIsPremium] = useState(false);
 
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
     localStorage.setItem("englishword-theme", theme);
   }, [theme]);
+
+  async function refreshSubscription() {
+    try {
+      const sub = await fetchSubscriptionStatus();
+      setIsPremium(!!sub && ACTIVE_SUBSCRIPTION_STATUSES.includes(sub.status));
+    } catch {
+      setIsPremium(false);
+    }
+  }
+
+  // ログイン後に購読状態を取得。Stripe Checkoutから戻ってきた場合は
+  // Webhook反映のタイムラグを考慮して少し待ってから再取得する。
+  useEffect(() => {
+    if (!user) return;
+    refreshSubscription();
+
+    const params = new URLSearchParams(window.location.search);
+    if (params.has("checkout")) {
+      window.history.replaceState({}, "", window.location.pathname);
+      if (params.get("checkout") === "success") {
+        setTimeout(refreshSubscription, 1500);
+      }
+    }
+  }, [user]);
+
+  // プレミアム未加入の場合、プレミアム限定単語を出題対象から除外する
+  const availableWords = words
+    ? words.filter((w) => isPremium || w.tier !== "premium")
+    : null;
 
   // 学年の静的単語データ＋ユーザーが追加した単語をマージして取得する
   async function loadWords(g) {
@@ -96,13 +130,15 @@ export default function App() {
       setScreen(SCREENS.ADD);
     } else if (mode === "library") {
       setScreen(SCREENS.LIBRARY);
+    } else if (mode === "upgrade") {
+      setScreen(SCREENS.UPGRADE);
     }
   }
 
   // 「最初から始める」: 出題順をシャッフルして0問目から開始する
   function startFreshPractice() {
-    const order = shuffle(words.map((w) => w.id));
-    setPracticeWords(buildOrderedWords(words, order));
+    const order = shuffle(availableWords.map((w) => w.id));
+    setPracticeWords(buildOrderedWords(availableWords, order));
     setPracticeStartIndex(0);
     savePracticeProgress(user.id, grade, order, 0);
     setScreen(SCREENS.PRACTICE);
@@ -111,8 +147,8 @@ export default function App() {
   // 「続きから始める」: 前回保存した出題順のまま、保存済みの位置から再開する
   function resumePractice() {
     const saved = getPracticeProgress(user.id, grade);
-    const order = saved ? saved.order : words.map((w) => w.id);
-    setPracticeWords(buildOrderedWords(words, order));
+    const order = saved ? saved.order : availableWords.map((w) => w.id);
+    setPracticeWords(buildOrderedWords(availableWords, order));
     setPracticeStartIndex(saved ? saved.index : 0);
     setScreen(SCREENS.PRACTICE);
   }
@@ -177,21 +213,21 @@ export default function App() {
       )}
 
       {!loading && screen === SCREENS.MODE && words && (
-        <ModeSelect grade={grade} onSelect={handleSelectMode} onBack={goHome} />
+        <ModeSelect grade={grade} isPremium={isPremium} onSelect={handleSelectMode} onBack={goHome} />
       )}
 
-      {screen === SCREENS.COUNT && words && (
+      {screen === SCREENS.COUNT && availableWords && (
         <QuestionCountSelect
-          maxAvailable={words.length}
+          maxAvailable={availableWords.length}
           onSelect={handleSelectCount}
           onBack={() => setScreen(SCREENS.MODE)}
         />
       )}
 
-      {screen === SCREENS.PRACTICE_CHOICE && words && (
+      {screen === SCREENS.PRACTICE_CHOICE && availableWords && (
         <PracticeResumeChoice
           savedIndex={getPracticeProgress(user.id, grade)?.index || 0}
-          total={words.length}
+          total={availableWords.length}
           onResume={resumePractice}
           onRestart={startFreshPractice}
           onBack={() => setScreen(SCREENS.MODE)}
@@ -209,9 +245,9 @@ export default function App() {
         />
       )}
 
-      {screen === SCREENS.TEST && words && (
+      {screen === SCREENS.TEST && availableWords && (
         <TestMode
-          words={words}
+          words={availableWords}
           count={questionCount}
           onFinish={handleFinishTest}
           onBack={() => setScreen(SCREENS.COUNT)}
@@ -228,6 +264,10 @@ export default function App() {
 
       {screen === SCREENS.LIBRARY && (
         <LibraryMode grade={grade} words={words} onBack={() => setScreen(SCREENS.MODE)} />
+      )}
+
+      {screen === SCREENS.UPGRADE && (
+        <UpgradeScreen isPremium={isPremium} onBack={() => setScreen(SCREENS.MODE)} />
       )}
 
       {screen === SCREENS.RESULT && result && (

@@ -51,3 +51,29 @@ create policy "own mistakes" on public.mistakes
   with check (auth.uid() = user_id);
 
 grant select, insert, update, delete on public.mistakes to authenticated;
+
+-- 有料会員(サブスクリプション)の状態。StripeのWebhookがservice_roleキーで更新する。
+create table if not exists public.subscriptions (
+  id uuid primary key default gen_random_uuid(),
+  user_id uuid not null unique references auth.users(id) on delete cascade,
+  stripe_customer_id text,
+  stripe_subscription_id text,
+  status text not null default 'inactive', -- active / trialing / past_due / canceled / inactive
+  current_period_end timestamptz,
+  updated_at timestamptz not null default now()
+);
+
+alter table public.subscriptions enable row level security;
+
+drop policy if exists "users read own subscription" on public.subscriptions;
+create policy "users read own subscription" on public.subscriptions
+  for select
+  using (auth.uid() = user_id);
+
+-- authenticatedロールにはselectのみ付与する(書き込みはservice_role経由のWebhookのみに限定し、
+-- クライアントから購読状態を偽装できないようにする)
+grant select on public.subscriptions to authenticated;
+
+-- service_role(Webhookが使うAdminクライアント)はRLSをバイパスするが、
+-- テーブルへの基本的な権限(GRANT)は別途必要なため明示的に付与する
+grant select, insert, update, delete on public.subscriptions to service_role;
