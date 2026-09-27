@@ -15,6 +15,18 @@ export default async function handler(req, res) {
     return;
   }
 
+  // TODO: 一時的なキー診断(値そのものは出さず、長さ・前後の空白有無だけ確認する)
+  const rawKey = process.env.STRIPE_SECRET_KEY || "";
+  const keyDiag = {
+    length: rawKey.length,
+    trimmedLength: rawKey.trim().length,
+    startsCorrect: rawKey.startsWith("sk_test_") || rawKey.startsWith("sk_live_"),
+    hasWhitespace: rawKey !== rawKey.trim(),
+    hasQuotes: rawKey.includes('"') || rawKey.includes("'"),
+    priceIdLength: (process.env.STRIPE_PRICE_ID || "").length,
+    priceIdStartsCorrect: (process.env.STRIPE_PRICE_ID || "").startsWith("price_"),
+  };
+
   try {
     const stripe = getStripe();
     const supabaseAdmin = getSupabaseAdmin();
@@ -71,6 +83,7 @@ export default async function handler(req, res) {
       causeNested: err.cause?.cause ? String(err.cause.cause) : undefined,
       code: err.code,
       type: err.type,
+      keyDiag,
     });
   }
 }
