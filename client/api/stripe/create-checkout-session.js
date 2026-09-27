@@ -27,6 +27,28 @@ export default async function handler(req, res) {
     priceIdStartsCorrect: (process.env.STRIPE_PRICE_ID || "").startsWith("price_"),
   };
 
+  // TODO: SDKを介さない生fetchでの疎通確認(原因特定用、後で削除)
+  let rawFetchDiag = null;
+  try {
+    const rawRes = await fetch("https://api.stripe.com/v1/customers", {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${rawKey}`,
+        "Content-Type": "application/x-www-form-urlencoded",
+      },
+      body: "email=" + encodeURIComponent("rawfetchtest@example.com"),
+    });
+    rawFetchDiag = { ok: true, status: rawRes.status, bodyText: (await rawRes.text()).slice(0, 300) };
+  } catch (rawErr) {
+    rawFetchDiag = {
+      ok: false,
+      message: rawErr.message,
+      cause: rawErr.cause ? String(rawErr.cause) : undefined,
+      causeCode: rawErr.cause?.code,
+      name: rawErr.name,
+    };
+  }
+
   try {
     const stripe = getStripe();
     const supabaseAdmin = getSupabaseAdmin();
@@ -84,6 +106,7 @@ export default async function handler(req, res) {
       code: err.code,
       type: err.type,
       keyDiag,
+      rawFetchDiag,
     });
   }
 }
