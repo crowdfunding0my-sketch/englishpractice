@@ -28,28 +28,49 @@ export default async function handler(req, res) {
 
     let customerId = existing?.stripe_customer_id;
     if (!customerId) {
-      const customer = await stripe.customers.create({
-        email: user.email,
-        metadata: { supabase_user_id: user.id },
-      });
+      let customer;
+      try {
+        customer = await stripe.customers.create({
+          email: user.email,
+          metadata: { supabase_user_id: user.id },
+        });
+      } catch (err) {
+        err.stage = "customers.create";
+        throw err;
+      }
       customerId = customer.id;
     }
 
-    const session = await stripe.checkout.sessions.create({
-      mode: "subscription",
-      customer: customerId,
-      client_reference_id: user.id,
-      line_items: [{ price: process.env.STRIPE_PRICE_ID, quantity: 1 }],
-      success_url: `${clientUrl}/?checkout=success`,
-      cancel_url: `${clientUrl}/?checkout=cancel`,
-      // 商品に税コードを設定していないため、Managed Payments(税コード必須)を無効化する
-      managed_payments: { enabled: false },
-    });
+    let session;
+    try {
+      session = await stripe.checkout.sessions.create({
+        mode: "subscription",
+        customer: customerId,
+        client_reference_id: user.id,
+        line_items: [{ price: process.env.STRIPE_PRICE_ID, quantity: 1 }],
+        success_url: `${clientUrl}/?checkout=success`,
+        cancel_url: `${clientUrl}/?checkout=cancel`,
+        // 商品に税コードを設定していないため、Managed Payments(税コード必須)を無効化する
+        managed_payments: { enabled: false },
+      });
+    } catch (err) {
+      err.stage = "checkout.sessions.create";
+      throw err;
+    }
 
     res.status(200).json({ url: session.url });
   } catch (err) {
     console.error("create-checkout-session error:", err);
     // TODO: 本番調査用の一時的な詳細出力。原因特定後は削除する。
-    res.status(500).json({ error: "決済ページの作成に失敗しました", debug: err.message, raw: err.raw?.message });
+    res.status(500).json({
+      error: "決済ページの作成に失敗しました",
+      stage: err.stage,
+      debug: err.message,
+      raw: err.raw?.message,
+      cause: err.cause ? String(err.cause) : undefined,
+      causeNested: err.cause?.cause ? String(err.cause.cause) : undefined,
+      code: err.code,
+      type: err.type,
+    });
   }
 }
