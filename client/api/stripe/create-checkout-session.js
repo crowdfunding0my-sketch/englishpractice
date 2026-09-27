@@ -49,6 +49,7 @@ export default async function handler(req, res) {
     res.status(200).json({ url: session.url });
   } catch (err) {
     console.error("create-checkout-session error:", err);
-    res.status(500).json({ error: "決済ページの作成に失敗しました" });
+    // TODO: 本番調査用の一時的な詳細出力。原因特定後は削除する。
+    res.status(500).json({ error: "決済ページの作成に失敗しました", debug: err.message, raw: err.raw?.message });
   }
 }
