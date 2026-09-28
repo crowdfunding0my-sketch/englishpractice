@@ -7,6 +7,7 @@ import TestMode from "./components/TestMode.jsx";
 import ResultScreen from "./components/ResultScreen.jsx";
 import ThemeToggle from "./components/ThemeToggle.jsx";
 import AuthScreen from "./components/AuthScreen.jsx";
+import ResetPasswordScreen from "./components/ResetPasswordScreen.jsx";
 import AddWordMode from "./components/AddWordMode.jsx";
 import LibraryMode from "./components/LibraryMode.jsx";
 import PracticeResumeChoice from "./components/PracticeResumeChoice.jsx";
@@ -42,7 +43,7 @@ const SCREENS = {
 };
 
 export default function App() {
-  const { user, loading: authLoading, signOut } = useAuth();
+  const { user, loading: authLoading, passwordRecovery, signOut } = useAuth();
   const [theme, setTheme] = useState(
     () => localStorage.getItem("englishword-theme") || "stylish"
   );
@@ -183,6 +184,11 @@ export default function App() {
 
   if (authLoading) {
     return <div className="loading">読み込み中...</div>;
+  }
+
+  // パスワード再設定メールのリンクを開いた場合、ログイン状態に関わらずこの画面を優先する
+  if (passwordRecovery) {
+    return <ResetPasswordScreen theme={theme} onThemeChange={setTheme} />;
   }
 
   if (!user) {
