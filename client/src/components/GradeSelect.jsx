@@ -7,6 +7,9 @@ const GRADES = [
 export default function GradeSelect({ onSelect }) {
   return (
     <div className="card">
+      <div className="mascot small">
+        <img src="/mascot-welcome.jpg" alt="単マスのマスコット" />
+      </div>
       <h2 className="center-text">学年を選んでね</h2>
       <div className="grade-grid">
         {GRADES.map((g) => (

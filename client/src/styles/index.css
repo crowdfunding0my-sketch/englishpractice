@@ -9,45 +9,53 @@ body,
   margin: 0;
 }
 
-/* ===== スタイリッシュテーマ(デフォルト) ===== */
+/* ===== スタイリッシュテーマ(デフォルト) =====
+   紫〜青の単調なグラデーションを避け、深みのあるネイビーに
+   ブルー×アンバー(琥珀色)のコントラストを添えた配色。 */
 :root,
 [data-theme="stylish"] {
-  --bg: #0f1220;
-  --bg-gradient: radial-gradient(circle at top, #1c2440 0%, #0a0c16 70%);
-  --surface: #1a1f36;
-  --surface-2: #232a4a;
-  --text: #eef0ff;
-  --text-muted: #9aa1c4;
-  --primary: #6c8cff;
-  --primary-2: #b06cff;
-  --accent: #35e0c4;
-  --danger: #ff6b81;
+  --bg: #10182b;
+  --bg-gradient: radial-gradient(circle at top, #1b2540 0%, #0c1220 70%);
+  --surface: #182035;
+  --surface-2: #212a48;
+  --text: #eef1fb;
+  --text-muted: #98a0c4;
+  --primary: #4f8dfd;
+  --primary-2: #f5b942;
+  --accent: #3fd0b4;
+  --danger: #ff7a7a;
   --success: #4ade80;
-  --border: #323a5e;
-  --radius: 12px;
-  --radius-lg: 20px;
+  --border: #2c355a;
+  --radius: 14px;
+  --radius-lg: 24px;
   --font: "Segoe UI", "Hiragino Sans", "Yu Gothic", sans-serif;
-  --shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+  --font-heading: "Zen Maru Gothic", var(--font);
+  --shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
+  --mascot-halo: radial-gradient(circle, #fdf6ea 0%, #fdf6ea 55%, transparent 78%);
 }
 
-/* ===== かわいいテーマ ===== */
+/* ===== かわいいテーマ =====
+   ピンク一色ではなく、クリーム色・コーラル・ミントを組み合わせた
+   温かみのある配色(motitown.com を参考)。 */
 [data-theme="cute"] {
-  --bg: #fff3f8;
-  --bg-gradient: radial-gradient(circle at top, #ffe3f0 0%, #fff8fb 70%);
+  --bg: #fdf6ea;
+  --bg-gradient: radial-gradient(circle at top, #fff1de 0%, #fdf8f0 70%);
   --surface: #ffffff;
-  --surface-2: #fff0f6;
-  --text: #5a3d4d;
-  --text-muted: #a884a0;
-  --primary: #ff8fb3;
-  --primary-2: #ffc2e2;
-  --accent: #7fd8c4;
-  --danger: #ff6b81;
-  --success: #6bcf9a;
-  --border: #ffd6e8;
-  --radius: 20px;
-  --radius-lg: 28px;
+  --surface-2: #fff6ea;
+  --text: #4a3f2f;
+  --text-muted: #a89a82;
+  --primary: #ff9a6b;
+  --primary-2: #ffc95c;
+  --accent: #4fc9a8;
+  --danger: #ff6b6b;
+  --success: #4fc98a;
+  --border: #ffe1c2;
+  --radius: 22px;
+  --radius-lg: 30px;
   --font: "Rounded Mplus 1c", "Hiragino Maru Gothic ProN", "Yu Gothic", sans-serif;
-  --shadow: 0 10px 24px rgba(255, 143, 179, 0.25);
+  --font-heading: "Zen Maru Gothic", var(--font);
+  --shadow: 0 14px 28px rgba(255, 154, 107, 0.2);
+  --mascot-halo: radial-gradient(circle, #fff6ea 0%, #fff6ea 55%, transparent 78%);
 }
 
 body {
@@ -76,13 +84,41 @@ body {
 }
 
 .app-title {
-  font-size: 1.5rem;
-  font-weight: 800;
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  font-weight: 900;
   letter-spacing: 0.02em;
   background: linear-gradient(90deg, var(--primary), var(--primary-2));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+}
+
+h2 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+}
+
+.mascot {
+  display: block;
+  margin: 0 auto 16px;
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  background: var(--mascot-halo);
+  padding: 8px;
+}
+
+.mascot img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.mascot.small {
+  width: 88px;
+  height: 88px;
 }
 
 .card {
@@ -277,6 +313,7 @@ body {
 }
 
 .word-title {
+  font-family: var(--font-heading);
   font-size: 2rem;
   font-weight: 800;
   display: flex;
@@ -371,6 +408,7 @@ body {
 }
 
 .result-score {
+  font-family: var(--font-heading);
   font-size: 2.4rem;
   font-weight: 900;
   text-align: center;

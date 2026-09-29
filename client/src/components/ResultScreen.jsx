@@ -1,8 +1,14 @@
 export default function ResultScreen({ result, onRetry, onHome }) {
   const { score, total, mistakes } = result;
+  const isGreatScore = total > 0 && score / total >= 0.7;
 
   return (
     <div className="card">
+      {isGreatScore && (
+        <div className="mascot">
+          <img src="/mascot-celebrate.jpg" alt="お祝いする単マスのマスコット" />
+        </div>
+      )}
       <h2 className="center-text">結果発表</h2>
       <div className="result-score">
         {score} / {total} 問正解！

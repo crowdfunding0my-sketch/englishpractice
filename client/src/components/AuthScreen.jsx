@@ -61,6 +61,9 @@ export default function AuthScreen({ theme, onThemeChange }) {
       </div>
 
       <div className="card" style={{ maxWidth: 420 }}>
+        <div className="mascot">
+          <img src="/mascot-welcome.jpg" alt="単マスのマスコット" />
+        </div>
         <h2 className="center-text">{titles[mode]}</h2>
         {mode === "forgotPassword" && (
           <p className="center-text" style={{ color: "var(--text-muted)", fontSize: "0.85rem", marginTop: 8 }}>
