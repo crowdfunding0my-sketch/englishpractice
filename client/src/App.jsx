@@ -10,6 +10,7 @@ import AuthScreen from "./components/AuthScreen.jsx";
 import ResetPasswordScreen from "./components/ResetPasswordScreen.jsx";
 import AddWordMode from "./components/AddWordMode.jsx";
 import LibraryMode from "./components/LibraryMode.jsx";
+import ArticleMode from "./components/ArticleMode.jsx";
 import PracticeResumeChoice from "./components/PracticeResumeChoice.jsx";
 import UpgradeScreen from "./components/UpgradeScreen.jsx";
 import { fetchWords, fetchCustomWords, reportMistakes, fetchSubscriptionStatus } from "./api.js";
@@ -38,6 +39,7 @@ const SCREENS = {
   TEST: "test",
   ADD: "add",
   LIBRARY: "library",
+  ARTICLES: "articles",
   UPGRADE: "upgrade",
   RESULT: "result",
 };
@@ -131,6 +133,8 @@ export default function App() {
       setScreen(SCREENS.ADD);
     } else if (mode === "library") {
       setScreen(SCREENS.LIBRARY);
+    } else if (mode === "articles") {
+      setScreen(SCREENS.ARTICLES);
     } else if (mode === "upgrade") {
       setScreen(SCREENS.UPGRADE);
     }
@@ -270,6 +274,10 @@ export default function App() {
 
       {screen === SCREENS.LIBRARY && (
         <LibraryMode grade={grade} words={words} onBack={() => setScreen(SCREENS.MODE)} />
+      )}
+
+      {screen === SCREENS.ARTICLES && (
+        <ArticleMode grade={grade} onBack={() => setScreen(SCREENS.MODE)} />
       )}
 
       {screen === SCREENS.UPGRADE && (

@@ -23,6 +23,12 @@ const MODES = [
     label: "苦手単語",
     sub: "間違えた単語を復習する",
   },
+  {
+    key: "articles",
+    icon: "/icon-article.jpg",
+    label: "英語記事",
+    sub: "今日の1本を読んで聴こう",
+  },
 ];
 
 export default function ModeSelect({ grade, isPremium, onSelect, onBack }) {

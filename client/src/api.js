@@ -6,6 +6,12 @@ export async function fetchWords(grade) {
   return res.json();
 }
 
+export async function fetchArticles(grade) {
+  const res = await fetch(`/api/articles?grade=${grade}`);
+  if (!res.ok) throw new Error("記事データの取得に失敗しました");
+  return res.json();
+}
+
 export async function fetchImage(query) {
   try {
     const res = await fetch(`/api/images?query=${encodeURIComponent(query)}`);

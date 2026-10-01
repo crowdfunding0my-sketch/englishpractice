@@ -1,0 +1,331 @@
+[
+  {
+    "id": "g2-a01",
+    "title": "My Summer Vacation",
+    "titleJa": "私の夏休み",
+    "sentences": [
+      {
+        "text": "Last summer, I went to the beach with my family.",
+        "ja": "去年の夏、私は家族とビーチに行きました。",
+        "spans": [
+          { "text": "Last summer", "role": "M" },
+          { "text": ",", "role": null },
+          { "text": "I", "role": "S" },
+          { "text": "went", "role": "V" },
+          { "text": "to the beach", "role": "M" },
+          { "text": "with my family", "role": "M" },
+          { "text": ".", "role": null }
+        ]
+      },
+      {
+        "text": "We stayed there for three days.",
+        "ja": "私たちはそこに3日間滞在しました。",
+        "spans": [
+          { "text": "We", "role": "S" },
+          { "text": "stayed", "role": "V" },
+          { "text": "there", "role": "M" },
+          { "text": "for three days", "role": "M" },
+          { "text": ".", "role": null }
+        ]
+      },
+      {
+        "text": "I swam in the sea every day.",
+        "ja": "私は毎日海で泳ぎました。",
+        "spans": [
+          { "text": "I", "role": "S" },
+          { "text": "swam", "role": "V" },
+          { "text": "in the sea", "role": "M" },
+          { "text": "every day", "role": "M" },
+          { "text": ".", "role": null }
+        ]
+      },
+      {
+        "text": "We also enjoyed a fireworks festival at night.",
+        "ja": "私たちは夜に花火大会も楽しみました。",
+        "spans": [
+          { "text": "We", "role": "S" },
+          { "text": "also", "role": "M" },
+          { "text": "enjoyed", "role": "V" },
+          { "text": "a fireworks festival", "role": "O" },
+          { "text": "at night", "role": "M" },
+          { "text": ".", "role": null }
+        ]
+      },
+      {
+        "text": "It was the best summer of my life.",
+        "ja": "それは私の人生で最高の夏でした。",
+        "spans": [
+          { "text": "It", "role": "S" },
+          { "text": "was", "role": "V" },
+          { "text": "the best summer of my life", "role": "C" },
+          { "text": ".", "role": null }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "g2-a02",
+    "title": "A Trip to Kyoto",
+    "titleJa": "京都への旅行",
+    "sentences": [
+      {
+        "text": "Our class took a school trip to Kyoto in October.",
+        "ja": "私たちのクラスは10月に京都へ修学旅行に行きました。",
+        "spans": [
+          { "text": "Our class", "role": "S" },
+          { "text": "took", "role": "V" },
+          { "text": "a school trip", "role": "O" },
+          { "text": "to Kyoto", "role": "M" },
+          { "text": "in October", "role": "M" },
+          { "text": ".", "role": null }
+        ]
+      },
+      {
+        "text": "We visited many old temples.",
+        "ja": "私たちはたくさんの古いお寺を訪れました。",
+        "spans": [
+          { "text": "We", "role": "S" },
+          { "text": "visited", "role": "V" },
+          { "text": "many old temples", "role": "O" },
+          { "text": ".", "role": null }
+        ]
+      },
+      {
+        "text": "The temples were very beautiful and quiet.",
+        "ja": "お寺はとても美しく静かでした。",
+        "spans": [
+          { "text": "The temples", "role": "S" },
+          { "text": "were", "role": "V" },
+          { "text": "very beautiful and quiet", "role": "C" },
+          { "text": ".", "role": null }
+        ]
+      },
+      {
+        "text": "I bought a small present for my grandmother.",
+        "ja": "私は祖母に小さなプレゼントを買いました。",
+        "spans": [
+          { "text": "I", "role": "S" },
+          { "text": "bought", "role": "V" },
+          { "text": "a small present", "role": "O" },
+          { "text": "for my grandmother", "role": "M" },
+          { "text": ".", "role": null }
+        ]
+      },
+      {
+        "text": "I want to visit Kyoto again someday.",
+        "ja": "私はいつかまた京都を訪れたいです。",
+        "spans": [
+          { "text": "I", "role": "S" },
+          { "text": "want to visit Kyoto again", "role": "O" },
+          { "text": "someday", "role": "M" },
+          { "text": ".", "role": null }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "g2-a03",
+    "title": "My Dream Job",
+    "titleJa": "私の将来の夢",
+    "sentences": [
+      {
+        "text": "I am going to be a nurse in the future.",
+        "ja": "私は将来看護師になるつもりです。",
+        "spans": [
+          { "text": "I", "role": "S" },
+          { "text": "am going to be", "role": "V" },
+          { "text": "a nurse", "role": "C" },
+          { "text": "in the future", "role": "M" },
+          { "text": ".", "role": null }
+        ]
+      },
+      {
+        "text": "My aunt is a nurse.",
+        "ja": "私のおばは看護師です。",
+        "spans": [
+          { "text": "My aunt", "role": "S" },
+          { "text": "is", "role": "V" },
+          { "text": "a nurse", "role": "C" },
+          { "text": ".", "role": null }
+        ]
+      },
+      {
+        "text": "She helps many people every day.",
+        "ja": "彼女は毎日たくさんの人を助けています。",
+        "spans": [
+          { "text": "She", "role": "S" },
+          { "text": "helps", "role": "V" },
+          { "text": "many people", "role": "O" },
+          { "text": "every day", "role": "M" },
+          { "text": ".", "role": null }
+        ]
+      },
+      {
+        "text": "She always looks happy at work.",
+        "ja": "彼女は仕事でいつも幸せそうに見えます。",
+        "spans": [
+          { "text": "She", "role": "S" },
+          { "text": "always", "role": "M" },
+          { "text": "looks", "role": "V" },
+          { "text": "happy", "role": "C" },
+          { "text": "at work", "role": "M" },
+          { "text": ".", "role": null }
+        ]
+      },
+      {
+        "text": "I will study hard to become a nurse.",
+        "ja": "私は看護師になるために一生懸命勉強するつもりです。",
+        "spans": [
+          { "text": "I", "role": "S" },
+          { "text": "will study", "role": "V" },
+          { "text": "hard", "role": "M" },
+          { "text": "to become a nurse", "role": "M" },
+          { "text": ".", "role": null }
+        ]
+      },
+      {
+        "text": "I hope my dream will come true.",
+        "ja": "私は自分の夢が叶うことを願っています。",
+        "spans": [
+          { "text": "I", "role": "S" },
+          { "text": "hope", "role": "V" },
+          { "text": "my dream will come true", "role": "O" },
+          { "text": ".", "role": null }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "g2-a04",
+    "title": "Sports Day",
+    "titleJa": "体育祭",
+    "sentences": [
+      {
+        "text": "Our sports day was held last Saturday.",
+        "ja": "体育祭は先週の土曜日に開催されました。",
+        "spans": [
+          { "text": "Our sports day", "role": "S" },
+          { "text": "was held", "role": "V" },
+          { "text": "last Saturday", "role": "M" },
+          { "text": ".", "role": null }
+        ]
+      },
+      {
+        "text": "I ran in the 100-meter race.",
+        "ja": "私は100メートル走に出場しました。",
+        "spans": [
+          { "text": "I", "role": "S" },
+          { "text": "ran", "role": "V" },
+          { "text": "in the 100-meter race", "role": "M" },
+          { "text": ".", "role": null }
+        ]
+      },
+      {
+        "text": "My class won the relay race.",
+        "ja": "私のクラスはリレーで優勝しました。",
+        "spans": [
+          { "text": "My class", "role": "S" },
+          { "text": "won", "role": "V" },
+          { "text": "the relay race", "role": "O" },
+          { "text": ".", "role": null }
+        ]
+      },
+      {
+        "text": "Everyone cheered loudly for their friends.",
+        "ja": "みんな友達のために大きな声で応援しました。",
+        "spans": [
+          { "text": "Everyone", "role": "S" },
+          { "text": "cheered", "role": "V" },
+          { "text": "loudly", "role": "M" },
+          { "text": "for their friends", "role": "M" },
+          { "text": ".", "role": null }
+        ]
+      },
+      {
+        "text": "It was a tiring but exciting day.",
+        "ja": "それは疲れたけれどわくわくする一日でした。",
+        "spans": [
+          { "text": "It", "role": "S" },
+          { "text": "was", "role": "V" },
+          { "text": "a tiring but exciting day", "role": "C" },
+          { "text": ".", "role": null }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "g2-a05",
+    "title": "Helping at Home",
+    "titleJa": "家でのお手伝い",
+    "sentences": [
+      {
+        "text": "I help my parents with housework every weekend.",
+        "ja": "私は毎週末両親の家事を手伝います。",
+        "spans": [
+          { "text": "I", "role": "S" },
+          { "text": "help", "role": "V" },
+          { "text": "my parents", "role": "O" },
+          { "text": "with housework", "role": "M" },
+          { "text": "every weekend", "role": "M" },
+          { "text": ".", "role": null }
+        ]
+      },
+      {
+        "text": "I usually clean the bathroom.",
+        "ja": "私はたいていお風呂を掃除します。",
+        "spans": [
+          { "text": "I", "role": "S" },
+          { "text": "usually", "role": "M" },
+          { "text": "clean", "role": "V" },
+          { "text": "the bathroom", "role": "O" },
+          { "text": ".", "role": null }
+        ]
+      },
+      {
+        "text": "I also wash the dishes after dinner.",
+        "ja": "私は夕食後に皿も洗います。",
+        "spans": [
+          { "text": "I", "role": "S" },
+          { "text": "also", "role": "M" },
+          { "text": "wash", "role": "V" },
+          { "text": "the dishes", "role": "O" },
+          { "text": "after dinner", "role": "M" },
+          { "text": ".", "role": null }
+        ]
+      },
+      {
+        "text": "My little brother waters the plants.",
+        "ja": "私の弟は植物に水をやります。",
+        "spans": [
+          { "text": "My little brother", "role": "S" },
+          { "text": "waters", "role": "V" },
+          { "text": "the plants", "role": "O" },
+          { "text": ".", "role": null }
+        ]
+      },
+      {
+        "text": "My parents always thank us for our help.",
+        "ja": "両親はいつも私たちの手伝いに感謝してくれます。",
+        "spans": [
+          { "text": "My parents", "role": "S" },
+          { "text": "always", "role": "M" },
+          { "text": "thank", "role": "V" },
+          { "text": "us", "role": "O" },
+          { "text": "for our help", "role": "M" },
+          { "text": ".", "role": null }
+        ]
+      },
+      {
+        "text": "Helping at home makes me feel proud.",
+        "ja": "家で手伝うことは私を誇らしい気持ちにさせます。",
+        "spans": [
+          { "text": "Helping at home", "role": "S" },
+          { "text": "makes", "role": "V" },
+          { "text": "me", "role": "O" },
+          { "text": "feel proud", "role": "C" },
+          { "text": ".", "role": null }
+        ]
+      }
+    ]
+  }
+]

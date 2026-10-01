@@ -1,0 +1,336 @@
+[
+  {
+    "id": "g1-a01",
+    "title": "My Family",
+    "titleJa": "私の家族",
+    "sentences": [
+      {
+        "text": "I have a big family.",
+        "ja": "私には大家族がいます。",
+        "spans": [
+          { "text": "I", "role": "S" },
+          { "text": "have", "role": "V" },
+          { "text": "a big family", "role": "O" },
+          { "text": ".", "role": null }
+        ]
+      },
+      {
+        "text": "My father is a teacher.",
+        "ja": "父は教師です。",
+        "spans": [
+          { "text": "My father", "role": "S" },
+          { "text": "is", "role": "V" },
+          { "text": "a teacher", "role": "C" },
+          { "text": ".", "role": null }
+        ]
+      },
+      {
+        "text": "My mother works at a hospital.",
+        "ja": "母は病院で働いています。",
+        "spans": [
+          { "text": "My mother", "role": "S" },
+          { "text": "works", "role": "V" },
+          { "text": "at a hospital", "role": "M" },
+          { "text": ".", "role": null }
+        ]
+      },
+      {
+        "text": "I have two sisters and one brother.",
+        "ja": "私には姉妹が2人と兄弟が1人います。",
+        "spans": [
+          { "text": "I", "role": "S" },
+          { "text": "have", "role": "V" },
+          { "text": "two sisters and one brother", "role": "O" },
+          { "text": ".", "role": null }
+        ]
+      },
+      {
+        "text": "We eat dinner together every night.",
+        "ja": "私たちは毎晩一緒に夕食を食べます。",
+        "spans": [
+          { "text": "We", "role": "S" },
+          { "text": "eat", "role": "V" },
+          { "text": "dinner", "role": "O" },
+          { "text": "together", "role": "M" },
+          { "text": "every night", "role": "M" },
+          { "text": ".", "role": null }
+        ]
+      },
+      {
+        "text": "I love my family very much.",
+        "ja": "私は家族をとても愛しています。",
+        "spans": [
+          { "text": "I", "role": "S" },
+          { "text": "love", "role": "V" },
+          { "text": "my family", "role": "O" },
+          { "text": "very much", "role": "M" },
+          { "text": ".", "role": null }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "g1-a02",
+    "title": "My School",
+    "titleJa": "私の学校",
+    "sentences": [
+      {
+        "text": "My school is near the station.",
+        "ja": "私の学校は駅の近くにあります。",
+        "spans": [
+          { "text": "My school", "role": "S" },
+          { "text": "is", "role": "V" },
+          { "text": "near the station", "role": "C" },
+          { "text": ".", "role": null }
+        ]
+      },
+      {
+        "text": "I go to school by bike.",
+        "ja": "私は自転車で学校に行きます。",
+        "spans": [
+          { "text": "I", "role": "S" },
+          { "text": "go", "role": "V" },
+          { "text": "to school", "role": "M" },
+          { "text": "by bike", "role": "M" },
+          { "text": ".", "role": null }
+        ]
+      },
+      {
+        "text": "We study English and math every day.",
+        "ja": "私たちは毎日英語と数学を勉強します。",
+        "spans": [
+          { "text": "We", "role": "S" },
+          { "text": "study", "role": "V" },
+          { "text": "English and math", "role": "O" },
+          { "text": "every day", "role": "M" },
+          { "text": ".", "role": null }
+        ]
+      },
+      {
+        "text": "My favorite subject is music.",
+        "ja": "私の好きな教科は音楽です。",
+        "spans": [
+          { "text": "My favorite subject", "role": "S" },
+          { "text": "is", "role": "V" },
+          { "text": "music", "role": "C" },
+          { "text": ".", "role": null }
+        ]
+      },
+      {
+        "text": "Our teacher is very kind.",
+        "ja": "私たちの先生はとても親切です。",
+        "spans": [
+          { "text": "Our teacher", "role": "S" },
+          { "text": "is", "role": "V" },
+          { "text": "very kind", "role": "C" },
+          { "text": ".", "role": null }
+        ]
+      },
+      {
+        "text": "I enjoy school life.",
+        "ja": "私は学校生活を楽しんでいます。",
+        "spans": [
+          { "text": "I", "role": "S" },
+          { "text": "enjoy", "role": "V" },
+          { "text": "school life", "role": "O" },
+          { "text": ".", "role": null }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "g1-a03",
+    "title": "My Pet",
+    "titleJa": "私のペット",
+    "sentences": [
+      {
+        "text": "I have a small dog.",
+        "ja": "私は小さな犬を飼っています。",
+        "spans": [
+          { "text": "I", "role": "S" },
+          { "text": "have", "role": "V" },
+          { "text": "a small dog", "role": "O" },
+          { "text": ".", "role": null }
+        ]
+      },
+      {
+        "text": "His name is Pochi.",
+        "ja": "彼の名前はポチです。",
+        "spans": [
+          { "text": "His name", "role": "S" },
+          { "text": "is", "role": "V" },
+          { "text": "Pochi", "role": "C" },
+          { "text": ".", "role": null }
+        ]
+      },
+      {
+        "text": "Pochi is very friendly.",
+        "ja": "ポチはとても人懐っこいです。",
+        "spans": [
+          { "text": "Pochi", "role": "S" },
+          { "text": "is", "role": "V" },
+          { "text": "very friendly", "role": "C" },
+          { "text": ".", "role": null }
+        ]
+      },
+      {
+        "text": "I walk him every morning.",
+        "ja": "私は毎朝彼を散歩させます。",
+        "spans": [
+          { "text": "I", "role": "S" },
+          { "text": "walk", "role": "V" },
+          { "text": "him", "role": "O" },
+          { "text": "every morning", "role": "M" },
+          { "text": ".", "role": null }
+        ]
+      },
+      {
+        "text": "He likes to play in the park.",
+        "ja": "彼は公園で遊ぶのが好きです。",
+        "spans": [
+          { "text": "He", "role": "S" },
+          { "text": "likes", "role": "V" },
+          { "text": "to play in the park", "role": "O" },
+          { "text": ".", "role": null }
+        ]
+      },
+      {
+        "text": "My family loves Pochi very much.",
+        "ja": "私の家族はポチをとても愛しています。",
+        "spans": [
+          { "text": "My family", "role": "S" },
+          { "text": "loves", "role": "V" },
+          { "text": "Pochi", "role": "O" },
+          { "text": "very much", "role": "M" },
+          { "text": ".", "role": null }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "g1-a04",
+    "title": "My Weekend",
+    "titleJa": "私の週末",
+    "sentences": [
+      {
+        "text": "I usually get up late on Sunday.",
+        "ja": "私は日曜日はたいてい遅く起きます。",
+        "spans": [
+          { "text": "I", "role": "S" },
+          { "text": "usually", "role": "M" },
+          { "text": "get up", "role": "V" },
+          { "text": "late", "role": "M" },
+          { "text": "on Sunday", "role": "M" },
+          { "text": ".", "role": null }
+        ]
+      },
+      {
+        "text": "In the morning, I clean my room.",
+        "ja": "朝、私は部屋を掃除します。",
+        "spans": [
+          { "text": "In the morning", "role": "M" },
+          { "text": ",", "role": null },
+          { "text": "I", "role": "S" },
+          { "text": "clean", "role": "V" },
+          { "text": "my room", "role": "O" },
+          { "text": ".", "role": null }
+        ]
+      },
+      {
+        "text": "In the afternoon, I play soccer with my friends.",
+        "ja": "午後、私は友達とサッカーをします。",
+        "spans": [
+          { "text": "In the afternoon", "role": "M" },
+          { "text": ",", "role": null },
+          { "text": "I", "role": "S" },
+          { "text": "play", "role": "V" },
+          { "text": "soccer", "role": "O" },
+          { "text": "with my friends", "role": "M" },
+          { "text": ".", "role": null }
+        ]
+      },
+      {
+        "text": "In the evening, my family watches TV together.",
+        "ja": "夕方、家族は一緒にテレビを見ます。",
+        "spans": [
+          { "text": "In the evening", "role": "M" },
+          { "text": ",", "role": null },
+          { "text": "my family", "role": "S" },
+          { "text": "watches", "role": "V" },
+          { "text": "TV", "role": "O" },
+          { "text": "together", "role": "M" },
+          { "text": ".", "role": null }
+        ]
+      },
+      {
+        "text": "Weekends are so much fun.",
+        "ja": "週末はとても楽しいです。",
+        "spans": [
+          { "text": "Weekends", "role": "S" },
+          { "text": "are", "role": "V" },
+          { "text": "so much fun", "role": "C" },
+          { "text": ".", "role": null }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "g1-a05",
+    "title": "My Favorite Food",
+    "titleJa": "私の好きな食べ物",
+    "sentences": [
+      {
+        "text": "My favorite food is curry and rice.",
+        "ja": "私の好きな食べ物はカレーライスです。",
+        "spans": [
+          { "text": "My favorite food", "role": "S" },
+          { "text": "is", "role": "V" },
+          { "text": "curry and rice", "role": "C" },
+          { "text": ".", "role": null }
+        ]
+      },
+      {
+        "text": "My mother makes curry every Friday.",
+        "ja": "母は毎週金曜日にカレーを作ります。",
+        "spans": [
+          { "text": "My mother", "role": "S" },
+          { "text": "makes", "role": "V" },
+          { "text": "curry", "role": "O" },
+          { "text": "every Friday", "role": "M" },
+          { "text": ".", "role": null }
+        ]
+      },
+      {
+        "text": "The curry smells so good.",
+        "ja": "カレーはとてもいい匂いがします。",
+        "spans": [
+          { "text": "The curry", "role": "S" },
+          { "text": "smells", "role": "V" },
+          { "text": "so good", "role": "C" },
+          { "text": ".", "role": null }
+        ]
+      },
+      {
+        "text": "I always eat two bowls.",
+        "ja": "私はいつも2杯食べます。",
+        "spans": [
+          { "text": "I", "role": "S" },
+          { "text": "always", "role": "M" },
+          { "text": "eat", "role": "V" },
+          { "text": "two bowls", "role": "O" },
+          { "text": ".", "role": null }
+        ]
+      },
+      {
+        "text": "We enjoy cooking together.",
+        "ja": "私たちは一緒に料理をするのを楽しみます。",
+        "spans": [
+          { "text": "We", "role": "S" },
+          { "text": "enjoy", "role": "V" },
+          { "text": "cooking together", "role": "O" },
+          { "text": ".", "role": null }
+        ]
+      }
+    ]
+  }
+]
