@@ -772,3 +772,84 @@ h2 {
   border-bottom-style: dashed;
   border-bottom-color: var(--text-muted);
 }
+
+.diary-note {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin: -8px 0 20px;
+}
+
+.diary-textarea {
+  width: 100%;
+  min-height: 140px;
+  resize: vertical;
+  line-height: 1.6;
+  font-family: var(--font);
+}
+
+.diary-toolbar {
+  display: flex;
+  justify-content: center;
+  margin-top: 14px;
+}
+
+.mic-button {
+  background: var(--surface-2);
+  border: 2px solid var(--border);
+  border-radius: 999px;
+  padding: 10px 20px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text);
+  cursor: pointer;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.mic-button:hover {
+  border-color: var(--primary);
+}
+
+.mic-button.recording {
+  border-color: var(--danger);
+  color: var(--danger);
+  background: color-mix(in srgb, var(--danger) 12%, var(--surface-2));
+}
+
+.diary-feedback {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 18px 0;
+  padding: 14px 18px;
+  background: var(--surface-2);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
+
+.diary-feedback-item {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.diary-feedback-item.ok {
+  color: var(--success);
+}
+
+.diary-feedback-item.warn {
+  color: var(--primary-2);
+}
+
+.diary-feedback-hint {
+  color: var(--text-muted);
+  font-size: 0.78rem;
+  margin-top: 4px;
+}
+
+.diary-textarea-ja {
+  width: 100%;
+  min-height: 70px;
+  resize: vertical;
+  line-height: 1.6;
+  font-family: var(--font);
+  margin-top: 20px;
+}

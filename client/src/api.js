@@ -126,6 +126,39 @@ export async function reportMistakes(grade, items) {
   }
 }
 
+// 英語日記モード: 自分で書いた(または音声入力した)英文を取得・保存・削除する
+export async function fetchDiaryEntries(grade) {
+  const { data, error } = await supabase
+    .from("diary_entries")
+    .select("*")
+    .eq("grade", grade)
+    .order("created_at", { ascending: false });
+  if (error) throw error;
+  return data;
+}
+
+export async function addDiaryEntry(grade, text, textJa = "") {
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+
+  const wordCount = text.trim() ? text.trim().split(/\s+/).filter(Boolean).length : 0;
+
+  const { error } = await supabase.from("diary_entries").insert({
+    user_id: user.id,
+    grade,
+    text,
+    text_ja: textJa,
+    word_count: wordCount,
+  });
+  if (error) throw error;
+}
+
+export async function deleteDiaryEntry(id) {
+  const { error } = await supabase.from("diary_entries").delete().eq("id", id);
+  if (error) throw error;
+}
+
 // 自分の購読状態(プレミアム会員かどうか)を取得する。行が無ければ未購読とみなす。
 export async function fetchSubscriptionStatus() {
   const { data, error } = await supabase.from("subscriptions").select("*").maybeSingle();

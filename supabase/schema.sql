@@ -77,3 +77,27 @@ grant select on public.subscriptions to authenticated;
 -- service_role(Webhookが使うAdminクライアント)はRLSをバイパスするが、
 -- テーブルへの基本的な権限(GRANT)は別途必要なため明示的に付与する
 grant select, insert, update, delete on public.subscriptions to service_role;
+
+-- 英語日記モード: ユーザーが自分で書いた(または音声入力した)英文を保存する
+create table if not exists public.diary_entries (
+  id uuid primary key default gen_random_uuid(),
+  user_id uuid not null references auth.users(id) on delete cascade,
+  grade smallint not null check (grade in (1, 2, 3)),
+  text text not null,
+  text_ja text not null default '',
+  word_count integer not null default 0,
+  created_at timestamptz not null default now()
+);
+
+-- 既存のdiary_entriesテーブルに対して再実行した場合のために、カラムが無ければ追加する
+alter table public.diary_entries add column if not exists text_ja text not null default '';
+
+alter table public.diary_entries enable row level security;
+
+drop policy if exists "own diary entries" on public.diary_entries;
+create policy "own diary entries" on public.diary_entries
+  for all
+  using (auth.uid() = user_id)
+  with check (auth.uid() = user_id);
+
+grant select, insert, update, delete on public.diary_entries to authenticated;

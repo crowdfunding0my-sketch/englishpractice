@@ -29,6 +29,12 @@ const MODES = [
     label: "英語記事",
     sub: "今日の1本を読んで聴こう",
   },
+  {
+    key: "diary",
+    icon: "/icon-diary.jpg",
+    label: "英語日記",
+    sub: "書いて・話して英文を残そう",
+  },
 ];
 
 export default function ModeSelect({ grade, isPremium, onSelect, onBack }) {

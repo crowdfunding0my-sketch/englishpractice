@@ -80,7 +80,7 @@
         "spans": [
           { "text": "My school", "role": "S" },
           { "text": "is", "role": "V" },
-          { "text": "near the station", "role": "C" },
+          { "text": "near the station", "role": "M" },
           { "text": ".", "role": null }
         ]
       },
