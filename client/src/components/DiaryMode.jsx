@@ -79,16 +79,29 @@ export default function DiaryMode({ grade, onBack }) {
     recognition.continuous = true;
     recognition.interimResults = false;
     recognition.maxAlternatives = 1;
+    const endPunct = target === "ja" ? "。" : ".";
+    const endPunctRe = target === "ja" ? /[。！？]$/ : /[.!?]$/;
     recognition.onresult = (e) => {
-      let newText = "";
+      // 話し終えて一区切りつくたびにonresultが発火するが、認識結果には句読点が
+      // 付かないため、ここで文末のピリオド(日本語は「。」)を自動で補う
+      const newPhrases = [];
       for (let i = e.resultIndex; i < e.results.length; i++) {
         if (e.results[i].isFinal) {
-          newText += `${e.results[i][0].transcript} `;
+          const t = e.results[i][0].transcript.trim();
+          if (t) {
+            const capitalized = target === "ja" ? t : t.charAt(0).toUpperCase() + t.slice(1);
+            newPhrases.push(endPunctRe.test(capitalized) ? capitalized : `${capitalized}${endPunct}`);
+          }
         }
       }
-      if (newText.trim()) {
-        setTarget((prev) => (prev.trim() ? `${prev.trim()} ${newText.trim()}` : newText.trim()));
-      }
+      if (newPhrases.length === 0) return;
+      const newChunk = newPhrases.join(" ");
+      setTarget((prev) => {
+        const trimmedPrev = prev.trim();
+        if (!trimmedPrev) return newChunk;
+        const sep = endPunctRe.test(trimmedPrev) ? " " : `${endPunct} `;
+        return `${trimmedPrev}${sep}${newChunk}`;
+      });
     };
     recognition.onend = () => setRecordingTarget(null);
     recognition.onerror = (e) => {
