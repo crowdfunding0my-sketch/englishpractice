@@ -6,7 +6,7 @@ import { splitSentences, tagSentenceApprox } from "../grammarTag.js";
 const SpeechRecognitionApi =
   typeof window !== "undefined" && (window.SpeechRecognition || window.webkitSpeechRecognition);
 
-const ROLE_LABELS = { S: "主語", V: "動詞", O: "目的語", C: "補語", M: "修飾語" };
+const ROLE_LABELS = { S: "主語", V: "動詞", O: "目的語", C: "補語", M: "修飾語", Ad: "副詞" };
 
 function isPunctSpan(text) {
   return /^[,.!?;:]+$/.test(text.trim());

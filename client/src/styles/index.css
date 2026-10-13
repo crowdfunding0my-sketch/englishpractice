@@ -739,7 +739,7 @@ h2 {
   font-size: 0.9rem;
 }
 
-/* 文法ハイライト: S(主語)/V(動詞)/O(目的語)/C(補語)/M(修飾語)を色分けする */
+/* 文法ハイライト: S(主語)/V(動詞)/O(目的語)/C(補語)/M(修飾語)/Ad(副詞)を色分けする */
 .grammar-role {
   font-weight: 700;
   border-bottom: 3px solid transparent;
@@ -761,9 +761,10 @@ h2 {
   border-bottom-color: var(--primary-2);
 }
 
+/* Cはprimary/accentの混色だとSと見分けにくかったため、successに変更して区別する */
 .grammar-role.role-C {
-  color: color-mix(in srgb, var(--primary) 50%, var(--accent));
-  border-bottom-color: color-mix(in srgb, var(--primary) 50%, var(--accent));
+  color: var(--success);
+  border-bottom-color: var(--success);
 }
 
 .grammar-role.role-M {
@@ -771,6 +772,25 @@ h2 {
   font-weight: 600;
   border-bottom-style: dashed;
   border-bottom-color: var(--text-muted);
+}
+
+/* Ad(副詞): M(前置詞句・節など)とは別カテゴリーとして、点線下線で区別する */
+.grammar-role.role-Ad {
+  color: var(--danger);
+  border-bottom-style: dotted;
+  border-bottom-color: var(--danger);
+}
+
+.grammar-point-badge {
+  display: inline-block;
+  background: var(--surface-2);
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 2px 10px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  margin-bottom: 6px;
 }
 
 .diary-note {

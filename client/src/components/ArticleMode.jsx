@@ -8,6 +8,7 @@ const ROLE_LABELS = {
   O: "目的語",
   C: "補語",
   M: "修飾語",
+  Ad: "副詞",
 };
 
 // 日付から「今日の記事」を決定論的に選ぶ(その日の通算日数を記事数で割った余り)
@@ -103,6 +104,9 @@ export default function ArticleMode({ grade, onBack }) {
         <div className="article-sentence-list">
           {selected.sentences.map((s, i) => (
             <div className="article-sentence-row" key={i}>
+              {showGrammar && s.grammarPoint && (
+                <span className="grammar-point-badge">{s.grammarPoint}</span>
+              )}
               <div className="en-row">
                 {showGrammar ? (
                   <SentenceSpans spans={s.spans} showGrammar={showGrammar} />

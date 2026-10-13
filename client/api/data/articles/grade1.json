@@ -7,6 +7,7 @@
       {
         "text": "I have a big family.",
         "ja": "私には大家族がいます。",
+        "grammarPoint": "一般動詞の現在形",
         "spans": [
           { "text": "I", "role": "S" },
           { "text": "have", "role": "V" },
@@ -17,6 +18,7 @@
       {
         "text": "My father is a teacher.",
         "ja": "父は教師です。",
+        "grammarPoint": "be動詞の現在形",
         "spans": [
           { "text": "My father", "role": "S" },
           { "text": "is", "role": "V" },
@@ -27,6 +29,7 @@
       {
         "text": "My mother works at a hospital.",
         "ja": "母は病院で働いています。",
+        "grammarPoint": "一般動詞の三人称単数現在形",
         "spans": [
           { "text": "My mother", "role": "S" },
           { "text": "works", "role": "V" },
@@ -37,6 +40,7 @@
       {
         "text": "I have two sisters and one brother.",
         "ja": "私には姉妹が2人と兄弟が1人います。",
+        "grammarPoint": "一般動詞の現在形",
         "spans": [
           { "text": "I", "role": "S" },
           { "text": "have", "role": "V" },
@@ -47,11 +51,12 @@
       {
         "text": "We eat dinner together every night.",
         "ja": "私たちは毎晩一緒に夕食を食べます。",
+        "grammarPoint": "一般動詞の現在形",
         "spans": [
           { "text": "We", "role": "S" },
           { "text": "eat", "role": "V" },
           { "text": "dinner", "role": "O" },
-          { "text": "together", "role": "M" },
+          { "text": "together", "role": "Ad" },
           { "text": "every night", "role": "M" },
           { "text": ".", "role": null }
         ]
@@ -59,11 +64,12 @@
       {
         "text": "I love my family very much.",
         "ja": "私は家族をとても愛しています。",
+        "grammarPoint": "一般動詞の現在形",
         "spans": [
           { "text": "I", "role": "S" },
           { "text": "love", "role": "V" },
           { "text": "my family", "role": "O" },
-          { "text": "very much", "role": "M" },
+          { "text": "very much", "role": "Ad" },
           { "text": ".", "role": null }
         ]
       }
@@ -77,6 +83,7 @@
       {
         "text": "My school is near the station.",
         "ja": "私の学校は駅の近くにあります。",
+        "grammarPoint": "be動詞の現在形(場所)",
         "spans": [
           { "text": "My school", "role": "S" },
           { "text": "is", "role": "V" },
@@ -87,6 +94,7 @@
       {
         "text": "I go to school by bike.",
         "ja": "私は自転車で学校に行きます。",
+        "grammarPoint": "一般動詞の現在形",
         "spans": [
           { "text": "I", "role": "S" },
           { "text": "go", "role": "V" },
@@ -98,6 +106,7 @@
       {
         "text": "We study English and math every day.",
         "ja": "私たちは毎日英語と数学を勉強します。",
+        "grammarPoint": "一般動詞の現在形",
         "spans": [
           { "text": "We", "role": "S" },
           { "text": "study", "role": "V" },
@@ -109,6 +118,7 @@
       {
         "text": "My favorite subject is music.",
         "ja": "私の好きな教科は音楽です。",
+        "grammarPoint": "be動詞の現在形",
         "spans": [
           { "text": "My favorite subject", "role": "S" },
           { "text": "is", "role": "V" },
@@ -119,6 +129,7 @@
       {
         "text": "Our teacher is very kind.",
         "ja": "私たちの先生はとても親切です。",
+        "grammarPoint": "be動詞の現在形+形容詞",
         "spans": [
           { "text": "Our teacher", "role": "S" },
           { "text": "is", "role": "V" },
@@ -129,6 +140,7 @@
       {
         "text": "I enjoy school life.",
         "ja": "私は学校生活を楽しんでいます。",
+        "grammarPoint": "一般動詞の現在形",
         "spans": [
           { "text": "I", "role": "S" },
           { "text": "enjoy", "role": "V" },
@@ -146,6 +158,7 @@
       {
         "text": "I have a small dog.",
         "ja": "私は小さな犬を飼っています。",
+        "grammarPoint": "一般動詞の現在形",
         "spans": [
           { "text": "I", "role": "S" },
           { "text": "have", "role": "V" },
@@ -156,6 +169,7 @@
       {
         "text": "His name is Pochi.",
         "ja": "彼の名前はポチです。",
+        "grammarPoint": "be動詞の現在形",
         "spans": [
           { "text": "His name", "role": "S" },
           { "text": "is", "role": "V" },
@@ -166,6 +180,7 @@
       {
         "text": "Pochi is very friendly.",
         "ja": "ポチはとても人懐っこいです。",
+        "grammarPoint": "be動詞の現在形+形容詞",
         "spans": [
           { "text": "Pochi", "role": "S" },
           { "text": "is", "role": "V" },
@@ -176,6 +191,7 @@
       {
         "text": "I walk him every morning.",
         "ja": "私は毎朝彼を散歩させます。",
+        "grammarPoint": "一般動詞の現在形",
         "spans": [
           { "text": "I", "role": "S" },
           { "text": "walk", "role": "V" },
@@ -187,6 +203,7 @@
       {
         "text": "He likes to play in the park.",
         "ja": "彼は公園で遊ぶのが好きです。",
+        "grammarPoint": "to不定詞(名詞的用法)",
         "spans": [
           { "text": "He", "role": "S" },
           { "text": "likes", "role": "V" },
@@ -197,11 +214,12 @@
       {
         "text": "My family loves Pochi very much.",
         "ja": "私の家族はポチをとても愛しています。",
+        "grammarPoint": "一般動詞の三人称単数現在形",
         "spans": [
           { "text": "My family", "role": "S" },
           { "text": "loves", "role": "V" },
           { "text": "Pochi", "role": "O" },
-          { "text": "very much", "role": "M" },
+          { "text": "very much", "role": "Ad" },
           { "text": ".", "role": null }
         ]
       }
@@ -215,11 +233,12 @@
       {
         "text": "I usually get up late on Sunday.",
         "ja": "私は日曜日はたいてい遅く起きます。",
+        "grammarPoint": "一般動詞の現在形",
         "spans": [
           { "text": "I", "role": "S" },
-          { "text": "usually", "role": "M" },
+          { "text": "usually", "role": "Ad" },
           { "text": "get up", "role": "V" },
-          { "text": "late", "role": "M" },
+          { "text": "late", "role": "Ad" },
           { "text": "on Sunday", "role": "M" },
           { "text": ".", "role": null }
         ]
@@ -227,6 +246,7 @@
       {
         "text": "In the morning, I clean my room.",
         "ja": "朝、私は部屋を掃除します。",
+        "grammarPoint": "一般動詞の現在形",
         "spans": [
           { "text": "In the morning", "role": "M" },
           { "text": ",", "role": null },
@@ -239,6 +259,7 @@
       {
         "text": "In the afternoon, I play soccer with my friends.",
         "ja": "午後、私は友達とサッカーをします。",
+        "grammarPoint": "一般動詞の現在形",
         "spans": [
           { "text": "In the afternoon", "role": "M" },
           { "text": ",", "role": null },
@@ -252,19 +273,21 @@
       {
         "text": "In the evening, my family watches TV together.",
         "ja": "夕方、家族は一緒にテレビを見ます。",
+        "grammarPoint": "一般動詞の三人称単数現在形",
         "spans": [
           { "text": "In the evening", "role": "M" },
           { "text": ",", "role": null },
           { "text": "my family", "role": "S" },
           { "text": "watches", "role": "V" },
           { "text": "TV", "role": "O" },
-          { "text": "together", "role": "M" },
+          { "text": "together", "role": "Ad" },
           { "text": ".", "role": null }
         ]
       },
       {
         "text": "Weekends are so much fun.",
         "ja": "週末はとても楽しいです。",
+        "grammarPoint": "be動詞の現在形(複数形)",
         "spans": [
           { "text": "Weekends", "role": "S" },
           { "text": "are", "role": "V" },
@@ -282,6 +305,7 @@
       {
         "text": "My favorite food is curry and rice.",
         "ja": "私の好きな食べ物はカレーライスです。",
+        "grammarPoint": "be動詞の現在形",
         "spans": [
           { "text": "My favorite food", "role": "S" },
           { "text": "is", "role": "V" },
@@ -292,6 +316,7 @@
       {
         "text": "My mother makes curry every Friday.",
         "ja": "母は毎週金曜日にカレーを作ります。",
+        "grammarPoint": "一般動詞の三人称単数現在形",
         "spans": [
           { "text": "My mother", "role": "S" },
           { "text": "makes", "role": "V" },
@@ -303,6 +328,7 @@
       {
         "text": "The curry smells so good.",
         "ja": "カレーはとてもいい匂いがします。",
+        "grammarPoint": "感覚動詞(smell)+形容詞",
         "spans": [
           { "text": "The curry", "role": "S" },
           { "text": "smells", "role": "V" },
@@ -313,9 +339,10 @@
       {
         "text": "I always eat two bowls.",
         "ja": "私はいつも2杯食べます。",
+        "grammarPoint": "一般動詞の現在形",
         "spans": [
           { "text": "I", "role": "S" },
-          { "text": "always", "role": "M" },
+          { "text": "always", "role": "Ad" },
           { "text": "eat", "role": "V" },
           { "text": "two bowls", "role": "O" },
           { "text": ".", "role": null }
@@ -324,6 +351,7 @@
       {
         "text": "We enjoy cooking together.",
         "ja": "私たちは一緒に料理をするのを楽しみます。",
+        "grammarPoint": "動名詞(動詞の目的語)",
         "spans": [
           { "text": "We", "role": "S" },
           { "text": "enjoy", "role": "V" },

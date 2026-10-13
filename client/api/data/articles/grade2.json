@@ -7,6 +7,7 @@
       {
         "text": "Last summer, I went to the beach with my family.",
         "ja": "去年の夏、私は家族とビーチに行きました。",
+        "grammarPoint": "過去形(不規則動詞)",
         "spans": [
           { "text": "Last summer", "role": "M" },
           { "text": ",", "role": null },
@@ -20,10 +21,11 @@
       {
         "text": "We stayed there for three days.",
         "ja": "私たちはそこに3日間滞在しました。",
+        "grammarPoint": "過去形(規則動詞)",
         "spans": [
           { "text": "We", "role": "S" },
           { "text": "stayed", "role": "V" },
-          { "text": "there", "role": "M" },
+          { "text": "there", "role": "Ad" },
           { "text": "for three days", "role": "M" },
           { "text": ".", "role": null }
         ]
@@ -31,6 +33,7 @@
       {
         "text": "I swam in the sea every day.",
         "ja": "私は毎日海で泳ぎました。",
+        "grammarPoint": "過去形(不規則動詞)",
         "spans": [
           { "text": "I", "role": "S" },
           { "text": "swam", "role": "V" },
@@ -42,9 +45,10 @@
       {
         "text": "We also enjoyed a fireworks festival at night.",
         "ja": "私たちは夜に花火大会も楽しみました。",
+        "grammarPoint": "過去形(規則動詞)",
         "spans": [
           { "text": "We", "role": "S" },
-          { "text": "also", "role": "M" },
+          { "text": "also", "role": "Ad" },
           { "text": "enjoyed", "role": "V" },
           { "text": "a fireworks festival", "role": "O" },
           { "text": "at night", "role": "M" },
@@ -54,6 +58,7 @@
       {
         "text": "It was the best summer of my life.",
         "ja": "それは私の人生で最高の夏でした。",
+        "grammarPoint": "be動詞の過去形",
         "spans": [
           { "text": "It", "role": "S" },
           { "text": "was", "role": "V" },
@@ -71,6 +76,7 @@
       {
         "text": "Our class took a school trip to Kyoto in October.",
         "ja": "私たちのクラスは10月に京都へ修学旅行に行きました。",
+        "grammarPoint": "過去形(不規則動詞)",
         "spans": [
           { "text": "Our class", "role": "S" },
           { "text": "took", "role": "V" },
@@ -83,6 +89,7 @@
       {
         "text": "We visited many old temples.",
         "ja": "私たちはたくさんの古いお寺を訪れました。",
+        "grammarPoint": "過去形(規則動詞)",
         "spans": [
           { "text": "We", "role": "S" },
           { "text": "visited", "role": "V" },
@@ -93,6 +100,7 @@
       {
         "text": "The temples were very beautiful and quiet.",
         "ja": "お寺はとても美しく静かでした。",
+        "grammarPoint": "be動詞の過去形(複数形)",
         "spans": [
           { "text": "The temples", "role": "S" },
           { "text": "were", "role": "V" },
@@ -103,6 +111,7 @@
       {
         "text": "I bought a small present for my grandmother.",
         "ja": "私は祖母に小さなプレゼントを買いました。",
+        "grammarPoint": "過去形(不規則動詞)",
         "spans": [
           { "text": "I", "role": "S" },
           { "text": "bought", "role": "V" },
@@ -114,10 +123,12 @@
       {
         "text": "I want to visit Kyoto again someday.",
         "ja": "私はいつかまた京都を訪れたいです。",
+        "grammarPoint": "to不定詞(名詞的用法)",
         "spans": [
           { "text": "I", "role": "S" },
-          { "text": "want to visit Kyoto again", "role": "O" },
-          { "text": "someday", "role": "M" },
+          { "text": "want to visit Kyoto", "role": "O" },
+          { "text": "again", "role": "Ad" },
+          { "text": "someday", "role": "Ad" },
           { "text": ".", "role": null }
         ]
       }
@@ -131,6 +142,7 @@
       {
         "text": "I am going to be a nurse in the future.",
         "ja": "私は将来看護師になるつもりです。",
+        "grammarPoint": "be going to(未来表現)",
         "spans": [
           { "text": "I", "role": "S" },
           { "text": "am going to be", "role": "V" },
@@ -142,6 +154,7 @@
       {
         "text": "My aunt is a nurse.",
         "ja": "私のおばは看護師です。",
+        "grammarPoint": "be動詞の現在形",
         "spans": [
           { "text": "My aunt", "role": "S" },
           { "text": "is", "role": "V" },
@@ -152,6 +165,7 @@
       {
         "text": "She helps many people every day.",
         "ja": "彼女は毎日たくさんの人を助けています。",
+        "grammarPoint": "一般動詞の三人称単数現在形",
         "spans": [
           { "text": "She", "role": "S" },
           { "text": "helps", "role": "V" },
@@ -163,9 +177,10 @@
       {
         "text": "She always looks happy at work.",
         "ja": "彼女は仕事でいつも幸せそうに見えます。",
+        "grammarPoint": "一般動詞(look+形容詞)",
         "spans": [
           { "text": "She", "role": "S" },
-          { "text": "always", "role": "M" },
+          { "text": "always", "role": "Ad" },
           { "text": "looks", "role": "V" },
           { "text": "happy", "role": "C" },
           { "text": "at work", "role": "M" },
@@ -175,10 +190,11 @@
       {
         "text": "I will study hard to become a nurse.",
         "ja": "私は看護師になるために一生懸命勉強するつもりです。",
+        "grammarPoint": "will(未来表現)+to不定詞(副詞的用法・目的)",
         "spans": [
           { "text": "I", "role": "S" },
           { "text": "will study", "role": "V" },
-          { "text": "hard", "role": "M" },
+          { "text": "hard", "role": "Ad" },
           { "text": "to become a nurse", "role": "M" },
           { "text": ".", "role": null }
         ]
@@ -186,6 +202,7 @@
       {
         "text": "I hope my dream will come true.",
         "ja": "私は自分の夢が叶うことを願っています。",
+        "grammarPoint": "will(未来表現、名詞節内)",
         "spans": [
           { "text": "I", "role": "S" },
           { "text": "hope", "role": "V" },
@@ -203,6 +220,7 @@
       {
         "text": "Our sports day was held last Saturday.",
         "ja": "体育祭は先週の土曜日に開催されました。",
+        "grammarPoint": "受け身(受動態)",
         "spans": [
           { "text": "Our sports day", "role": "S" },
           { "text": "was held", "role": "V" },
@@ -213,6 +231,7 @@
       {
         "text": "I ran in the 100-meter race.",
         "ja": "私は100メートル走に出場しました。",
+        "grammarPoint": "過去形(不規則動詞)",
         "spans": [
           { "text": "I", "role": "S" },
           { "text": "ran", "role": "V" },
@@ -223,6 +242,7 @@
       {
         "text": "My class won the relay race.",
         "ja": "私のクラスはリレーで優勝しました。",
+        "grammarPoint": "過去形(不規則動詞)",
         "spans": [
           { "text": "My class", "role": "S" },
           { "text": "won", "role": "V" },
@@ -233,10 +253,11 @@
       {
         "text": "Everyone cheered loudly for their friends.",
         "ja": "みんな友達のために大きな声で応援しました。",
+        "grammarPoint": "過去形(規則動詞)",
         "spans": [
           { "text": "Everyone", "role": "S" },
           { "text": "cheered", "role": "V" },
-          { "text": "loudly", "role": "M" },
+          { "text": "loudly", "role": "Ad" },
           { "text": "for their friends", "role": "M" },
           { "text": ".", "role": null }
         ]
@@ -244,6 +265,7 @@
       {
         "text": "It was a tiring but exciting day.",
         "ja": "それは疲れたけれどわくわくする一日でした。",
+        "grammarPoint": "be動詞の過去形+現在分詞/過去分詞の形容詞用法",
         "spans": [
           { "text": "It", "role": "S" },
           { "text": "was", "role": "V" },
@@ -261,6 +283,7 @@
       {
         "text": "I help my parents with housework every weekend.",
         "ja": "私は毎週末両親の家事を手伝います。",
+        "grammarPoint": "一般動詞の現在形",
         "spans": [
           { "text": "I", "role": "S" },
           { "text": "help", "role": "V" },
@@ -273,9 +296,10 @@
       {
         "text": "I usually clean the bathroom.",
         "ja": "私はたいていお風呂を掃除します。",
+        "grammarPoint": "一般動詞の現在形",
         "spans": [
           { "text": "I", "role": "S" },
-          { "text": "usually", "role": "M" },
+          { "text": "usually", "role": "Ad" },
           { "text": "clean", "role": "V" },
           { "text": "the bathroom", "role": "O" },
           { "text": ".", "role": null }
@@ -284,9 +308,10 @@
       {
         "text": "I also wash the dishes after dinner.",
         "ja": "私は夕食後に皿も洗います。",
+        "grammarPoint": "一般動詞の現在形",
         "spans": [
           { "text": "I", "role": "S" },
-          { "text": "also", "role": "M" },
+          { "text": "also", "role": "Ad" },
           { "text": "wash", "role": "V" },
           { "text": "the dishes", "role": "O" },
           { "text": "after dinner", "role": "M" },
@@ -296,6 +321,7 @@
       {
         "text": "My little brother waters the plants.",
         "ja": "私の弟は植物に水をやります。",
+        "grammarPoint": "一般動詞の三人称単数現在形",
         "spans": [
           { "text": "My little brother", "role": "S" },
           { "text": "waters", "role": "V" },
@@ -306,9 +332,10 @@
       {
         "text": "My parents always thank us for our help.",
         "ja": "両親はいつも私たちの手伝いに感謝してくれます。",
+        "grammarPoint": "一般動詞の三人称複数現在形",
         "spans": [
           { "text": "My parents", "role": "S" },
-          { "text": "always", "role": "M" },
+          { "text": "always", "role": "Ad" },
           { "text": "thank", "role": "V" },
           { "text": "us", "role": "O" },
           { "text": "for our help", "role": "M" },
@@ -318,6 +345,7 @@
       {
         "text": "Helping at home makes me feel proud.",
         "ja": "家で手伝うことは私を誇らしい気持ちにさせます。",
+        "grammarPoint": "動名詞(主語)+SVOC",
         "spans": [
           { "text": "Helping at home", "role": "S" },
           { "text": "makes", "role": "V" },

@@ -7,16 +7,18 @@
       {
         "text": "The environment around us is changing quickly.",
         "ja": "私たちの周りの環境は急速に変化しています。",
+        "grammarPoint": "現在進行形",
         "spans": [
           { "text": "The environment around us", "role": "S" },
           { "text": "is changing", "role": "V" },
-          { "text": "quickly", "role": "M" },
+          { "text": "quickly", "role": "Ad" },
           { "text": ".", "role": null }
         ]
       },
       {
         "text": "Air pollution is a serious problem in many cities.",
         "ja": "大気汚染は多くの都市で深刻な問題です。",
+        "grammarPoint": "be動詞の現在形",
         "spans": [
           { "text": "Air pollution", "role": "S" },
           { "text": "is", "role": "V" },
@@ -27,6 +29,7 @@
       {
         "text": "We should reduce plastic waste to protect the ocean.",
         "ja": "私たちは海を守るためにプラスチックごみを減らすべきです。",
+        "grammarPoint": "助動詞(should)+to不定詞(副詞的用法・目的)",
         "spans": [
           { "text": "We", "role": "S" },
           { "text": "should reduce", "role": "V" },
@@ -38,6 +41,7 @@
       {
         "text": "Some students started a recycling project at school.",
         "ja": "何人かの生徒は学校でリサイクル活動を始めました。",
+        "grammarPoint": "過去形(規則動詞)",
         "spans": [
           { "text": "Some students", "role": "S" },
           { "text": "started", "role": "V" },
@@ -49,6 +53,7 @@
       {
         "text": "Small actions can make a big difference.",
         "ja": "小さな行動が大きな違いを生むことがあります。",
+        "grammarPoint": "助動詞(can)",
         "spans": [
           { "text": "Small actions", "role": "S" },
           { "text": "can make", "role": "V" },
@@ -59,6 +64,7 @@
       {
         "text": "I want to take care of the environment for future generations.",
         "ja": "私は未来の世代のために環境を大切にしたいです。",
+        "grammarPoint": "to不定詞(名詞的用法)",
         "spans": [
           { "text": "I", "role": "S" },
           { "text": "want to take care of the environment", "role": "O" },
@@ -76,6 +82,7 @@
       {
         "text": "I have wanted to be a doctor since I was a child.",
         "ja": "私は子供の頃から医者になりたいと思っています。",
+        "grammarPoint": "現在完了形(継続)+to不定詞",
         "spans": [
           { "text": "I", "role": "S" },
           { "text": "have wanted", "role": "V" },
@@ -87,6 +94,7 @@
       {
         "text": "My grandfather, who was a doctor, saved many lives.",
         "ja": "医者だった私の祖父はたくさんの命を救いました。",
+        "grammarPoint": "関係代名詞(who・主格・非制限用法)",
         "spans": [
           { "text": "My grandfather", "role": "S" },
           { "text": ",", "role": null },
@@ -100,6 +108,7 @@
       {
         "text": "His story inspired me to choose this path.",
         "ja": "彼の話は私にこの道を選ぶよう促しました。",
+        "grammarPoint": "to不定詞(副詞的用法・inspire O to doの形)",
         "spans": [
           { "text": "His story", "role": "S" },
           { "text": "inspired", "role": "V" },
@@ -110,17 +119,19 @@
       {
         "text": "I study science harder than before.",
         "ja": "私は以前よりも一生懸命理科を勉強しています。",
+        "grammarPoint": "比較級",
         "spans": [
           { "text": "I", "role": "S" },
           { "text": "study", "role": "V" },
           { "text": "science", "role": "O" },
-          { "text": "harder than before", "role": "M" },
+          { "text": "harder than before", "role": "Ad" },
           { "text": ".", "role": null }
         ]
       },
       {
         "text": "I believe that hard work will lead me to my goal.",
         "ja": "私は努力が目標へ導いてくれると信じています。",
+        "grammarPoint": "接続詞that(名詞節)",
         "spans": [
           { "text": "I", "role": "S" },
           { "text": "believe", "role": "V" },
@@ -138,6 +149,7 @@
       {
         "text": "Hideyo Noguchi was a Japanese doctor who studied dangerous diseases.",
         "ja": "野口英世は危険な病気を研究した日本の医者でした。",
+        "grammarPoint": "関係代名詞(who・主格)",
         "spans": [
           { "text": "Hideyo Noguchi", "role": "S" },
           { "text": "was", "role": "V" },
@@ -148,6 +160,7 @@
       {
         "text": "He traveled to Africa to research yellow fever.",
         "ja": "彼は黄熱病を研究するためにアフリカへ渡りました。",
+        "grammarPoint": "to不定詞(副詞的用法・目的)",
         "spans": [
           { "text": "He", "role": "S" },
           { "text": "traveled", "role": "V" },
@@ -159,6 +172,7 @@
       {
         "text": "His research is still respected around the world.",
         "ja": "彼の研究は今も世界中で尊敬されています。",
+        "grammarPoint": "受け身(受動態)",
         "spans": [
           { "text": "His research", "role": "S" },
           { "text": "is still respected", "role": "V" },
@@ -169,6 +183,7 @@
       {
         "text": "Many people learn from his hard work and courage.",
         "ja": "多くの人が彼の努力と勇気から学んでいます。",
+        "grammarPoint": "一般動詞の現在形",
         "spans": [
           { "text": "Many people", "role": "S" },
           { "text": "learn", "role": "V" },
@@ -179,10 +194,11 @@
       {
         "text": "I hope to make a difference like him someday.",
         "ja": "私はいつか彼のように違いを生み出したいです。",
+        "grammarPoint": "to不定詞(名詞的用法)",
         "spans": [
           { "text": "I", "role": "S" },
           { "text": "hope to make a difference like him", "role": "O" },
-          { "text": "someday", "role": "M" },
+          { "text": "someday", "role": "Ad" },
           { "text": ".", "role": null }
         ]
       }
@@ -196,6 +212,7 @@
       {
         "text": "Technology has changed the way we live and communicate.",
         "ja": "テクノロジーは私たちの生活とコミュニケーションの仕方を変えました。",
+        "grammarPoint": "現在完了形(完了・結果)",
         "spans": [
           { "text": "Technology", "role": "S" },
           { "text": "has changed", "role": "V" },
@@ -206,6 +223,7 @@
       {
         "text": "Smartphones let us talk to friends around the world.",
         "ja": "スマートフォンは私たちが世界中の友達と話すことを可能にします。",
+        "grammarPoint": "使役動詞(let)",
         "spans": [
           { "text": "Smartphones", "role": "S" },
           { "text": "let", "role": "V" },
@@ -216,8 +234,9 @@
       {
         "text": "However, too much screen time can be harmful to our health.",
         "ja": "しかし、画面を見過ぎることは私たちの健康に害を与えることがあります。",
+        "grammarPoint": "助動詞(can)+be動詞",
         "spans": [
-          { "text": "However", "role": "M" },
+          { "text": "However", "role": "Ad" },
           { "text": ",", "role": null },
           { "text": "too much screen time", "role": "S" },
           { "text": "can be", "role": "V" },
@@ -228,17 +247,19 @@
       {
         "text": "We need to use technology wisely.",
         "ja": "私たちはテクノロジーを賢く使う必要があります。",
+        "grammarPoint": "to不定詞(名詞的用法)",
         "spans": [
           { "text": "We", "role": "S" },
           { "text": "need to use", "role": "V" },
           { "text": "technology", "role": "O" },
-          { "text": "wisely", "role": "M" },
+          { "text": "wisely", "role": "Ad" },
           { "text": ".", "role": null }
         ]
       },
       {
         "text": "Technology should make our lives easier, not harder.",
         "ja": "テクノロジーは私たちの生活を難しくするのではなく楽にするべきです。",
+        "grammarPoint": "使役動詞(make)+SVOC+比較級",
         "spans": [
           { "text": "Technology", "role": "S" },
           { "text": "should make", "role": "V" },
@@ -257,6 +278,7 @@
       {
         "text": "Last spring, I traveled to Australia with my family.",
         "ja": "去年の春、私は家族とオーストラリアへ旅行しました。",
+        "grammarPoint": "過去形(規則動詞)",
         "spans": [
           { "text": "Last spring", "role": "M" },
           { "text": ",", "role": null },
@@ -270,6 +292,7 @@
       {
         "text": "It was my first time to travel abroad.",
         "ja": "それは私にとって初めての海外旅行でした。",
+        "grammarPoint": "to不定詞(形容詞的用法)",
         "spans": [
           { "text": "It", "role": "S" },
           { "text": "was", "role": "V" },
@@ -280,6 +303,7 @@
       {
         "text": "I was surprised that people there were so friendly.",
         "ja": "私はそこの人々がとても親切なことに驚きました。",
+        "grammarPoint": "受け身(be surprised)+接続詞that",
         "spans": [
           { "text": "I", "role": "S" },
           { "text": "was surprised", "role": "V" },
@@ -290,6 +314,7 @@
       {
         "text": "I learned that the world is bigger than I thought.",
         "ja": "私は世界が思っていたより大きいことを学びました。",
+        "grammarPoint": "比較級+接続詞that",
         "spans": [
           { "text": "I", "role": "S" },
           { "text": "learned", "role": "V" },
@@ -300,6 +325,7 @@
       {
         "text": "I want to travel to more countries in the future.",
         "ja": "私は将来もっと多くの国を旅行したいです。",
+        "grammarPoint": "to不定詞(名詞的用法)",
         "spans": [
           { "text": "I", "role": "S" },
           { "text": "want to travel to more countries", "role": "O" },

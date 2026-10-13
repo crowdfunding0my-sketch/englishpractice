@@ -17,8 +17,13 @@ function isVerbish(tags) {
   return tags.has("Verb") || tags.has("Copula") || tags.has("Auxiliary") || tags.has("Modal");
 }
 
+// compromise は "can be" のように助動詞+原形beの場合、beにCopulaタグを
+// 付けないことがあるため、be動詞の原形も明示的にチェックする
+const BE_FORMS = new Set(["be", "is", "am", "are", "was", "were", "been", "being"]);
+
 function isLinkingVerb(term) {
-  return new Set(term.tags).has("Copula") || LINKING_VERBS.has(term.text.toLowerCase());
+  const text = term.text.toLowerCase();
+  return new Set(term.tags).has("Copula") || LINKING_VERBS.has(text) || BE_FORMS.has(text);
 }
 
 export function tagSentenceApprox(sentence) {
@@ -63,7 +68,13 @@ export function tagSentenceApprox(sentence) {
       break;
     }
   }
-  const objEnd = prepStart === -1 ? afterEnd : prepStart;
+  let objEnd = prepStart === -1 ? afterEnd : prepStart;
+
+  // 目的語/補語の末尾にある副詞(very much, hardなど)もAdとして切り出す
+  let coreEnd = objEnd;
+  while (coreEnd - 1 > verbEnd && new Set(terms[coreEnd - 1].tags).has("Adverb")) {
+    coreEnd--;
+  }
 
   const spans = [];
   function pushRange(start, end, role) {
@@ -77,11 +88,14 @@ export function tagSentenceApprox(sentence) {
     if (text) spans.push({ text, role });
   }
 
-  if (sStart > 0) pushRange(0, sStart, "M");
+  // S/Vの前後にある副詞(already/alsoなど)は、他のM(前置詞句・節など)とは
+  // 別カテゴリーのAd(副詞)として扱う
+  if (sStart > 0) pushRange(0, sStart, "Ad");
   pushRange(sStart, sEnd, "S");
-  if (sEnd < verbStart) pushRange(sEnd, verbStart, "M");
+  if (sEnd < verbStart) pushRange(sEnd, verbStart, "Ad");
   pushRange(verbStart, verbEnd + 1, "V");
-  pushRange(verbEnd + 1, objEnd, verbIsCopula ? "C" : "O");
+  pushRange(verbEnd + 1, coreEnd, verbIsCopula ? "C" : "O");
+  if (coreEnd < objEnd) pushRange(coreEnd, objEnd, "Ad");
   if (prepStart !== -1) pushRange(prepStart, terms.length, "M");
 
   // 末尾の句読点(.!?)は単独のスパンとして分離する
