@@ -51,14 +51,14 @@ description: 「単マス」のブランド・デザイン規則。画面の新�
 - 新しい画面を作る際は、既存のクラス(`.card`, `.button`, `.select-card`, `.auth-input`など)を再利用し、独自のインラインスタイルで配色を直書きしないこと
 
 ## 文法ハイライト配色(英語記事モード・英語日記モード共通)
-`ArticleMode.jsx`/`DiaryMode.jsx`の文法ハイライト機能では、S(主語)/V(動詞)/O(目的語)/C(補語)/M(修飾語・前置詞句や節など)/Ad(副詞)の6つを以下の配色で色分けする(`index.css`の`.grammar-role.role-*`)。新しい文法要素の色を追加する場合もこのトークンの組み合わせから選ぶこと。Cは当初primary+accentのcolor-mixにしていたがSと見分けにくかったためsuccessに変更した経緯がある。
+`ArticleMode.jsx`/`DiaryMode.jsx`の文法ハイライト機能では、S(主語)/V(動詞)/O(目的語)/C(補語)/M(修飾語・前置詞句や節など)/Ad(副詞)の6つを以下の配色で色分けする(`index.css`の`.grammar-role.role-*`)。新しい文法要素の色を追加する場合もこのトークンの組み合わせから選ぶこと。Cは当初primary+accentのcolor-mix → success(緑)と変更したが、緑はV(accentのティール)と似て見分けにくかったため、専用トークン`--sky`(薄い青)にした経緯がある。
 
 | 役割 | 色 | 下線スタイル |
 |---|---|---|
 | S 主語 | `var(--primary)` | 実線 |
 | V 動詞 | `var(--accent)` | 実線 |
 | O 目的語 | `var(--primary-2)` | 実線 |
-| C 補語 | `var(--success)` | 実線 |
+| C 補語 | `var(--sky)`(スタイリッシュ`#7dd3fc` / かわいい`#5fb3f5`) | 実線 |
 | M 修飾語(前置詞句・節など) | `var(--text-muted)` | 破線(dashed) |
 | Ad 副詞(already/alsoなど、Mとは別カテゴリー) | `var(--danger)` | 点線(dotted) |
 

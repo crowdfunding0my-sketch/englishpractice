@@ -111,7 +111,9 @@ export default function DiaryMode({ grade, onBack }) {
         return;
       }
       if (e.error === "not-allowed" || e.error === "service-not-allowed") {
-        setMicError("マイクの使用が許可されていません。ブラウザのアドレスバー付近のマイクアイコンから許可してください。");
+        setMicError(
+          "マイクの使用が許可されていません。ブラウザのアドレスバー左側のアイコン(🔒など)から「権限」または「サイトの設定」を開き、マイクを「許可」にしてください。変更したあとはページを再読み込みして、もう一度試してね。"
+        );
       } else if (e.error === "no-speech") {
         setMicError("音声が検出されませんでした。マイクに向かってはっきり話してみてね。(マイクが正しく選択されているかも確認してください)");
       } else if (e.error === "audio-capture") {
@@ -191,7 +193,12 @@ export default function DiaryMode({ grade, onBack }) {
             {recordingTarget === "en" ? "⏹ 録音中... (押して停止)" : "🎤 英語を話して入力する"}
           </button>
         ) : (
-          <div className="mistake-note">このブラウザは音声入力に対応していません。</div>
+          <div className="voice-help">
+            このブラウザ(iPhoneのChromeなど)では、画面の🎤ボタンによる音声入力は使えません。
+            <br />
+            スマホでは、<b>キーボードにあるマイクのボタン(🎤)</b>を押して話すと、文字に変換できます。
+            英語を話すときは、キーボードの言語を英語に切り替えてね。
+          </div>
         )}
       </div>
       {micError && (
@@ -220,8 +227,8 @@ export default function DiaryMode({ grade, onBack }) {
           placeholder="例: 今日は自転車で学校に行きました。"
         />
       </label>
-      {SpeechRecognitionApi && (
-        <div className="diary-toolbar">
+      <div className="diary-toolbar">
+        {SpeechRecognitionApi ? (
           <button
             type="button"
             className={`mic-button ${recordingTarget === "ja" ? "recording" : ""}`}
@@ -230,8 +237,12 @@ export default function DiaryMode({ grade, onBack }) {
           >
             {recordingTarget === "ja" ? "⏹ 録音中... (押して停止)" : "🎤 日本語を話して入力する"}
           </button>
-        </div>
-      )}
+        ) : (
+          <div className="voice-help">
+            日本語も、キーボードのマイクボタン(🎤)で音声入力できるよ(キーボードの言語を日本語にしてね)。
+          </div>
+        )}
+      </div>
 
       <div className="article-toggle-row">
         <button
@@ -289,6 +300,12 @@ export default function DiaryMode({ grade, onBack }) {
           ))}
         </div>
       )}
+
+      <div className="button-row">
+        <button className="button secondary" onClick={onBack}>
+          ← モード選択にもどる
+        </button>
+      </div>
     </div>
   );
 }

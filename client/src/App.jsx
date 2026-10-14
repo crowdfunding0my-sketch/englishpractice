@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import GradeSelect from "./components/GradeSelect.jsx";
 import ModeSelect from "./components/ModeSelect.jsx";
 import QuestionCountSelect from "./components/QuestionCountSelect.jsx";
@@ -46,6 +46,21 @@ const SCREENS = {
   RESULT: "result",
 };
 
+// スマホの戻るボタン/ジェスチャーを押したときに戻る先の画面(1つ上の階層)
+const PARENT_SCREEN = {
+  [SCREENS.MODE]: SCREENS.GRADE,
+  [SCREENS.COUNT]: SCREENS.MODE,
+  [SCREENS.PRACTICE_CHOICE]: SCREENS.MODE,
+  [SCREENS.PRACTICE]: SCREENS.MODE,
+  [SCREENS.TEST]: SCREENS.COUNT,
+  [SCREENS.ADD]: SCREENS.MODE,
+  [SCREENS.LIBRARY]: SCREENS.MODE,
+  [SCREENS.ARTICLES]: SCREENS.MODE,
+  [SCREENS.DIARY]: SCREENS.MODE,
+  [SCREENS.UPGRADE]: SCREENS.MODE,
+  [SCREENS.RESULT]: SCREENS.GRADE,
+};
+
 export default function App() {
   const { user, loading: authLoading, passwordRecovery, signOut } = useAuth();
   const [theme, setTheme] = useState(
@@ -66,6 +81,46 @@ export default function App() {
     document.documentElement.setAttribute("data-theme", theme);
     localStorage.setItem("englishword-theme", theme);
   }, [theme]);
+
+  // スマホの戻るボタン/ジェスチャーで1つ前の画面に戻れるようにする。
+  // 学年選択以外の画面にいる間は、ブラウザ履歴に「戻る用の1エントリ」を常に1つだけ積んでおき、
+  // 戻る操作(popstate)を検知したらアプリ内の1つ上の画面(PARENT_SCREEN)へ移動する。
+  const screenRef = useRef(screen);
+  const goHomeRef = useRef(null);
+  const ignorePopRef = useRef(false);
+  screenRef.current = screen;
+  goHomeRef.current = goHome;
+
+  useEffect(() => {
+    if (!user) return;
+    const hasGuard = window.history.state?.app === true;
+    if (screen !== SCREENS.GRADE) {
+      if (!hasGuard) window.history.pushState({ app: true }, "");
+    } else if (hasGuard) {
+      // アプリ内のボタンで学年選択に戻った場合、不要になった履歴エントリを取り除く
+      ignorePopRef.current = true;
+      window.history.back();
+    }
+  }, [screen, user]);
+
+  useEffect(() => {
+    if (!user) return;
+    function onPopState() {
+      if (ignorePopRef.current) {
+        ignorePopRef.current = false;
+        return;
+      }
+      const parent = PARENT_SCREEN[screenRef.current];
+      if (!parent) return;
+      if (parent === SCREENS.GRADE) {
+        goHomeRef.current();
+      } else {
+        setScreen(parent);
+      }
+    }
+    window.addEventListener("popstate", onPopState);
+    return () => window.removeEventListener("popstate", onPopState);
+  }, [user]);
 
   async function refreshSubscription() {
     try {
@@ -207,7 +262,7 @@ export default function App() {
     <div className="app-shell">
       <div className="app-header">
         <div className="app-title">単マス</div>
-        <div style={{ display: "flex", gap: 12, alignItems: "center" }}>
+        <div className="app-header-actions">
           <ThemeToggle theme={theme} onChange={setTheme} />
           <button className="button secondary" onClick={signOut}>
             ログアウト
