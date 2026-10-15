@@ -92,16 +92,13 @@
         ]
       },
       {
-        "text": "My grandfather, who was a doctor, saved many lives.",
-        "ja": "医者だった私の祖父はたくさんの命を救いました。",
-        "grammarPoint": "関係代名詞(who・主格・非制限用法)",
+        "text": "My grandfather was a doctor who saved many lives.",
+        "ja": "私の祖父は、たくさんの命を救った医者でした。",
+        "grammarPoint": "関係代名詞(who・主格)",
         "spans": [
           { "text": "My grandfather", "role": "S" },
-          { "text": ",", "role": null },
-          { "text": "who was a doctor", "role": "M" },
-          { "text": ",", "role": null },
-          { "text": "saved", "role": "V" },
-          { "text": "many lives", "role": "O" },
+          { "text": "was", "role": "V" },
+          { "text": "a doctor who saved many lives", "role": "C" },
           { "text": ".", "role": null }
         ]
       },
@@ -330,6 +327,80 @@
           { "text": "I", "role": "S" },
           { "text": "want to travel to more countries", "role": "O" },
           { "text": "in the future", "role": "M" },
+          { "text": ".", "role": null }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "g3-a06",
+    "title": "People and Things I Like",
+    "titleJa": "私の好きな人やもの",
+    "sentences": [
+      {
+        "text": "I have a friend who plays the violin very well.",
+        "ja": "私にはバイオリンをとても上手に弾く友達がいます。",
+        "grammarPoint": "関係代名詞(who・主格)",
+        "spans": [
+          { "text": "I", "role": "S" },
+          { "text": "have", "role": "V" },
+          { "text": "a friend who plays the violin very well", "role": "O" },
+          { "text": ".", "role": null }
+        ]
+      },
+      {
+        "text": "This is the book that I read last week.",
+        "ja": "これは私が先週読んだ本です。",
+        "grammarPoint": "関係代名詞(that・目的格)",
+        "spans": [
+          { "text": "This", "role": "S" },
+          { "text": "is", "role": "V" },
+          { "text": "the book that I read last week", "role": "C" },
+          { "text": ".", "role": null }
+        ]
+      },
+      {
+        "text": "The movie which we watched yesterday was very exciting.",
+        "ja": "私たちが昨日見た映画はとてもわくわくしました。",
+        "grammarPoint": "関係代名詞(which・目的格)",
+        "spans": [
+          { "text": "The movie which we watched yesterday", "role": "S" },
+          { "text": "was", "role": "V" },
+          { "text": "very exciting", "role": "C" },
+          { "text": ".", "role": null }
+        ]
+      },
+      {
+        "text": "I like songs that make me feel happy.",
+        "ja": "私は、聞くと幸せな気持ちになる歌が好きです。",
+        "grammarPoint": "関係代名詞(that・主格)",
+        "spans": [
+          { "text": "I", "role": "S" },
+          { "text": "like", "role": "V" },
+          { "text": "songs that make me feel happy", "role": "O" },
+          { "text": ".", "role": null }
+        ]
+      },
+      {
+        "text": "My sister has a dog which is very smart.",
+        "ja": "私の姉には、とても賢い犬がいます。",
+        "grammarPoint": "関係代名詞(which・主格)",
+        "spans": [
+          { "text": "My sister", "role": "S" },
+          { "text": "has", "role": "V" },
+          { "text": "a dog which is very smart", "role": "O" },
+          { "text": ".", "role": null }
+        ]
+      },
+      {
+        "text": "The people who live near my house are always kind to me.",
+        "ja": "私の家の近くに住む人たちは、いつも私に親切です。",
+        "grammarPoint": "関係代名詞(who・主格)",
+        "spans": [
+          { "text": "The people who live near my house", "role": "S" },
+          { "text": "are", "role": "V" },
+          { "text": "always", "role": "Ad" },
+          { "text": "kind to me", "role": "C" },
           { "text": ".", "role": null }
         ]
       }
