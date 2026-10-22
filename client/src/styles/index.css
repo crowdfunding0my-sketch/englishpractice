@@ -25,7 +25,7 @@ body,
   --accent: #3fd0b4;
   --danger: #ff7a7a;
   --success: #4ade80;
-  --sky: #7dd3fc;
+  --deep-blue: #2563eb;
   --border: #2c355a;
   --radius: 14px;
   --radius-lg: 24px;
@@ -50,7 +50,7 @@ body,
   --accent: #4fc9a8;
   --danger: #ff6b6b;
   --success: #4fc98a;
-  --sky: #5fb3f5;
+  --deep-blue: #1e40af;
   --border: #ffe1c2;
   --radius: 22px;
   --radius-lg: 30px;
@@ -776,11 +776,11 @@ h2 {
   border-bottom-color: var(--primary-2);
 }
 
-/* Cは他のどの役割とも被らないよう、薄い青(sky)にしている。
-   successの緑はV(accentのティール)と似て見分けにくかったため */
+/* Cは他のどの役割とも被らないよう、ディープブルー(deep-blue)にしている。
+   スタイリッシュは濃紺背景で読めるよう少し明るめの青にしている */
 .grammar-role.role-C {
-  color: var(--sky);
-  border-bottom-color: var(--sky);
+  color: var(--deep-blue);
+  border-bottom-color: var(--deep-blue);
 }
 
 .grammar-role.role-M {
